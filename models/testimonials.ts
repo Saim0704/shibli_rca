@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import { BaseModel } from '.';
+import mongoose from "mongoose";
+import { BaseModel } from ".";
 
 export interface ITestimonial extends BaseModel {
   name: string;
@@ -18,4 +18,7 @@ const testimonialSchema = new mongoose.Schema<ITestimonial>(
   { timestamps: true }
 );
 
-export const Testimonial = mongoose.model<ITestimonial>('Testimonial', testimonialSchema);
+export const Testimonial = mongoose.model<ITestimonial>(
+  "Testimonial",
+  testimonialSchema
+);

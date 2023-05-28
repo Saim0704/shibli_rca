@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 export interface IOtp {
   email: string;
@@ -10,4 +10,4 @@ const otpSchema = new mongoose.Schema<IOtp>({
   otp: { type: Number, required: true },
 });
 
-export const Otp = mongoose.model<IOtp>('Otp', otpSchema);
+export const Otp = mongoose.model<IOtp>("Otp", otpSchema);

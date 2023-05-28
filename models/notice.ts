@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import { BaseModel } from '.';
+import mongoose from "mongoose";
+import { BaseModel } from ".";
 
 export interface INotice extends BaseModel {
   title: string;
@@ -16,4 +16,4 @@ const noticeSchema = new mongoose.Schema<INotice>(
   { timestamps: true }
 );
 
-export const Notice = mongoose.model<INotice>('Notice', noticeSchema);
+export const Notice = mongoose.model<INotice>("Notice", noticeSchema);

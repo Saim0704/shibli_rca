@@ -4,7 +4,5 @@
   "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.words": [
-    "aadhar"
-  ]
+  "cSpell.words": ["aadhar"]
 }

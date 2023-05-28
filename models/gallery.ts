@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import { BaseModel } from '.';
+import mongoose from "mongoose";
+import { BaseModel } from ".";
 
 export interface IGallery extends BaseModel {
   name: string;
@@ -16,4 +16,4 @@ const gallerySchema = new mongoose.Schema<IGallery>(
   { timestamps: true }
 );
 
-export const Gallery = mongoose.model<IGallery>('Gallery', gallerySchema);
+export const Gallery = mongoose.model<IGallery>("Gallery", gallerySchema);

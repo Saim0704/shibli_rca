@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export const UserTypes = ['ADMIN', 'USER'] as const;
+export const UserTypes = ["ADMIN", "USER"] as const;
 
 export interface IUser {
   email: string;

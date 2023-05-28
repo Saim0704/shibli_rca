@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import { BaseModel } from '.';
+import mongoose from "mongoose";
+import { BaseModel } from ".";
 
 export interface ITestCenter extends BaseModel {
   codeName: string;
@@ -14,4 +14,7 @@ const testCenterSchema = new mongoose.Schema<ITestCenter>({
   email: { type: String },
 });
 
-export const TestCenter = mongoose.model<ITestCenter>('TestCenter', testCenterSchema);
+export const TestCenter = mongoose.model<ITestCenter>(
+  "TestCenter",
+  testCenterSchema
+);

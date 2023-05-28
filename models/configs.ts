@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 export interface IConfig {
   _id?: string;
@@ -11,4 +11,4 @@ const configSchema = new mongoose.Schema<IConfig>({
   value: { type: String, required: true },
 });
 
-export const Config = mongoose.model<IConfig>('Config', configSchema);
+export const Config = mongoose.model<IConfig>("Config", configSchema);

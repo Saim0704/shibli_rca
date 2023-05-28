@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import { BaseModel } from '.';
+import mongoose from "mongoose";
+import { BaseModel } from ".";
 
 export interface IAchievement extends BaseModel {
   title: string;
@@ -18,4 +18,7 @@ const achievementSchema = new mongoose.Schema<IAchievement>(
   { timestamps: true }
 );
 
-export const Achievement = mongoose.model<IAchievement>('Achievement', achievementSchema);
+export const Achievement = mongoose.model<IAchievement>(
+  "Achievement",
+  achievementSchema
+);

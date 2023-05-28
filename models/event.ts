@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import { BaseModel } from '.';
+import mongoose from "mongoose";
+import { BaseModel } from ".";
 
 export interface IEvent extends BaseModel {
   name: string;
@@ -22,4 +22,4 @@ const eventSchema = new mongoose.Schema<IEvent>(
   { timestamps: true }
 );
 
-export const Event =  mongoose.model<IEvent>('Event', eventSchema);
+export const Event = mongoose.model<IEvent>("Event", eventSchema);

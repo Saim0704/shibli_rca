@@ -1,7 +1,7 @@
-import mongoose from 'mongoose';
-import { BaseModel } from '.';
-import { IUser } from './user';
-import { ITestCenter } from './testCenter';
+import mongoose from "mongoose";
+import { BaseModel } from ".";
+import { IUser } from "./user";
+import { ITestCenter } from "./testCenter";
 
 export interface IAddress {
   city: string;
@@ -58,7 +58,7 @@ export interface IRegistration extends BaseModel {
   lastSemesterCertificate?: string;
 }
 
-export const genders = ['M', 'F', 'O'] as const;
+export const genders = ["M", "F", "O"] as const;
 
 const addressSchema = {
   landmark: { type: String },
@@ -76,7 +76,7 @@ const educationSchema = {
 
 const registrationSchema = new mongoose.Schema<IRegistration>(
   {
-    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+    user: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
     currentStep: { type: Number, default: 0 },
     gender: { type: String, enum: genders, required: true },
     fatherName: { type: String, required: true },
@@ -91,15 +91,15 @@ const registrationSchema = new mongoose.Schema<IRegistration>(
       intermediate: educationSchema,
       graduation: educationSchema,
       other: {
-        education: { type: String, default: '' },
-        passYear: { type: Number, default: '' },
-        percentage: { type: Number, default: '' },
-        boardOrUni: { type: String, default: '' },
+        education: { type: String, default: "" },
+        passYear: { type: Number, default: "" },
+        percentage: { type: Number, default: "" },
+        boardOrUni: { type: String, default: "" },
       },
     },
     testCenter: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'TestCenter',
+      ref: "TestCenter",
       required: true,
     },
     transactionId: { type: String, required: true },
@@ -128,4 +128,4 @@ const registrationSchema = new mongoose.Schema<IRegistration>(
 
 export const Registration =
   mongoose.models.Registration ||
-  mongoose.model<IRegistration>('Registration', registrationSchema);
+  mongoose.model<IRegistration>("Registration", registrationSchema);
