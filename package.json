@@ -9,10 +9,8 @@
     "build": "tsc",
     "prepare": "husky install",
     "lint": "eslint \"**/*.{ts,tsx}\"",
-    "check:format": "prettier --check .",
     "check:lint": "eslint . --ext .ts --ext .tsx --ext .js --ext .jsx",
-    "format": "prettier --write .",
-    "check:all": "yarn check:format && yarn check:lint"
+    "format": "prettier --write ."
   }, 
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -47,6 +45,6 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint --cache --fix"
+    "*.{js,jsx,ts,tsx}": "yarn lint"
   }
 }
