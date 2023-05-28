@@ -4,7 +4,7 @@ export const UserTypes = ["ADMIN", "USER"] as const;
 
 export interface IUser {
   email: string;
-  type: typeof UserTypes[number];
+  type: (typeof UserTypes)[number];
   password: string;
   name: string;
 }

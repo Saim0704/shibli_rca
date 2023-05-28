@@ -4,5 +4,19 @@
   "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.words": ["aadhar"]
+  "cSpell.words": [
+    "aadhar",
+    "shibli", 
+    "aadhar",
+    "Azamgarh",
+    "cloudinary",
+    "coachings",
+    "Islamia",
+    "Jamia",
+    "maxlength",
+    "Millia",
+    "rca",
+    "Shibli",
+    "UPSC"
+  ]
 }
