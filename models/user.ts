@@ -1,36 +1,34 @@
 import mongoose from "mongoose";
 
+export const UserTypes = ['ADMIN', 'USER'] as const;
+
 export interface IUser {
   email: string;
-  role: "USER" | "ADMIN" | "SUPER_ADMIN";
+  type: typeof UserTypes[number];
   password: string;
   name: string;
-  deleted?: boolean;
-  banned?: boolean;
 }
 
 const userSchema = new mongoose.Schema<IUser>(
   {
+    name: {
+      type: String,
+      required: [true, "Name is required"],
+      trim: true,
+    },
     email: {
       type: String,
       unique: true,
       required: [true, "Email is required"],
       trim: true,
     },
-    role: {
+    type: {
       type: String,
-      enum: ["USER", "ADMIN", "SUPER_ADMIN"],
+      enum: UserTypes,
       default: "USER",
       trim: true,
     },
     password: { type: String },
-    name: {
-      type: String,
-      required: [true, "Name is required"],
-      trim: true,
-    },
-    deleted: { type: Boolean, default: false },
-    banned: { type: Boolean, default: false },
   },
   { timestamps: true }
 );
