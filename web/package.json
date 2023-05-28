@@ -18,8 +18,7 @@
     "react-lottie": "^1.2.3",
     "react-quill": "^2.0.0",
     "react-router-dom": "^6.11.2",
-    "react-to-print": "^2.14.12",
-    "recoil": "^0.7.7"
+    "react-to-print": "^2.14.12"
   },
   "devDependencies": {
     "@types/lodash.debounce": "^4.0.7",
