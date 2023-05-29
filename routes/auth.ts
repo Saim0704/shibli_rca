@@ -3,14 +3,21 @@ import { IUser, User } from 'models/user';
 import { Request, Response } from 'express';
 import { compareHash, getHash } from 'utils/auth';
 import sendMailForResetPassword from 'mailer/reset-password';
+import { issueJWT } from 'middlewares/auth';
 
 export const login = async (req: Request, res: Response) => {
   try {
     const { email, password } = req.body;
-    if (!email || !password) throw new Error('Bad request');
-    //
-    //	TODO
-    //
+    if (!email || !password) throw new Error('No credentials');
+
+    const user = await User.findOne({ email });
+    if (!user) throw new Error('User not found');
+
+    const matched = await compareHash(password, user.password);
+    if (!matched) throw new Error('Wrong Credentials');
+    const { token, expires } = issueJWT(user);
+
+    return res.status(200).json({ user, token, expires });
   } catch (err: any) {
     console.log(err);
     return res.status(500).json({
