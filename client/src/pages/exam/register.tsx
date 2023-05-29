@@ -26,17 +26,11 @@ import Agreements from '../../components/register/agreements';
 import Confirmation from '../../components/register/confirmation';
 import { validateRegister } from '../../components/register/validate';
 import EarlierCompetitiveExamsContainer from '../../components/register/earlierCompetitiveExams';
-import { IRegistration, ITestCenter } from '../../types/models';
 import { uiAtom } from '../../utils/atoms';
 import useSession from '../../hooks/session';
 import { useNavigate } from 'react-router-dom';
 
-type IProps = {
-  registration: IRegistration | null;
-  testCenter: ITestCenter | null;
-};
-
-const Register: React.FC<IProps> = (props) => {
+const Register = () => {
   const [form] = Form.useForm();
   const [payload, setPayload] = useState<IRegisterPayload>(defaultPayload);
   const { isMobile } = useRecoilValue(uiAtom);
@@ -65,7 +59,7 @@ const Register: React.FC<IProps> = (props) => {
       };
       getInitialData().then().catch(console.log);
     }
-  }, [props]);
+  }, []);
 
   const setStep = (step: number) => () => {
     setPayload((prev) => ({ ...prev, currentStep: step }));

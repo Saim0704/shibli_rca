@@ -19,7 +19,7 @@ const splitCamelCase = (str: string) => {
   return result.charAt(0).toUpperCase() + result.slice(1);
 };
 
-const Miscellaneous: React.FC<IProps> = () => {
+const SiteSettings: React.FC<IProps> = () => {
   const { isMobile } = useRecoilValue(uiAtom);
   const [config, setConfig] = React.useState<IConfig[]>([]);
 
@@ -96,4 +96,4 @@ const Miscellaneous: React.FC<IProps> = () => {
   );
 };
 
-export default Miscellaneous;
+export default SiteSettings;
