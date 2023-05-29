@@ -1,1 +1,0 @@
-### Blank MERN project Starter 
