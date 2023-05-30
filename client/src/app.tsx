@@ -21,6 +21,8 @@ import Testimonials from './pages/testimonials';
 import Auth from './pages/user/auth';
 import ChangePassword from './pages/user/change-password';
 import NotFound from './pages/404';
+import { message } from 'antd';
+import Profile from './pages/user/profile';
 
 interface IRoute {
   path: string;
@@ -41,6 +43,7 @@ const adminRoutes: IRoute[] = [
 const userRoutes: IRoute[] = [
   { path: '/exam/register', Component: Register },
   { path: '/user/change-password', Component: ChangePassword },
+  { path: '/user/profile', Component: Profile },
 ];
 
 const otherRoutes: IRoute[] = [
@@ -61,6 +64,7 @@ const App = () => {
     getMeInitial,
     me: { authenticated, user, loading },
   } = useSession();
+  console.log({ authenticated, user, loading });
 
   const routes = useMemo(() => {
     let routes: IRoute[] = [];
@@ -75,7 +79,12 @@ const App = () => {
   }, [authenticated, user, loading]);
 
   useEffect(() => {
-    getMeInitial();
+    getMeInitial()
+      .then((correct) => {
+        if (correct) message.success('Successfully logged in');
+        else message.warning('User not logged in');
+      })
+      .catch(console.log);
   }, []);
 
   if (loading) return <Loading loading={loading} />;

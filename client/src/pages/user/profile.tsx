@@ -27,7 +27,7 @@ const Profile = () => {
   useEffect(() => {
     const getData = async () => {
       // NOT EXISTS
-      const { data } = await instance.post('/get-profile');
+      const { data } = await instance.get('/profile');
       if (!data || !data.registration || !data.registration.registerComplete) {
         navigate('/exam/register');
         return;

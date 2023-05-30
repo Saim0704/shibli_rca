@@ -31,7 +31,7 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
           'phoneNumber',
           'languageOfExam',
         ].map((t) => (
-          <Descriptions.Item label={camelCaseToSentenceCase(t)}>
+          <Descriptions.Item label={camelCaseToSentenceCase(t)} key={t}>
             {/* @ts-ignore */}
             {payload[t]}
           </Descriptions.Item>
@@ -52,7 +52,7 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
       <Descriptions column={{ xs: 1, sm: 1, md: 1 }}>
         {['cityOrTown', 'district', 'landmark', 'postalCode', 'state'].map(
           (t) => (
-            <Descriptions.Item label={camelCaseToSentenceCase(t)}>
+            <Descriptions.Item label={camelCaseToSentenceCase(t)} key={t}>
               {/* @ts-ignore */}
               {payload.correspondenceAddress[t]}
             </Descriptions.Item>
@@ -66,7 +66,7 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
       <Descriptions column={{ xs: 1, sm: 1, md: 1 }}>
         {['cityOrTown', 'district', 'landmark', 'postalCode', 'state'].map(
           (t) => (
-            <Descriptions.Item label={camelCaseToSentenceCase(t)}>
+            <Descriptions.Item label={camelCaseToSentenceCase(t)} key={t}>
               {/* @ts-ignore */}
               {payload.permanentAddress[t]}
             </Descriptions.Item>
@@ -81,7 +81,7 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
       <Typography.Title level={5}>Matriculation</Typography.Title>
       <Descriptions column={{ xs: 1, sm: 1, md: 1 }}>
         {['boardOrUni', 'percentage', 'passYear'].map((t) => (
-          <Descriptions.Item label={camelCaseToSentenceCase(t)}>
+          <Descriptions.Item label={camelCaseToSentenceCase(t)} key={t}>
             {/* @ts-ignore */}
             {payload.education.matriculation[t]}
           </Descriptions.Item>
@@ -93,7 +93,7 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
       <Typography.Title level={5}>Intermediate</Typography.Title>
       <Descriptions column={{ xs: 1, sm: 1, md: 1 }}>
         {['boardOrUni', 'percentage', 'passYear'].map((t) => (
-          <Descriptions.Item label={camelCaseToSentenceCase(t)}>
+          <Descriptions.Item label={camelCaseToSentenceCase(t)} key={t}>
             {/* @ts-ignore */}
             {payload.education.intermediate[t]}
           </Descriptions.Item>
@@ -105,7 +105,7 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
       <Typography.Title level={5}>Graduation</Typography.Title>
       <Descriptions column={{ xs: 1, sm: 1, md: 1 }}>
         {['boardOrUni', 'percentage', 'passYear'].map((t) => (
-          <Descriptions.Item label={camelCaseToSentenceCase(t)}>
+          <Descriptions.Item label={camelCaseToSentenceCase(t)} key={t}>
             {/* @ts-ignore */}
             {payload.education.graduation[t]}
           </Descriptions.Item>
@@ -119,7 +119,7 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
           <Typography.Title level={5}>Other</Typography.Title>
           <Descriptions column={{ xs: 1, sm: 1, md: 1 }}>
             {['boardOrUni', 'percentage', 'passYear'].map((t) => (
-              <Descriptions.Item label={camelCaseToSentenceCase(t)}>
+              <Descriptions.Item label={camelCaseToSentenceCase(t)} key={t}>
                 {/* @ts-ignore */}
                 {payload.education.other[t]}
               </Descriptions.Item>
@@ -137,9 +137,9 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
           </Typography.Title>
           <Descriptions column={{ xs: 1, sm: 1, md: 1 }}>
             {payload.earlierCompetitiveExams.map((t) => (
-              <Fragment>
-                <Descriptions.Item label={t.name}>{t.year}</Descriptions.Item>
-              </Fragment>
+              <Descriptions.Item key={t.name} label={t.name}>
+                {t.year}
+              </Descriptions.Item>
             ))}
           </Descriptions>
         </Fragment>
@@ -172,7 +172,7 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
         // @ts-ignore
         if (!payload[t]) return null;
         // @ts-ignore
-        return <Image preview={false} src={payload[t]} />;
+        return <Image key={t} preview={false} src={payload[t]} />;
       })}
 
       <br />

@@ -31,7 +31,7 @@ import { updateTestCenter } from 'routes/test-centers';
 import { deleteTestCenter } from 'routes/test-centers';
 import { getUsers } from 'routes/user';
 import { getAllRegistrations } from 'routes/registration';
-import { initialGet } from 'routes/misc';
+import { getProfile, initialGet } from 'routes/misc';
 import mongoose from 'mongoose';
 import { checkAuth } from 'middlewares/auth';
 
@@ -105,7 +105,8 @@ app.post('/upload', () => {
   console.log('Hello');
 });
 
-app.get('/initial', initialGet);
+app.get('/initial', checkAuth, initialGet);
+app.get('/profile', checkAuth, getProfile);
 
 const port = process.env.PORT || 4000;
 const startServer = async () => {

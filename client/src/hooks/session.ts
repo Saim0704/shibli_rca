@@ -39,11 +39,10 @@ const useSession = () => {
         return;
       }
 
-      const { data } = await instance.get('/me', {
-        headers: { Authorization: `Bearer ${token}` },
-      });
-      if (!data || !data.user) throw new Error('User not found');
-      setSession(data.token, data.user);
+      const { data } = await instance.get('/me');
+      console.log(data);
+      if (!data) throw new Error('User not found');
+      setSession(token, data);
       return true;
     } catch (err: any) {
       console.log(err);

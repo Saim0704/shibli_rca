@@ -48,7 +48,7 @@ const Register = () => {
       navigate('/user/auth', { replace: true });
     } else {
       const getInitialData = async () => {
-        const { data } = await instance.get('/api/user/initial');
+        const { data } = await instance.get('/initial');
         if (data.registration && data.testCenter) {
           if (data.registration.registerComplete) {
             navigate('/user/profile', { replace: true });
