@@ -50,9 +50,10 @@ const Principles = () => {
       justify='center'
       className='lg:py-12 md:px-8 xl:px-32 md:relative md:-top-[100px] -mb-20 md:z-10 px-4'
     >
-      {principles.map((item, index) => {
+      {principles.map((item) => {
         return (
           <Col
+            key={item.name}
             sm={12}
             lg={6}
             style={{

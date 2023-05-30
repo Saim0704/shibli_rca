@@ -12,9 +12,10 @@ const Auth = () => {
   const location = useLocation();
   const [form] = Form.useForm();
   const {
-    me: { authenticated, loading },
+    me: { authenticated, loading, user },
     login,
   } = useSession();
+  console.log({ loading, authenticated, user });
   const [authType, setAuthType] = useState<'login' | 'register'>('login');
   const { isMobile } = useRecoilValue(uiAtom);
 
@@ -34,12 +35,7 @@ const Auth = () => {
   ) => {
     if (!name || !email || !password)
       message.error('Please enter all the fields');
-
-    await instance.post('/create-account', {
-      email,
-      password,
-      name,
-    });
+    await instance.post('/create-account', { email, password, name });
   };
 
   const onFinish = async (values: any) => {

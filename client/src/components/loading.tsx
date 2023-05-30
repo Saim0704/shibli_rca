@@ -1,8 +1,8 @@
-import { Spin, Typography } from 'antd';
 import React from 'react';
+import { Spin, Typography } from 'antd';
 
 interface IProps {
-  loading?: boolean;
+  loading: boolean;
   message?: string;
 }
 

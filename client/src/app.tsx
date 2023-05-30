@@ -39,7 +39,7 @@ const adminRoutes: IRoute[] = [
 ];
 
 const userRoutes: IRoute[] = [
-  { path: '/exam-register', Component: Register },
+  { path: '/exam/register', Component: Register },
   { path: '/user/change-password', Component: ChangePassword },
 ];
 
@@ -66,26 +66,27 @@ const App = () => {
     getMeInitial();
   }, []);
 
+  useEffect(() => {
+    console.log('app: ', { authenticated, user, loading });
+  }, [authenticated, user, loading]);
+
+  if (loading) <Loading loading={loading} />;
   return (
     <ErrorBoundary>
       <AppContainer>
-        {loading ? (
-          <Loading loading={loading} />
-        ) : (
-          <Routes>
-            {[
-              ...(authenticated
-                ? user?.type === 'ADMIN'
-                  ? adminRoutes
-                  : userRoutes
-                : unAuthRoutes),
-              ...otherRoutes,
-            ].map(({ path, Component }) => (
-              <Route key={path} path={path} Component={Component} />
-            ))}
-            <Route path='*' Component={NotFound} />
-          </Routes>
-        )}
+        <Routes>
+          {[
+            ...(authenticated
+              ? user?.type === 'ADMIN'
+                ? adminRoutes
+                : userRoutes
+              : unAuthRoutes),
+            ...otherRoutes,
+          ].map(({ path, Component }) => (
+            <Route key={path} path={path} Component={Component} />
+          ))}
+          <Route path='*' Component={NotFound} />
+        </Routes>
       </AppContainer>
     </ErrorBoundary>
   );

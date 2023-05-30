@@ -1,12 +1,12 @@
+import instance from './api';
 import { useRecoilState } from 'recoil';
 import { meAtom } from '../utils/atoms';
 import { IUser } from '../types/models';
 import { useNavigate } from 'react-router-dom';
-import instance from './api';
 
 const useSession = () => {
-  const [me, setMe] = useRecoilState(meAtom);
   const navigate = useNavigate();
+  const [me, setMe] = useRecoilState(meAtom);
 
   const setSession = (token: string, user: IUser) => {
     if (!token || !user || Object.entries(user).length === 0) return;
@@ -14,55 +14,73 @@ const useSession = () => {
     setMe({ authenticated: true, user, loading: false });
   };
 
-  const getToken = () => window.localStorage.getItem('token') ?? null;
+  const stopLoading = () => setMe((prev) => ({ ...prev, loading: false }));
 
-  const getMeInitial = async () => {
-    setMe((prev) => ({ ...prev, loading: true }));
-    const token = getToken();
-    if (!token) {
-      navigate('/user/auth');
-      return;
-    }
+  const startLoading = () => setMe((prev) => ({ ...prev, loading: true }));
 
-    const { data } = await instance.get('/me', {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
-    if (!data || !data.user) logout();
-    else setSession(data.token, data.user);
-  };
-
-  const login = async ({
-    email,
-    password,
-  }: {
-    email: string;
-    password: string;
-  }) => {
-    try {
-      setMe((prev) => ({ ...prev, loading: true }));
-      const { data } = await instance.post('/login', { email, password });
-      setSession(data.token, data.user);
-      return true;
-    } catch (err) {
-      return false;
-    }
+  const resetSession = () => {
+    window.localStorage.removeItem('token');
+    setMe({ authenticated: false, user: null, loading: false });
   };
 
   const logout = () => {
-    window.localStorage.removeItem('token');
-    setMe({ authenticated: false, user: null, loading: false });
+    resetSession();
     navigate('/user/auth');
+  };
+
+  const getToken = () => window.localStorage.getItem('token') ?? null;
+
+  const getMeInitial = async () => {
+    try {
+      setMe((prev) => ({ ...prev, loading: true }));
+      const token = getToken();
+      if (!token) {
+        navigate('/user/auth');
+        return;
+      }
+
+      const { data } = await instance.get('/me', {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      if (!data || !data.user) resetSession();
+      else setSession(data.token, data.user);
+    } catch (err: any) {
+      console.log(err);
+      resetSession();
+    } finally {
+      stopLoading();
+    }
+  };
+
+  interface ILogin {
+    email: string;
+    password: string;
+  }
+  const login = async ({ email, password }: ILogin) => {
+    try {
+      startLoading();
+      const { data } = await instance.post('/login', { email, password });
+      if (!data || !data.token || !data.user) throw new Error('No user found');
+      setSession(data.token, data.user);
+      return true;
+    } catch (err) {
+      resetSession();
+      return false;
+    } finally {
+      stopLoading();
+    }
   };
 
   return {
     me,
-    getMeInitial,
     login,
     logout,
     getToken,
     setSession,
+    stopLoading,
+    getMeInitial,
+    resetSession,
+    startLoading,
   };
 };
 
