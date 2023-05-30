@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import AppContainer from './components/root';
 import ErrorBoundary from './components/errorBoundary';
@@ -62,29 +62,26 @@ const App = () => {
     me: { authenticated, user, loading },
   } = useSession();
 
+  const routes = useMemo(() => {
+    if (authenticated) {
+      if (user?.type === 'ADMIN') return [...adminRoutes, ...otherRoutes];
+      return [...userRoutes, ...otherRoutes];
+    }
+    return [...unAuthRoutes, ...otherRoutes];
+  }, [authenticated, user, loading]);
+
   useEffect(() => {
     getMeInitial();
   }, []);
 
-  useEffect(() => {
-    console.log('app: ', { authenticated, user, loading });
-  }, [authenticated, user, loading]);
-
-  if (loading) <Loading loading={loading} />;
+  if (loading) return <Loading loading={loading} />;
   return (
     <ErrorBoundary>
       <AppContainer>
         <Routes>
-          {[
-            ...(authenticated
-              ? user?.type === 'ADMIN'
-                ? adminRoutes
-                : userRoutes
-              : unAuthRoutes),
-            ...otherRoutes,
-          ].map(({ path, Component }) => (
-            <Route key={path} path={path} Component={Component} />
-          ))}
+          {routes.map(({ path, Component }) => {
+            return <Route key={path} path={path} Component={Component} />;
+          })}
           <Route path='*' Component={NotFound} />
         </Routes>
       </AppContainer>

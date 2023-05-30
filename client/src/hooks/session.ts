@@ -32,7 +32,7 @@ const useSession = () => {
 
   const getMeInitial = async () => {
     try {
-      setMe((prev) => ({ ...prev, loading: true }));
+      startLoading();
       const token = getToken();
       if (!token) {
         navigate('/user/auth');
@@ -42,11 +42,13 @@ const useSession = () => {
       const { data } = await instance.get('/me', {
         headers: { Authorization: `Bearer ${token}` },
       });
-      if (!data || !data.user) resetSession();
-      else setSession(data.token, data.user);
+      if (!data || !data.user) throw new Error('User not found');
+      setSession(data.token, data.user);
+      return true;
     } catch (err: any) {
       console.log(err);
       resetSession();
+      return false;
     } finally {
       stopLoading();
     }

@@ -15,7 +15,6 @@ const Auth = () => {
     me: { authenticated, loading, user },
     login,
   } = useSession();
-  console.log({ loading, authenticated, user });
   const [authType, setAuthType] = useState<'login' | 'register'>('login');
   const { isMobile } = useRecoilValue(uiAtom);
 
@@ -50,9 +49,7 @@ const Auth = () => {
 
       if (!res) throw new Error('Login failed!');
       message.success('Login successful!');
-      // if (router.query.redirect && router.query.redirect === 'exam-register') {
-      //   navigate('/exam/register', { replace: true });
-      // }
+      setTimeout(() => navigate('/exam/register', { replace: true }), 1000);
     } catch (err: any) {
       message.error(err.message || 'Login failed!');
     } finally {
