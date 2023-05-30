@@ -30,7 +30,7 @@ const Gallery = () => {
     { title: 'Details', dataIndex: 'description' },
   ];
 
-  const handleImageUrl = (imgSrc: string) => {};
+  const handleImageUrl = (/*imgSrc: string */) => {};
 
   return (
     <AdminContainer>

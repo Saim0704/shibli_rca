@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Input, Button, Typography, message } from 'antd';
 import { useRecoilValue } from 'recoil';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import useSession from '../../hooks/session';
 import { uiAtom } from '../../utils/atoms';
 import Loading from '../../components/loading';
@@ -9,10 +9,10 @@ import instance from '../../hooks/api';
 
 const Auth = () => {
   const navigate = useNavigate();
-  const location = useLocation();
+  // const location = useLocation();
   const [form] = Form.useForm();
   const {
-    me: { authenticated, loading, user },
+    me: { authenticated, loading },
     login,
   } = useSession();
   const [authType, setAuthType] = useState<'login' | 'register'>('login');

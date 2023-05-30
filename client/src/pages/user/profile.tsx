@@ -1,28 +1,28 @@
 import { Typography } from 'antd';
-import React, { Fragment, useEffect, useRef, useState } from 'react';
-import { useReactToPrint } from 'react-to-print';
-import { IRegistration, ITestCenter } from '../../types/models';
+import { Fragment, useEffect } from 'react';
+// import { useReactToPrint } from 'react-to-print';
+// import { IRegistration, ITestCenter } from '../../types/models';
 import { useNavigate } from 'react-router-dom';
 import instance from '../../hooks/api';
 
-interface IProfileProps {
-  data: IRegistration & {
-    timeOfExam: string;
-    dateOfExam: string;
-  };
-  printContainerRef: React.MutableRefObject<null>;
-}
+// interface IProfileProps {
+//   data: IRegistration & {
+//     timeOfExam: string;
+//     dateOfExam: string;
+//   };
+//   printContainerRef: React.MutableRefObject<null>;
+// }
 
-interface IProps {
-  registration: IRegistration;
-  testCenter: ITestCenter;
-  dateOfExam: string;
-  timeOfExam: string;
-}
+// interface IProps {
+//   registration: IRegistration;
+//   testCenter: ITestCenter;
+//   dateOfExam: string;
+//   timeOfExam: string;
+// }
 
 const Profile = () => {
   const navigate = useNavigate();
-  const [props, setProps] = useState<IProps | null>(null);
+  // const [props, setProps] = useState<IProps | null>(null);
 
   useEffect(() => {
     const getData = async () => {
@@ -32,22 +32,22 @@ const Profile = () => {
         navigate('/exam/register');
         return;
       }
-      setProps(data);
+      // setProps(data);
     };
     getData().then().catch(console.log);
   }, []);
 
-  const data: IProfileProps['data'] = {
-    ...(props?.registration as IRegistration),
-    testCenter: props?.testCenter?.address as any,
-    dateOfExam: props?.dateOfExam as string,
-    timeOfExam: props?.timeOfExam as string,
-  };
+  // const data: IProfileProps['data'] = {
+  //   ...(props?.registration as IRegistration),
+  //   testCenter: props?.testCenter?.address as any,
+  //   dateOfExam: props?.dateOfExam as string,
+  //   timeOfExam: props?.timeOfExam as string,
+  // };
 
-  const printContainerRef = useRef(null);
-  const printPdf = useReactToPrint({
-    content: () => printContainerRef.current,
-  });
+  // const printContainerRef = useRef(null);
+  // const printPdf = useReactToPrint({
+  //   content: () => printContainerRef.current,
+  // });
 
   return (
     <Fragment>

@@ -90,9 +90,9 @@ export default function CustomTable<RecordType = unknown>({
     console.log(actionModal.data);
   };
 
-  const handleMoreInfo = async () => {
-    console.log(actionModal.data);
-  };
+  // const handleMoreInfo = async () => {
+  //   console.log(actionModal.data);
+  // };
 
   if (!tableColumns || tableColumns.length == 0) {
     return null;
@@ -157,7 +157,7 @@ export default function CustomTable<RecordType = unknown>({
     }
   };
 
-  const handleFormFinishFailed = async (values: any) => {};
+  const handleFormFinishFailed = async () => {};
 
   const allCols: TableProps<RecordType>['columns'] = [
     {
@@ -170,7 +170,7 @@ export default function CustomTable<RecordType = unknown>({
     {
       title: '',
       width: 130,
-      render: (text, record) => {
+      render: (/*text,*/ record) => {
         return (
           <div style={{ display: 'flex', gap: '10px' }}>
             <Tooltip title='Edit this entry'>
@@ -220,7 +220,7 @@ export default function CustomTable<RecordType = unknown>({
 
   const refreshEntries = async () => {
     const {
-      data: { data, error },
+      data: { data },
     } = await instance.get(endpoint.get);
     setTableData(data);
   };

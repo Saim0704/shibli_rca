@@ -1,28 +1,30 @@
-import { Suspense, useEffect, useMemo } from 'react';
+import { message } from 'antd';
+import React, { Suspense, useEffect, useMemo } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import AppContainer from './components/root';
 import ErrorBoundary from './components/errorBoundary';
 import useSession from './hooks/session';
 import Loading from './components/loading';
 
-import Registration from './pages/admin/registration';
-import Gallery from './pages/admin/gallery';
-import Events from './pages/admin/events';
-import Notices from './pages/admin/notices';
-import TestCentres from './pages/admin/test-centers';
-import CurrentAffairs from './pages/admin/current-affairs';
-import SiteSettings from './pages/admin/site-settings';
-import Register from './pages/exam/register';
-import Home from './pages';
-import ContactUs from './pages/contact-us';
-import AboutUs from './pages/about-us';
-import Achievements from './pages/achievements';
-import Testimonials from './pages/testimonials';
-import Auth from './pages/user/auth';
-import ChangePassword from './pages/user/change-password';
-import NotFound from './pages/404';
-import { message } from 'antd';
-import Profile from './pages/user/profile';
+const Registration = React.lazy(() => import('./pages/admin/registration'));
+const Gallery = React.lazy(() => import('./pages/admin/gallery'));
+const Events = React.lazy(() => import('./pages/admin/events'));
+const Notices = React.lazy(() => import('./pages/admin/notices'));
+const TestCentres = React.lazy(() => import('./pages/admin/test-centers'));
+const CurrentAffairs = React.lazy(
+  () => import('./pages/admin/current-affairs')
+);
+const SiteSettings = React.lazy(() => import('./pages/admin/site-settings'));
+const Register = React.lazy(() => import('./pages/exam/register'));
+const Home = React.lazy(() => import('./pages'));
+const ContactUs = React.lazy(() => import('./pages/contact-us'));
+const AboutUs = React.lazy(() => import('./pages/about-us'));
+const Achievements = React.lazy(() => import('./pages/achievements'));
+const Testimonials = React.lazy(() => import('./pages/testimonials'));
+const Auth = React.lazy(() => import('./pages/user/auth'));
+const ChangePassword = React.lazy(() => import('./pages/user/change-password'));
+const NotFound = React.lazy(() => import('./pages/404'));
+const Profile = React.lazy(() => import('./pages/user/profile'));
 
 interface IRoute {
   path: string;

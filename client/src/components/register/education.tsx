@@ -13,7 +13,6 @@ interface IEducationContainerProps {
 }
 
 const EducationContainer: React.FC<IEducationContainerProps> = ({
-  disabled,
   education,
   name,
   onChange,

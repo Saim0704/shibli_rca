@@ -19,7 +19,7 @@ interface IProps {
 const RegisterContainer: React.FC<IProps> = ({ payload, setPayload }) => {
   const { isMobile } = useRecoilValue(uiAtom);
 
-  const handleRegister = async (values: any) => {};
+  const handleRegister = async () => {};
 
   const goToPreviousStep = () => {
     if (payload.currentStep === 0) return;
