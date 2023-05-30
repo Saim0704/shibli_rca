@@ -20,10 +20,10 @@ const TestCentres: React.FC<IProps> = () => {
         <CustomTable<ITestCenter>
           tableTitle='Gallery'
           endpoint={{
-            get: '/api/admin/test-centers',
-            post: '/api/admin/test-centers',
-            put: '/api/admin/test-centers',
-            delete: '/api/admin/test-centers',
+            get: '/test-centers',
+            post: '/test-centers',
+            put: '/test-centers',
+            delete: '/test-centers',
           }}
           scroll={{ x: 800 }}
           tableColumns={columns}

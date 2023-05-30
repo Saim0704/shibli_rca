@@ -34,10 +34,10 @@ const Events = () => {
         <CustomTable<IEvent>
           tableTitle='Events'
           endpoint={{
-            get: '/api/admin/events',
-            post: '/api/admin/events',
-            put: '/api/admin/events',
-            delete: '/api/admin/events',
+            get: '/events',
+            post: '/events',
+            put: '/events',
+            delete: '/events',
           }}
           tableColumns={columns}
           addButtonLabel='Add Event'

@@ -45,10 +45,10 @@ const Registration: React.FC<IProps> = () => {
         <CustomTable<IRegistration>
           tableTitle='Registrations'
           endpoint={{
-            get: '/api/admin/registration',
-            post: '/api/admin/registration',
-            put: '/api/admin/registration',
-            delete: '/api/admin/registration',
+            get: '/registration',
+            post: '/registration',
+            put: '/registration',
+            delete: '/registration',
           }}
           tableColumns={columns}
           recoilAtom={registrationAtom}

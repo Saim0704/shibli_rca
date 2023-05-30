@@ -22,10 +22,10 @@ const Notices: React.FC<IProps> = () => {
         <CustomTable<INotice>
           tableTitle='Notices'
           endpoint={{
-            get: '/api/admin/notices',
-            post: '/api/admin/notices',
-            put: '/api/admin/notices',
-            delete: '/api/admin/notices',
+            get: '/notices',
+            post: '/notices',
+            put: '/notices',
+            delete: '/notices',
           }}
           scroll={{ x: 800 }}
           tableColumns={columns}

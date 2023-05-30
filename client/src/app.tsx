@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react';
+import { Suspense, useEffect, useMemo } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import AppContainer from './components/root';
 import ErrorBoundary from './components/errorBoundary';
@@ -63,11 +63,15 @@ const App = () => {
   } = useSession();
 
   const routes = useMemo(() => {
+    let routes: IRoute[] = [];
     if (authenticated) {
-      if (user?.type === 'ADMIN') return [...adminRoutes, ...otherRoutes];
-      return [...userRoutes, ...otherRoutes];
-    }
-    return [...unAuthRoutes, ...otherRoutes];
+      if (user?.type === 'ADMIN') routes = adminRoutes;
+      else routes = userRoutes;
+    } else routes = unAuthRoutes;
+    return [...routes, ...otherRoutes].map((t) => ({
+      ...t,
+      key: Math.random(),
+    }));
   }, [authenticated, user, loading]);
 
   useEffect(() => {
@@ -77,14 +81,16 @@ const App = () => {
   if (loading) return <Loading loading={loading} />;
   return (
     <ErrorBoundary>
-      <AppContainer>
-        <Routes>
-          {routes.map(({ path, Component }) => {
-            return <Route key={path} path={path} Component={Component} />;
-          })}
-          <Route path='*' Component={NotFound} />
-        </Routes>
-      </AppContainer>
+      <Suspense fallback={<Loading loading />}>
+        <AppContainer>
+          <Routes>
+            {routes.map(({ path, Component, key }) => {
+              return <Route key={key} path={path} Component={Component} />;
+            })}
+            <Route path='*' Component={NotFound} />
+          </Routes>
+        </AppContainer>
+      </Suspense>
     </ErrorBoundary>
   );
 };

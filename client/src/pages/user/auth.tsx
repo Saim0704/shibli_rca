@@ -49,7 +49,7 @@ const Auth = () => {
 
       if (!res) throw new Error('Login failed!');
       message.success('Login successful!');
-      setTimeout(() => navigate('/exam/register', { replace: true }), 1000);
+      navigate('/', { replace: true });
     } catch (err: any) {
       message.error(err.message || 'Login failed!');
     } finally {

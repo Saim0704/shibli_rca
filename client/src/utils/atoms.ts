@@ -17,7 +17,7 @@ export const meAtom = atom<IMe>({
   key: 'me',
   default: {
     authenticated: false,
-    loading: false,
+    loading: true,
     user: null,
   },
 });

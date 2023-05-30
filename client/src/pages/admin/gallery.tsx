@@ -38,10 +38,10 @@ const Gallery = () => {
         <CustomTable<IGallery>
           tableTitle='Gallery'
           endpoint={{
-            get: '/api/admin/gallery',
-            post: '/api/admin/gallery',
-            put: '/api/admin/gallery',
-            delete: '/api/admin/gallery',
+            get: '/gallery',
+            post: '/gallery',
+            put: '/gallery',
+            delete: '/gallery',
           }}
           scroll={{ x: 800 }}
           tableColumns={columns}
