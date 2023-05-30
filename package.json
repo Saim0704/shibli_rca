@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "pnpx rollup -c",
     "dev": "pnpx rollup -c -w"
@@ -30,6 +31,7 @@
     "@types/jsonwebtoken": "^9.0.2",
     "@types/multer": "^1.4.7",
     "@types/nodemailer": "^6.4.8",
+    "rollup-plugin-includepaths": "^0.2.4",
     "typescript": "^5.0.4"
   }
 }

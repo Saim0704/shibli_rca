@@ -32,6 +32,7 @@ import { deleteTestCenter } from 'routes/test-centers';
 import { getUsers } from 'routes/user';
 import { getAllRegistrations } from 'routes/registration';
 import { initialGet } from 'routes/misc';
+import mongoose from 'mongoose';
 
 const app = express();
 app.use(
@@ -94,4 +95,14 @@ app.get('/registrations', getAllRegistrations);
 app.get('/initial', initialGet);
 
 const port = process.env.PORT || 4000;
-app.listen(port, () => console.log('Server Ready on: ' + port));
+const startServer = async () => {
+  try {
+    await mongoose.connect(process.env.MONGO_URI!!);
+    app.listen(port, () => console.log('Server Ready on: ' + port));
+  } catch (err) {
+    console.log(err);
+    process.exit(1);
+  }
+};
+
+startServer().then().catch();

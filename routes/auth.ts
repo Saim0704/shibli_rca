@@ -28,6 +28,9 @@ export const login = async (req: Request, res: Response) => {
 
 export const getMeInitial = async (req: Request, res: Response) => {
   try {
+    if (!req.user) throw new Error('User not found');
+    const user = await User.findById(req.user._id);
+    return res.status(200).json({ user });
   } catch (err: any) {
     console.log(err);
     return res.status(500).json({

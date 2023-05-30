@@ -50,7 +50,7 @@ export const checkAuth = (req: Request, res: Response, next: NextFunction) => {
     const { valid, expired, payload } = verifyJWT(token);
     if (!valid || expired) throw new Error('Valid or expired');
 
-    req.user = payload.sub;
+    req.user = payload?.sub as any;
     req.authenticated = true;
     next();
   } catch (err) {
