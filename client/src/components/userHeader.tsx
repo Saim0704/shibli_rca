@@ -4,12 +4,16 @@ import React, { Fragment, PropsWithChildren } from 'react';
 import { useRecoilValue } from 'recoil';
 import { uiAtom } from '../utils/atoms';
 import { useNavigate } from 'react-router-dom';
+import useSession from '../hooks/session';
 
 interface IProps extends PropsWithChildren {}
 
 const UserHeader: React.FC<IProps> = ({ children }) => {
   const { isMobile } = useRecoilValue(uiAtom);
   const navigate = useNavigate();
+  const {
+    me: { authenticated, user },
+  } = useSession();
 
   const headerItems = [
     { to: '/', label: 'Home' },
@@ -21,8 +25,7 @@ const UserHeader: React.FC<IProps> = ({ children }) => {
 
   return (
     <Fragment>
-      {/* @ts-ignore */}
-      {(!session || (session && session.user?.type !== 'ADMIN')) && (
+      {(!authenticated || (authenticated && user?.type !== 'ADMIN')) && (
         <Layout.Header
           style={{ backgroundColor: constants.appThemeColor, height: 40 }}
         >

@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "pnpx rollup -c",
-    "dev": "pnpx rollup -c -w"
+    "dev": "pnpx rollup -c -w",
+    "prod": "node dist/index.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",

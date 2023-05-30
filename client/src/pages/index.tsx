@@ -1,5 +1,4 @@
 import dayjs from 'dayjs';
-import axios from 'axios';
 import { Fragment, useEffect, useState } from 'react';
 import { Button, Card, Carousel, Image, Typography } from 'antd';
 import { IEvent, IGallery, INotice } from '../types/models';
@@ -7,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import UserHeader from '../components/userHeader';
 import MainCarousel from '../components/mainCarousel';
 import Principles from '../components/principles';
+import instance from '../hooks/api';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -15,17 +15,17 @@ const Home = () => {
   const [events, setEvents] = useState<IEvent[]>([]);
 
   const getNotices = async () => {
-    const { data } = await axios.get('/api/admin/notices');
+    const { data } = await instance.get('/notices');
     setNotices(data.data);
   };
 
   const getGallery = async () => {
-    const { data } = await axios.get('/api/admin/gallery');
+    const { data } = await instance.get('/gallery');
     setGallery(data.data);
   };
 
   const getEvents = async () => {
-    const { data } = await axios.get('/api/admin/events');
+    const { data } = await instance.get('/events');
     setEvents(data.data);
   };
 

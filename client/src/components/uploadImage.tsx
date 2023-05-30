@@ -1,8 +1,8 @@
 import React from 'react';
-import axios from 'axios';
 import constants from '../utils/constants';
 import { CloseCircleOutlined } from '@ant-design/icons';
 import { Form, Image, Upload, message, Typography } from 'antd';
+import instance from '../hooks/api';
 
 interface IProps {
   handleImageUrl: (imgSrc: string) => any;
@@ -35,10 +35,10 @@ const ImageUploader: React.FC<IProps> = ({
     try {
       const formData = new FormData();
       formData.append('file', options.file);
-      const { data } = await axios({
+      const { data } = await instance({
         method: 'POST',
         data: formData,
-        url: '/api/admin/upload',
+        url: '/upload',
         headers: {
           'Content-Type': 'multipart/form-data',
         },

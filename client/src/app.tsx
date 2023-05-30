@@ -66,24 +66,26 @@ const App = () => {
     getMeInitial();
   }, []);
 
-  if (loading) return <Loading loading={loading} />;
-
   return (
     <ErrorBoundary>
       <AppContainer>
-        <Routes>
-          {[
-            ...(authenticated
-              ? user?.type === 'ADMIN'
-                ? adminRoutes
-                : userRoutes
-              : unAuthRoutes),
-            ...otherRoutes,
-          ].map(({ path, Component }) => (
-            <Route key={path} path={path} Component={Component} />
-          ))}
-          <Route path='*' Component={NotFound} />
-        </Routes>
+        {loading ? (
+          <Loading loading={loading} />
+        ) : (
+          <Routes>
+            {[
+              ...(authenticated
+                ? user?.type === 'ADMIN'
+                  ? adminRoutes
+                  : userRoutes
+                : unAuthRoutes),
+              ...otherRoutes,
+            ].map(({ path, Component }) => (
+              <Route key={path} path={path} Component={Component} />
+            ))}
+            <Route path='*' Component={NotFound} />
+          </Routes>
+        )}
       </AppContainer>
     </ErrorBoundary>
   );

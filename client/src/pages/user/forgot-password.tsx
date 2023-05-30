@@ -1,9 +1,9 @@
 import { Button, Form, Input, Typography, message } from 'antd';
-import axios from 'axios';
 import React, { Fragment, useState } from 'react';
 import { useRecoilValue } from 'recoil';
 import { uiAtom } from '../../utils/atoms';
 import { useNavigate } from 'react-router-dom';
+import instance from '../../hooks/api';
 
 interface IProps {}
 
@@ -21,7 +21,7 @@ const ForgotPassword: React.FC<IProps> = () => {
         return;
       }
       try {
-        await axios.post('/api/user/forgot-password', {
+        await instance.post('/forgot-password', {
           email: values.email,
           step: 1,
         });
@@ -40,7 +40,7 @@ const ForgotPassword: React.FC<IProps> = () => {
       return;
     }
     try {
-      await axios.post('/api/user/forgot-password', {
+      await instance.post('/reset-password', {
         email: values.email,
         otp: values.otp,
         password: values.password,

@@ -33,14 +33,23 @@ import { getUsers } from 'routes/user';
 import { getAllRegistrations } from 'routes/registration';
 import { initialGet } from 'routes/misc';
 import mongoose from 'mongoose';
+import { checkAuth } from 'middlewares/auth';
 
 const app = express();
+mongoose.set('debug', true);
 app.use(
   cors({
     origin: ['http://localhost:3000'],
     credentials: true,
   })
 );
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+app.use((req, res, next) => {
+  console.log(req.url, req.body);
+  return next();
+});
 
 app.get('/', (req, res) => res.send('Hello World'));
 app.get('/health', (req, res) => {
@@ -59,9 +68,9 @@ app.get('/health', (req, res) => {
 });
 
 app.post('/login', login);
-app.post('/me', getMeInitial);
+app.get('/me', checkAuth, getMeInitial);
 app.post('/create-account', createAccount);
-app.post('/change-password', changePassword);
+app.post('/change-password', checkAuth, changePassword);
 app.post('/forgot-password', forgotPassword);
 app.post('/reset-password', resetPassword);
 
@@ -69,28 +78,32 @@ app.get('/config', getConfig);
 app.put('/config', updateConfig);
 
 app.get('/events', getEvents);
-app.post('/events', createEvent);
-app.put('/events', updateEvent);
-app.delete('/events', deleteEvent);
+app.post('/events', checkAuth, createEvent);
+app.put('/events', checkAuth, updateEvent);
+app.delete('/events', checkAuth, deleteEvent);
 
 app.get('/gallery', getGallery);
-app.post('/gallery', createGallery);
-app.put('/gallery', updateGallery);
-app.delete('/gallery', deleteGallery);
+app.post('/gallery', checkAuth, createGallery);
+app.put('/gallery', checkAuth, updateGallery);
+app.delete('/gallery', checkAuth, deleteGallery);
 
-app.get('/notice', getNotices);
-app.post('/notice', createNotice);
-app.put('/notice', updateNotice);
-app.delete('/notice', deleteNotice);
+app.get('/notices', getNotices);
+app.post('/notices', checkAuth, createNotice);
+app.put('/notices', checkAuth, updateNotice);
+app.delete('/notices', checkAuth, deleteNotice);
 
 app.get('/test-centers', getTestCenters);
-app.post('/test-centers', createTestCenter);
-app.put('/test-centers', updateTestCenter);
-app.delete('/test-centers', deleteTestCenter);
+app.post('/test-centers', checkAuth, createTestCenter);
+app.put('/test-centers', checkAuth, updateTestCenter);
+app.delete('/test-centers', checkAuth, deleteTestCenter);
 
-app.get('/users', getUsers);
+app.get('/users', checkAuth, getUsers);
 
-app.get('/registrations', getAllRegistrations);
+app.get('/registrations', checkAuth, getAllRegistrations);
+
+app.post('/upload', () => {
+  console.log('Hello');
+});
 
 app.get('/initial', initialGet);
 
@@ -98,6 +111,7 @@ const port = process.env.PORT || 4000;
 const startServer = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI!!);
+    console.log('Connected to the database');
     app.listen(port, () => console.log('Server Ready on: ' + port));
   } catch (err) {
     console.log(err);

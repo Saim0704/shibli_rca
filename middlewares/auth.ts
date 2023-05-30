@@ -6,7 +6,7 @@ export const issueJWT = (user: IUser) => {
   const expiresIn = '1d';
   const payload = {
     sub: {
-      id: user._id,
+      _id: user._id,
       name: user.name,
       email: user.email,
     },
@@ -44,7 +44,6 @@ const verifyJWT = (token: string) => {
 export const checkAuth = (req: Request, res: Response, next: NextFunction) => {
   try {
     const token = req.headers['authorization'];
-
     if (!token) throw new Error('No token');
 
     const { valid, expired, payload } = verifyJWT(token);

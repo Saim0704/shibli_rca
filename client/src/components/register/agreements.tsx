@@ -1,10 +1,10 @@
-import axios from 'axios';
 import { useRecoilValue } from 'recoil';
 import React, { Fragment, useEffect, useState } from 'react';
 import { IRegisterPayload } from './stepper';
 import { Checkbox, Form, Select, Typography } from 'antd';
 import { ITestCenter } from '../../types/models';
 import { uiAtom } from '../../utils/atoms';
+import instance from '../../hooks/api';
 
 interface IProps {
   payload: IRegisterPayload;
@@ -27,7 +27,7 @@ const Agreements: React.FC<IProps> = ({ payload, setPayload }) => {
 
   useEffect(() => {
     const getTestCenters = async () => {
-      const { data } = await axios.get('/api/admin/test-centers');
+      const { data } = await instance.get('/test-centers');
       setTestCenters(data.data);
     };
     getTestCenters().then().catch(console.log);

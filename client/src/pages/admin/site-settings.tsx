@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Input, message } from 'antd';
-import axios from 'axios';
 import { useRecoilValue } from 'recoil';
 import { uiAtom } from '../../utils/atoms';
 import AdminContainer from '../../components/adminContainer';
 import ConfigForm from '../../components/configForm';
+import instance from '../../hooks/api';
 
 interface IProps {}
 
@@ -25,9 +25,7 @@ const SiteSettings: React.FC<IProps> = () => {
 
   useEffect(() => {
     const getSiteSettings = async () => {
-      const response = await axios.get('/api/admin/config', {
-        headers: { 'Content-Type': 'application/json' },
-      });
+      const response = await instance.get('/config');
       return response.data.data;
     };
 
@@ -46,11 +44,7 @@ const SiteSettings: React.FC<IProps> = () => {
 
   const onSubmitConfig = async ({ name, value }: IConfig) => {
     try {
-      await axios.put(
-        '/api/admin/config',
-        { name: name, value: value },
-        { headers: { 'Content-Type': 'application/json' } }
-      );
+      await instance.put('/config', { name, value });
       message.success('Config updated successfully');
     } catch (err) {
       message.error('Config update failed');

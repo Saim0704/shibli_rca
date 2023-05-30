@@ -1,9 +1,9 @@
 import { Typography } from 'antd';
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import { useReactToPrint } from 'react-to-print';
-import axios from 'axios';
 import { IRegistration, ITestCenter } from '../../types/models';
 import { useNavigate } from 'react-router-dom';
+import instance from '../../hooks/api';
 
 interface IProfileProps {
   data: IRegistration & {
@@ -26,7 +26,8 @@ const Profile = () => {
 
   useEffect(() => {
     const getData = async () => {
-      const { data } = await axios.post('/api/user/get-profile');
+      // NOT EXISTS
+      const { data } = await instance.post('/get-profile');
       if (!data || !data.registration || !data.registration.registerComplete) {
         navigate('/exam/register');
         return;

@@ -15,11 +15,11 @@ import {
   PlusOutlined,
   ReloadOutlined,
 } from '@ant-design/icons';
-import axios from 'axios';
 import constants from '../utils/constants';
 import ObjectAsDetails from './objectToSchema';
 import { RecoilState, useRecoilState } from 'recoil';
 import { ReactNode, useEffect, useState } from 'react';
+import instance from '../hooks/api';
 
 export type FormResponseError = {
   field: string;
@@ -112,10 +112,10 @@ export default function CustomTable<RecordType = unknown>({
     if (!file) return;
     const formData = new FormData();
     formData.append('file', file);
-    const { data } = await axios({
+    const { data } = await instance({
       method: 'POST',
       data: formData,
-      url: '/api/admin/upload',
+      url: '/upload',
       headers: { 'Content-Type': 'multipart/form-data' },
     });
     return data;
@@ -148,7 +148,7 @@ export default function CustomTable<RecordType = unknown>({
       }
 
       const url = getUrl(window.location.href, endpoint.post);
-      const { data } = await axios.post(url, values);
+      const { data } = await instance.post(url, values);
       setTableData((p) => [...p, { ...data.data }]);
       form.resetFields();
       setModal(initialState);
@@ -221,7 +221,7 @@ export default function CustomTable<RecordType = unknown>({
   const refreshEntries = async () => {
     const {
       data: { data, error },
-    } = await axios.get(endpoint.get);
+    } = await instance.get(endpoint.get);
     setTableData(data);
   };
 

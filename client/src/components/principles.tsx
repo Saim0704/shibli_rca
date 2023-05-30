@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd';
-import axios from 'axios';
 import { useEffect, useState } from 'react';
+import instance from '../hooks/api';
 
 const colors = {
   mission: '#737495',
@@ -22,7 +22,7 @@ const Principles = () => {
 
   useEffect(() => {
     const getConfig = async () => {
-      const { data } = await axios.get('/api/admin/config');
+      const { data } = await instance.get('/config');
       const newConfigs = data?.data.reduce(
         (acc: Array<IPrinciple>, curr: any) => {
           if (namesArr.includes(curr.name)) {

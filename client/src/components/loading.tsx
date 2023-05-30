@@ -3,9 +3,10 @@ import React from 'react';
 
 interface IProps {
   loading?: boolean;
+  message?: string;
 }
 
-const Loading: React.FC<IProps> = ({ loading }) => {
+const Loading: React.FC<IProps> = ({ loading, message }) => {
   return (
     <>
       <div
@@ -16,7 +17,7 @@ const Loading: React.FC<IProps> = ({ loading }) => {
 
         <br />
 
-        <Typography.Text>App is Loading . . .</Typography.Text>
+        <Typography.Text>{message || 'App is Loading . . .'}</Typography.Text>
       </div>
     </>
   );

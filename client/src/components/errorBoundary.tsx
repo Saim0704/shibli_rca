@@ -34,7 +34,6 @@ type IProps = {
 };
 
 const ErrorHandlerFallback: React.FC<IProps> = ({ removeError }) => {
-  // const navigate = useNavigate()
   const { pathname } = useLocation();
   const [currentPath, setCurrentPath] = useState('');
 
@@ -48,7 +47,6 @@ const ErrorHandlerFallback: React.FC<IProps> = ({ removeError }) => {
     if (currentPath !== pathname) {
       removeError();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
   return <NotFound />;

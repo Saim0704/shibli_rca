@@ -8,7 +8,6 @@ import {
   ReconciliationOutlined,
   SolutionOutlined,
 } from '@ant-design/icons';
-import axios from 'axios';
 import { useRecoilValue } from 'recoil';
 import { Button, Form, message, Steps } from 'antd';
 import React, { Fragment, useEffect, useState } from 'react';
@@ -29,6 +28,7 @@ import EarlierCompetitiveExamsContainer from '../../components/register/earlierC
 import { uiAtom } from '../../utils/atoms';
 import useSession from '../../hooks/session';
 import { useNavigate } from 'react-router-dom';
+import instance from '../../hooks/api';
 
 const Register = () => {
   const [form] = Form.useForm();
@@ -48,7 +48,7 @@ const Register = () => {
       navigate('/user/auth', { replace: true });
     } else {
       const getInitialData = async () => {
-        const { data } = await axios.get('/api/user/initial');
+        const { data } = await instance.get('/api/user/initial');
         if (data.registration && data.testCenter) {
           if (data.registration.registerComplete) {
             navigate('/user/profile', { replace: true });
@@ -110,7 +110,7 @@ const Register = () => {
         return;
       }
 
-      await axios.post('/api/user/register', {
+      await instance.post('/register', {
         ...payload,
         // @ts-ignore
         user: session.data?.user?._id,

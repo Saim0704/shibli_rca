@@ -1,7 +1,7 @@
 import { Button, Form, Input, Typography, message } from 'antd';
-import axios from 'axios';
 import { useRecoilValue } from 'recoil';
 import { uiAtom } from '../../utils/atoms';
+import instance from '../../hooks/api';
 
 const ChangePassword = () => {
   const { isMobile } = useRecoilValue(uiAtom);
@@ -11,7 +11,7 @@ const ChangePassword = () => {
     try {
       // @ts-ignore
       const dataBody = { ...values, userId: session.data?.user?._id };
-      const { data } = await axios.post('/api/user/change-password', dataBody);
+      const { data } = await instance.post('/change-password', dataBody);
       message.success(data.message || 'Data updated successfully');
     } catch (err: any) {
       message.error(

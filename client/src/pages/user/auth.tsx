@@ -1,21 +1,20 @@
 import React, { useState } from 'react';
 import { Form, Input, Button, Typography, message } from 'antd';
-import axios from 'axios';
 import { useRecoilValue } from 'recoil';
 import { useLocation, useNavigate } from 'react-router-dom';
 import useSession from '../../hooks/session';
 import { uiAtom } from '../../utils/atoms';
 import Loading from '../../components/loading';
+import instance from '../../hooks/api';
 
 const Auth = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [form] = Form.useForm();
   const {
-    me: { authenticated },
+    me: { authenticated, loading },
     login,
   } = useSession();
-  const [loading, setLoading] = React.useState(false);
   const [authType, setAuthType] = useState<'login' | 'register'>('login');
   const { isMobile } = useRecoilValue(uiAtom);
 
@@ -36,7 +35,7 @@ const Auth = () => {
     if (!name || !email || !password)
       message.error('Please enter all the fields');
 
-    await axios.post('/api/user/create-account', {
+    await instance.post('/create-account', {
       email,
       password,
       name,
@@ -45,12 +44,11 @@ const Auth = () => {
 
   const onFinish = async (values: any) => {
     try {
-      setLoading(true);
       if (authType === 'register')
         await createAccount(values.name, values.email, values.password);
 
       const res = await login({
-        username: values.username,
+        email: values.email,
         password: values.password,
       });
 
@@ -62,7 +60,6 @@ const Auth = () => {
     } catch (err: any) {
       message.error(err.message || 'Login failed!');
     } finally {
-      setLoading(false);
     }
   };
 

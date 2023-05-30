@@ -9,7 +9,7 @@ const NotFound: React.FC<IProps> = () => {
     <>
       <Lottie
         options={{
-          animationData: notFound,
+          animationData: JSON.parse(JSON.stringify(notFound)),
           autoplay: true,
           loop: true,
         }}
