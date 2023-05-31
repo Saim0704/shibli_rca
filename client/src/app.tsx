@@ -66,7 +66,6 @@ const App = () => {
     getMeInitial,
     me: { authenticated, user, loading },
   } = useSession();
-  console.log({ authenticated, user, loading });
 
   const routes = useMemo(() => {
     let routes: IRoute[] = [];

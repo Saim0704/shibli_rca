@@ -40,7 +40,6 @@ const useSession = () => {
       }
 
       const { data } = await instance.get('/me');
-      console.log(data);
       if (!data) throw new Error('User not found');
       setSession(token, data);
       return true;

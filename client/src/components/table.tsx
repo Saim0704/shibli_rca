@@ -20,6 +20,7 @@ import ObjectAsDetails from './objectToSchema';
 import { RecoilState, useRecoilState } from 'recoil';
 import { ReactNode, useEffect, useState } from 'react';
 import instance from '../hooks/api';
+import useSession from '../hooks/session';
 
 export type FormResponseError = {
   field: string;
@@ -64,6 +65,7 @@ export default function CustomTable<RecordType = unknown>({
   const [tableData, setTableData] = useRecoilState(recoilAtom);
   const [modal, setModal] = useState(initialState);
   const [form] = Form.useForm();
+  const { getToken } = useSession();
 
   interface IActionModal {
     loading: boolean;
@@ -116,7 +118,10 @@ export default function CustomTable<RecordType = unknown>({
       method: 'POST',
       data: formData,
       url: '/upload',
-      headers: { 'Content-Type': 'multipart/form-data' },
+      headers: {
+        'Content-Type': 'multipart/form-data',
+        Authorization: `Bearer ${getToken()}`,
+      },
     });
     return data;
   };
@@ -148,7 +153,11 @@ export default function CustomTable<RecordType = unknown>({
       }
 
       const url = getUrl(window.location.href, endpoint.post);
-      const { data } = await instance.post(url, values);
+      const { data } = await instance.post(url, values, {
+        headers: {
+          Authorization: `Bearer ${getToken()}`,
+        },
+      });
       setTableData((p) => [...p, { ...data.data }]);
       form.resetFields();
       setModal(initialState);
@@ -221,7 +230,9 @@ export default function CustomTable<RecordType = unknown>({
   const refreshEntries = async () => {
     const {
       data: { data },
-    } = await instance.get(endpoint.get);
+    } = await instance.get(endpoint.get, {
+      headers: { Authorization: `Bearer ${getToken()}` },
+    });
     setTableData(data);
   };
 

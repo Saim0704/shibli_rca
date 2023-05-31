@@ -38,6 +38,7 @@ const Register = () => {
 
   const {
     me: { authenticated, loading, user },
+    getToken,
   } = useSession();
 
   useEffect(() => {
@@ -92,8 +93,7 @@ const Register = () => {
   const handleRegister = async () => {
     try {
       const errors = validateRegister(payload);
-      // @ts-ignore
-      if (!session.data?.user?._id) errors.push("User doesn't exist");
+      if (!user?._id) errors.push("User doesn't exist");
 
       if (errors.length > 0) {
         message.error(
@@ -110,11 +110,11 @@ const Register = () => {
         return;
       }
 
-      await instance.post('/register', {
-        ...payload,
-        // @ts-ignore
-        user: session.data?.user?._id,
-      });
+      await instance.post(
+        '/register',
+        { ...payload, user: user?._id },
+        { headers: { Authorization: `Bearer ${getToken()}` } }
+      );
       setPayload(defaultPayload);
       message.success('Successfully registered');
     } catch (err: any) {
