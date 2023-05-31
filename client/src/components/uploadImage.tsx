@@ -41,6 +41,7 @@ const ImageUploader: React.FC<IProps> = ({
         url: '/upload',
         headers: {
           'Content-Type': 'multipart/form-data',
+          Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
       });
       setImageUrl(data.url);

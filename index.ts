@@ -34,6 +34,7 @@ import { getAllRegistrations } from 'routes/registration';
 import { getProfile, initialGet } from 'routes/misc';
 import mongoose from 'mongoose';
 import { checkAuth } from 'middlewares/auth';
+import { upload } from 'middlewares/upload';
 
 const app = express();
 mongoose.set('debug', true);
@@ -101,8 +102,9 @@ app.get('/users', checkAuth, getUsers);
 
 app.get('/registrations', checkAuth, getAllRegistrations);
 
-app.post('/upload', () => {
-  console.log('Hello');
+app.post('/upload', checkAuth, upload.single('file'), (req, res) => {
+  const file = req.file;
+  return res.status(200).json({ url: file?.path, name: file?.filename });
 });
 
 app.get('/initial', checkAuth, initialGet);
