@@ -43,10 +43,8 @@ app.use(
     origin: [
       'http://localhost:3000',
       'https://shiblirca.netlify.app',
-      '647793280995750909f5cb8c--shiblirca.netlify.app',
       'https://647793280995750909f5cb8c--shiblirca.netlify.app',
     ],
-    credentials: true,
   })
 );
 app.use(express.urlencoded({ extended: true }));
