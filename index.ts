@@ -40,7 +40,12 @@ const app = express();
 mongoose.set('debug', true);
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'https://shiblirca.netlify.app'],
+    origin: [
+      'http://localhost:3000',
+      'https://shiblirca.netlify.app',
+      '*shiblirca.netlify.app',
+      '*',
+    ],
     credentials: true,
   })
 );
