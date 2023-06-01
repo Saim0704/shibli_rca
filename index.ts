@@ -57,7 +57,7 @@ app.use((req, res, next) => {
   return next();
 });
 
-app.get('/', (req, res) => res.send('Hello World'));
+app.get('/', (req, res) => res.send('<h1>Hello World</h1>'));
 app.get('/health', (req, res) => {
   const healthCheck = {
     uptime: process.uptime(),
