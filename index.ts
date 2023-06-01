@@ -44,6 +44,7 @@ app.use(
       'http://localhost:3000',
       'https://shiblirca.netlify.app',
       '647793280995750909f5cb8c--shiblirca.netlify.app',
+      'https://647793280995750909f5cb8c--shiblirca.netlify.app',
     ],
     credentials: true,
   })
