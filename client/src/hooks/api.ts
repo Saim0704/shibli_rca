@@ -5,6 +5,7 @@ const instance = axios.create({
   baseURL: 'https://shiblirca.m3rashid.in',
   headers: {
     Authorization: `Bearer ${window.localStorage.getItem('token')}`,
+    'Access-Control-Allow-Origin': '*',
   },
   timeout: 5000,
 });
