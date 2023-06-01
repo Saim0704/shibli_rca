@@ -45,6 +45,7 @@ app.use(
       'https://shiblirca.netlify.app',
       'https://647793280995750909f5cb8c--shiblirca.netlify.app',
     ],
+    credentials: true,
   })
 );
 app.use(express.urlencoded({ extended: true }));
