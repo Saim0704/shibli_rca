@@ -1,28 +1,14 @@
+import React, { Fragment } from 'react';
+import { IRegistration } from '../types/models';
+import { Descriptions, DescriptionsProps, Image, Typography } from 'antd';
+import { camelCaseToSentenceCase } from '../utils/strings';
 import dayjs from 'dayjs';
-import React, { Fragment, useContext } from 'react';
-import { IRegisterPayload } from './stepper';
-import {
-  Button,
-  Descriptions,
-  DescriptionsProps,
-  Form,
-  Image,
-  Typography,
-} from 'antd';
-import useSession from '../../hooks/session';
-import { camelCaseToSentenceCase } from '../../utils/strings';
-import { uiContext } from '../../hooks/ui';
 
 interface IProps {
-  payload: IRegisterPayload;
+  data: IRegistration;
 }
 
-const Confirmation: React.FC<IProps> = ({ payload }) => {
-  const [{ isMobile }] = useContext(uiContext);
-  const {
-    me: { user },
-  } = useSession();
-
+const RegistrationInfo: React.FC<IProps> = ({ data: payload }) => {
   const defaultDescriptionProps: DescriptionsProps = {
     size: 'small',
     column: { xs: 1, sm: 1, md: 1 },
@@ -30,10 +16,8 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
 
   return (
     <Fragment>
-      <Typography.Title level={3}>Basic Information</Typography.Title>
       <Descriptions {...defaultDescriptionProps}>
-        <Descriptions.Item label='Name'>{user?.name}</Descriptions.Item>
-
+        <Descriptions.Item label='Name'>{payload.user?.name}</Descriptions.Item>
         {[
           'fatherName',
           'motherName',
@@ -41,8 +25,14 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
           'mobileNumber',
           'phoneNumber',
           'languageOfExam',
+          'rollNumber',
+          'aadharCard',
         ].map((t) => (
-          <Descriptions.Item label={camelCaseToSentenceCase(t)} key={t}>
+          <Descriptions.Item
+            contentStyle={{ margin: 0, padding: 0 }}
+            label={camelCaseToSentenceCase(t)}
+            key={t}
+          >
             {/* @ts-ignore */}
             {payload[t]}
           </Descriptions.Item>
@@ -55,10 +45,9 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
         ) : null}
       </Descriptions>
 
-      <br />
+      <hr />
       <br />
 
-      <Typography.Title level={3}>Addresses</Typography.Title>
       <Typography.Title level={5}>Correspondence Address</Typography.Title>
       <Descriptions {...defaultDescriptionProps}>
         {['cityOrTown', 'district', 'landmark', 'postalCode', 'state'].map(
@@ -71,6 +60,7 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
         )}
       </Descriptions>
 
+      <hr />
       <br />
 
       <Typography.Title level={5}>Permanent Address</Typography.Title>
@@ -85,10 +75,9 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
         )}
       </Descriptions>
 
-      <br />
+      <hr />
       <br />
 
-      <Typography.Title level={3}>Education</Typography.Title>
       <Typography.Title level={5}>Matriculation</Typography.Title>
       <Descriptions {...defaultDescriptionProps}>
         {['boardOrUni', 'percentage', 'passYear'].map((t) => (
@@ -99,7 +88,7 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
         ))}
       </Descriptions>
 
-      <br />
+      <hr />
 
       <Typography.Title level={5}>Intermediate</Typography.Title>
       <Descriptions {...defaultDescriptionProps}>
@@ -111,7 +100,7 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
         ))}
       </Descriptions>
 
-      <br />
+      <hr />
 
       <Typography.Title level={5}>Graduation</Typography.Title>
       <Descriptions {...defaultDescriptionProps}>
@@ -123,10 +112,9 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
         ))}
       </Descriptions>
 
-      <br />
-
       {payload.education.other.percentage !== 0 && (
         <Fragment>
+          <hr />
           <Typography.Title level={5}>Other</Typography.Title>
           <Descriptions {...defaultDescriptionProps}>
             {['boardOrUni', 'percentage', 'passYear'].map((t) => (
@@ -139,11 +127,12 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
         </Fragment>
       )}
 
+      <hr />
+
       {payload.earlierCompetitiveExams.length > 0 ? (
         <Fragment>
           <br />
-          <br />
-          <Typography.Title level={3}>
+          <Typography.Title level={5}>
             Earlier Competitive Examinations
           </Typography.Title>
           <Descriptions {...defaultDescriptionProps}>
@@ -156,58 +145,31 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
         </Fragment>
       ) : null}
 
-      <br />
-      <br />
-
-      <Typography.Title level={3}>Terms and Conditions</Typography.Title>
-      <Descriptions {...defaultDescriptionProps}>
-        <Descriptions.Item label='Information given by me is correct'>
-          {payload.agreeToTerms.informationIsCorrect ? 'Yes' : 'No'}
-        </Descriptions.Item>
-
-        <Descriptions.Item label='Details in the exam can be changed by the Shibli RCA at any time'>
-          {payload.agreeToTerms.rightToChange ? 'Yes' : 'No'}
-        </Descriptions.Item>
-      </Descriptions>
-
-      <br />
+      <hr />
       <br />
 
-      <Typography.Title level={3}>Uploads</Typography.Title>
-      <Descriptions {...defaultDescriptionProps}>
-        <Descriptions.Item label='Aadhar Card Number'>
-          {payload.aadharCard}
-        </Descriptions.Item>
-      </Descriptions>
-      {['photograph', 'signature', 'lastSemesterCertificate'].map((t) => {
-        // @ts-ignore
-        if (!payload[t]) return null;
-        // @ts-ignore
-        return <Image key={t} preview={false} src={payload[t]} />;
-      })}
+      <div className='flex items-center gap-8 flex-wrap'>
+        <div>
+          <Typography.Title level={5}>Photograph</Typography.Title>
+          <Image src={payload.photograph} height={100} />
+        </div>
 
-      <br />
-      <br />
+        <div>
+          <Typography.Title level={5}>Signature</Typography.Title>
+          <Image src={payload.signature} height={100} />
+        </div>
 
-      <Form.Item className='w-full flex justify-end'>
-        <Button
-          size={isMobile ? 'middle' : 'large'}
-          className='mr-2'
-          onClick={() => {}}
-        >
-          Cancel
-        </Button>
-
-        <Button
-          type='primary'
-          htmlType='submit'
-          size={isMobile ? 'middle' : 'large'}
-        >
-          Register
-        </Button>
-      </Form.Item>
+        {payload.lastSemesterCertificate && (
+          <div>
+            <Typography.Title level={5}>
+              Last Semester Certificate
+            </Typography.Title>
+            <Image src={payload.lastSemesterCertificate} height={100} />
+          </div>
+        )}
+      </div>
     </Fragment>
   );
 };
 
-export default Confirmation;
+export default RegistrationInfo;

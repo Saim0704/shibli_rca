@@ -30,7 +30,11 @@ import { createTestCenter } from 'routes/test-centers';
 import { updateTestCenter } from 'routes/test-centers';
 import { deleteTestCenter } from 'routes/test-centers';
 import { getUsers } from 'routes/user';
-import { getAllRegistrations, registerForExam } from 'routes/registration';
+import {
+  getAllRegistrations,
+  registerForExam,
+  changeTestCenter,
+} from 'routes/registration';
 import { getProfile, initialGet } from 'routes/misc';
 import mongoose from 'mongoose';
 import { checkAuth } from 'middlewares/auth';
@@ -107,6 +111,7 @@ app.delete('/test-centers', checkAuth, deleteTestCenter);
 app.get('/users', checkAuth, getUsers);
 
 app.get('/registrations', checkAuth, getAllRegistrations);
+app.patch('/registrations/test-center', checkAuth, changeTestCenter);
 
 app.post('/upload', checkAuth, upload.single('file'), (req, res) => {
   const file = req.file;

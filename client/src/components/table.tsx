@@ -43,14 +43,16 @@ const initialActionsModal: IActionModal = {
 export type ICustomTableProps<RecordType> = TableProps<RecordType> & {
   tableColumns: TableProps<RecordType>['columns'];
   addButtonLabel?: string;
+  moreActions?: (record: RecordType) => ReactNode;
   endpoint: {
     get: string;
-    post: string;
-    put: string;
-    delete: string;
+    post?: string;
+    put?: string;
+    delete?: string;
   };
   AddFormInner: ReactNode;
   tableTitle: string;
+  moreInfoTransformer?: (data: any) => ReactNode;
   customFormValidation?: (
     values: any
   ) => FormResponseError[] | Promise<FormResponseError[]>;
@@ -71,6 +73,7 @@ export default function CustomTable<RecordType = unknown>({
   const [modal, setModal] = useState(initialState);
   const [form] = Form.useForm();
   const { getToken } = useSession();
+  const [page, setPage] = useState(1);
 
   const { data: tableData } = useQuery({
     queryKey: [tableTitle],
@@ -151,7 +154,7 @@ export default function CustomTable<RecordType = unknown>({
           break;
         }
       }
-
+      if (!endpoint.post) throw new Error('No endpoint for post');
       await instance.post(endpoint.post, values, {
         headers: {
           Authorization: `Bearer ${getToken()}`,
@@ -166,43 +169,53 @@ export default function CustomTable<RecordType = unknown>({
 
   const handleFormFinishFailed = async () => {};
 
+  const infoTransformer = (data: any) => {
+    if (props.moreInfoTransformer) return props.moreInfoTransformer(data);
+    return <ObjectAsDetails data={data} />;
+  };
+
   const allCols: TableProps<RecordType>['columns'] = [
     {
       title: 'Sl. No.',
-      render: (_, __, index) => `${index + 1}.`,
+      render: (_, __, index) => `${(page - 1) * 10 + index + 1}.`,
       width: 100,
       align: 'center',
     },
     ...tableColumns,
     {
       title: '',
-      width: 130,
       render: (/*text,*/ record) => {
         return (
           <div style={{ display: 'flex', gap: '10px' }}>
-            <Tooltip title='Edit this entry'>
-              <Button
-                type='primary'
-                icon={<EditOutlined />}
-                onClick={handleEdit}
-              />
-            </Tooltip>
+            {props.moreActions ? props.moreActions(record) : null}
 
-            <Tooltip title='Delete this entry'>
-              <Button
-                type='primary'
-                style={{ background: constants.dangerColor }}
-                icon={<DeleteOutlined />}
-                onClick={() =>
-                  setActionsModal({
-                    data: record,
-                    loading: false,
-                    open: true,
-                    type: 'DELETE',
-                  })
-                }
-              />
-            </Tooltip>
+            {endpoint.put && (
+              <Tooltip title='Edit this entry'>
+                <Button
+                  type='primary'
+                  icon={<EditOutlined />}
+                  onClick={handleEdit}
+                />
+              </Tooltip>
+            )}
+
+            {endpoint.delete && (
+              <Tooltip title='Delete this entry'>
+                <Button
+                  type='primary'
+                  style={{ background: constants.dangerColor }}
+                  icon={<DeleteOutlined />}
+                  onClick={() => {
+                    setActionsModal({
+                      data: record,
+                      loading: false,
+                      open: true,
+                      type: 'DELETE',
+                    });
+                  }}
+                />
+              </Tooltip>
+            )}
 
             <Tooltip title='Know more'>
               <Button
@@ -211,7 +224,7 @@ export default function CustomTable<RecordType = unknown>({
                 icon={<InfoOutlined />}
                 onClick={() =>
                   setActionsModal({
-                    data: record,
+                    data: infoTransformer(record),
                     loading: false,
                     open: true,
                     type: 'INFO',
@@ -302,7 +315,7 @@ export default function CustomTable<RecordType = unknown>({
             Are you sure you want to delete this entry ?
           </Typography.Text>
         ) : (
-          <ObjectAsDetails data={actionModal.data} />
+          actionModal.data
         )}
       </Modal>
 
@@ -333,6 +346,12 @@ export default function CustomTable<RecordType = unknown>({
             rowKey={(record) => record._id}
             // @ts-ignore
             dataSource={tableData.data}
+            pagination={{
+              current: page,
+              pageSize: 10,
+              total: tableData.data.length,
+              onChange: (page) => setPage(page),
+            }}
             {...props}
           />
         ) : null}

@@ -40,7 +40,6 @@ const Gallery = () => {
           endpoint={{
             get: '/gallery',
             post: '/gallery',
-            put: '/gallery',
             delete: '/gallery',
           }}
           scroll={{ x: 800 }}

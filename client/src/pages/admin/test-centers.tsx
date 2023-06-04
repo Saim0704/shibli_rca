@@ -17,12 +17,11 @@ const TestCentres: React.FC<IProps> = () => {
     <AdminContainer>
       <div className='m-4 bg-white rounded-md shadow-md'>
         <CustomTable<ITestCenter>
-          tableTitle='Gallery'
+          tableTitle='Test Centres'
           endpoint={{
             get: '/test-centers',
             post: '/test-centers',
             put: '/test-centers',
-            delete: '/test-centers',
           }}
           scroll={{ x: 800 }}
           tableColumns={columns}
