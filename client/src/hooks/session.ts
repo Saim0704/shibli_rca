@@ -1,12 +1,12 @@
 import instance from './api';
-import { useRecoilState } from 'recoil';
-import { meAtom } from '../utils/atoms';
+import { authContext } from './auth';
 import { IUser } from '../types/models';
 import { useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
 
 const useSession = () => {
   const navigate = useNavigate();
-  const [me, setMe] = useRecoilState(meAtom);
+  const [me, setMe] = useContext(authContext);
 
   const setSession = (token: string, user: IUser) => {
     if (!token || !user || Object.entries(user).length === 0) return;

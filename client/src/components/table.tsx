@@ -13,18 +13,31 @@ import {
   EditOutlined,
   InfoOutlined,
   PlusOutlined,
-  ReloadOutlined,
 } from '@ant-design/icons';
 import constants from '../utils/constants';
 import ObjectAsDetails from './objectToSchema';
-import { RecoilState, useRecoilState } from 'recoil';
-import { ReactNode, useEffect, useState } from 'react';
+import { ReactNode, useState } from 'react';
 import instance from '../hooks/api';
 import useSession from '../hooks/session';
+import { useQuery } from '@tanstack/react-query';
 
 export type FormResponseError = {
   field: string;
   message: string;
+};
+
+interface IActionModal {
+  loading: boolean;
+  open: boolean;
+  type: 'DELETE' | 'INFO';
+  data: any | null;
+}
+
+const initialActionsModal: IActionModal = {
+  loading: false,
+  open: false,
+  type: 'DELETE',
+  data: null,
 };
 
 export type ICustomTableProps<RecordType> = TableProps<RecordType> & {
@@ -36,7 +49,6 @@ export type ICustomTableProps<RecordType> = TableProps<RecordType> & {
     put: string;
     delete: string;
   };
-  recoilAtom: RecoilState<Array<Partial<RecordType>>>;
   AddFormInner: ReactNode;
   tableTitle: string;
   customFormValidation?: (
@@ -46,40 +58,28 @@ export type ICustomTableProps<RecordType> = TableProps<RecordType> & {
 
 const fileInputNames = ['image', 'file'];
 
-export const getUrl = (base: string, endpoint: string) => {
-  const url = base.split('/');
-  return [url[0], url[2]].join('//') + endpoint;
-};
-
 export default function CustomTable<RecordType = unknown>({
   endpoint,
   tableColumns,
   addButtonLabel,
   AddFormInner,
   customFormValidation,
-  recoilAtom,
   tableTitle,
   ...props
 }: ICustomTableProps<RecordType>) {
   const initialState = { loading: false, open: false, disable: false };
-  const [tableData, setTableData] = useRecoilState(recoilAtom);
   const [modal, setModal] = useState(initialState);
   const [form] = Form.useForm();
   const { getToken } = useSession();
 
-  interface IActionModal {
-    loading: boolean;
-    open: boolean;
-    type: 'DELETE' | 'INFO';
-    data: any | null;
-  }
-
-  const initialActionsModal: IActionModal = {
-    loading: false,
-    open: false,
-    type: 'DELETE',
-    data: null,
-  };
+  const { data: tableData } = useQuery({
+    queryKey: [tableTitle],
+    queryFn: () => {
+      return instance.get(endpoint.get, {
+        headers: { Authorization: `Bearer ${getToken()}` },
+      });
+    },
+  });
 
   const [actionModal, setActionsModal] =
     useState<IActionModal>(initialActionsModal);
@@ -152,13 +152,11 @@ export default function CustomTable<RecordType = unknown>({
         }
       }
 
-      const url = getUrl(window.location.href, endpoint.post);
-      const { data } = await instance.post(url, values, {
+      await instance.post(endpoint.post, values, {
         headers: {
           Authorization: `Bearer ${getToken()}`,
         },
       });
-      setTableData((p) => [...p, { ...data.data }]);
       form.resetFields();
       setModal(initialState);
     } catch (err) {
@@ -226,20 +224,6 @@ export default function CustomTable<RecordType = unknown>({
       },
     },
   ];
-
-  const refreshEntries = async () => {
-    const {
-      data: { data },
-    } = await instance.get(endpoint.get, {
-      headers: { Authorization: `Bearer ${getToken()}` },
-    });
-    setTableData(data);
-  };
-
-  useEffect(() => {
-    if (tableData?.length > 0) return;
-    refreshEntries();
-  }, []);
 
   return (
     <>
@@ -325,7 +309,6 @@ export default function CustomTable<RecordType = unknown>({
       <div className='flex items-center justify-between m-[10px] gap-3 pt-[10px]'>
         <Typography.Title level={4}>{tableTitle}</Typography.Title>
         <div className='flex items-center gap-3'>
-          <Button icon={<ReloadOutlined />} onClick={refreshEntries} />
           {addButtonLabel ? (
             <Button
               type='primary'
@@ -339,18 +322,20 @@ export default function CustomTable<RecordType = unknown>({
       </div>
 
       <div style={{ width: '100%', overflowX: 'auto' }}>
-        <Table
-          size='small'
-          sticky
-          scroll={{ x: 1000 }}
-          // @ts-ignore
-          columns={allCols}
-          // @ts-ignore
-          rowKey={(record) => record._id}
-          // @ts-ignore
-          dataSource={tableData as Array<RecordType>}
-          {...props}
-        />
+        {tableData ? (
+          <Table
+            size='small'
+            sticky
+            scroll={{ x: 1000 }}
+            // @ts-ignore
+            columns={allCols}
+            // @ts-ignore
+            rowKey={(record) => record._id}
+            // @ts-ignore
+            dataSource={tableData.data}
+            {...props}
+          />
+        ) : null}
       </div>
     </>
   );

@@ -1,8 +1,7 @@
 import { Checkbox, Form, Input, InputNumber, Select, Typography } from 'antd';
 import { IRegisterPayload } from './stepper';
-import React, { Fragment, useState } from 'react';
-import { useRecoilValue } from 'recoil';
-import { uiAtom } from '../../utils/atoms';
+import React, { Fragment, useContext, useState } from 'react';
+import { uiContext } from '../../hooks/ui';
 
 const indianStates = [
   'Andhra Pradesh',
@@ -56,7 +55,7 @@ const AddressContainer: React.FC<IInnerProps> = ({
   name,
   disabled,
 }) => {
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
 
   return (
     <Fragment>

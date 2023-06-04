@@ -8,9 +8,8 @@ import {
   ReconciliationOutlined,
   SolutionOutlined,
 } from '@ant-design/icons';
-import { useRecoilValue } from 'recoil';
 import { Button, Form, message, Steps } from 'antd';
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { Fragment, useContext, useEffect, useState } from 'react';
 
 import {
   defaultPayload,
@@ -25,15 +24,15 @@ import Agreements from '../../components/register/agreements';
 import Confirmation from '../../components/register/confirmation';
 import { validateRegister } from '../../components/register/validate';
 import EarlierCompetitiveExamsContainer from '../../components/register/earlierCompetitiveExams';
-import { uiAtom } from '../../utils/atoms';
 import useSession from '../../hooks/session';
 import { useNavigate } from 'react-router-dom';
 import instance from '../../hooks/api';
+import { uiContext } from '../../hooks/ui';
 
 const Register = () => {
   const [form] = Form.useForm();
   const [payload, setPayload] = useState<IRegisterPayload>(defaultPayload);
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
   const navigate = useNavigate();
 
   const {

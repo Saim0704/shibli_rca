@@ -1,5 +1,5 @@
 import { Button, Form } from 'antd';
-import React from 'react';
+import React, { useContext } from 'react';
 import Address from './address';
 import Uploads from './uploads';
 import Payment from './payment';
@@ -8,8 +8,7 @@ import BasicInfo from './basicInfo';
 import Agreements from './agreements';
 import EarlierCompetitiveExamsContainer from './earlierCompetitiveExams';
 import { IRegisterPayload } from './stepper';
-import { useRecoilValue } from 'recoil';
-import { uiAtom } from '../../utils/atoms';
+import { uiContext } from '../../hooks/ui';
 
 interface IProps {
   payload: IRegisterPayload;
@@ -17,7 +16,7 @@ interface IProps {
 }
 
 const RegisterContainer: React.FC<IProps> = ({ payload, setPayload }) => {
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
 
   const handleRegister = async () => {};
 

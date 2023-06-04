@@ -1,9 +1,8 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext } from 'react';
 import { Form, InputNumber } from 'antd';
 import ImageUploader from '../uploadImage';
 import { IRegisterPayload } from './stepper';
-import { useRecoilValue } from 'recoil';
-import { uiAtom } from '../../utils/atoms';
+import { uiContext } from '../../hooks/ui';
 
 interface IProps {
   payload: IRegisterPayload;
@@ -11,7 +10,7 @@ interface IProps {
 }
 
 const Uploads: React.FC<IProps> = ({ payload, setPayload }) => {
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
 
   const handleImageFile = async (name: string, imgUrl: string) => {
     if (!imgUrl) return;

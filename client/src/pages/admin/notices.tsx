@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { INotice } from '../../types/models';
 import AdminContainer from '../../components/adminContainer';
 import CustomTable from '../../components/table';
-import { noticeAtom } from '../../utils/atoms';
 import NoticeForm from '../../components/NoticeForm';
 
 interface IProps {}
@@ -30,7 +29,6 @@ const Notices: React.FC<IProps> = () => {
           scroll={{ x: 800 }}
           tableColumns={columns}
           addButtonLabel='Add Notice'
-          recoilAtom={noticeAtom}
           AddFormInner={
             <NoticeForm quillValue={quillValue} setValue={setQuillValue} />
           }

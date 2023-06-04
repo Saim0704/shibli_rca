@@ -1,18 +1,17 @@
 import dayjs from 'dayjs';
-import React, { Fragment } from 'react';
-import { useRecoilValue } from 'recoil';
+import React, { Fragment, useContext } from 'react';
 import { IRegisterPayload } from './stepper';
 import { Button, Descriptions, Form, Image, Typography } from 'antd';
-import { uiAtom } from '../../utils/atoms';
 import useSession from '../../hooks/session';
 import { camelCaseToSentenceCase } from '../../utils/strings';
+import { uiContext } from '../../hooks/ui';
 
 interface IProps {
   payload: IRegisterPayload;
 }
 
 const Confirmation: React.FC<IProps> = ({ payload }) => {
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
   const {
     me: { user },
   } = useSession();

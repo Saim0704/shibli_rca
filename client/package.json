@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.1.3",
+    "@tanstack/react-query": "^4.29.12",
+    "@tanstack/react-query-devtools": "^4.29.12",
     "antd": "^5.5.1",
     "axios": "^1.4.0",
     "dayjs": "^1.11.7",
@@ -19,8 +21,7 @@
     "react-lottie": "^1.2.3",
     "react-quill": "^2.0.0",
     "react-router-dom": "^6.11.2",
-    "react-to-print": "^2.14.12",
-    "recoil": "^0.7.7"
+    "react-to-print": "^2.14.12"
   },
   "devDependencies": {
     "@types/lodash.debounce": "^4.0.7",

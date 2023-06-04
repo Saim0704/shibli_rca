@@ -4,7 +4,7 @@ import { INotice, Notice } from 'models/notice';
 export const getNotices = async (req: Request, res: Response) => {
   try {
     const notices = await Notice.find({});
-    return res.status(200).json({ error: null, data: notices });
+    return res.status(200).json(notices);
   } catch (err: any) {
     console.log(err);
     return res.status(500).json({
@@ -23,7 +23,7 @@ export const createNotice = async (req: Request, res: Response) => {
     }
     const notice = new Notice<INotice>({ title, description, issuedBy });
     const newNotice = await notice.save();
-    return res.status(200).json({ error: null, data: newNotice });
+    return res.status(200).json(newNotice);
   } catch (err: any) {
     console.log(err);
     return res.status(500).json({
@@ -39,7 +39,7 @@ export const updateNotice = async (req: Request, res: Response) => {
     const updatedNotice = await Notice.findByIdAndUpdate(_id, {
       ...updates,
     });
-    return res.status(200).json({ error: null, data: updatedNotice });
+    return res.status(200).json(updatedNotice);
   } catch (err: any) {
     console.log(err);
     return res.status(500).json({
@@ -54,7 +54,7 @@ export const deleteNotice = async (req: Request, res: Response) => {
     if (!_id) return res.status(400).json({ error: 'Missing _id', data: null });
 
     const deletedNotice = await Notice.findByIdAndDelete(_id);
-    return res.status(200).json({ error: null, data: deletedNotice });
+    return res.status(200).json(deletedNotice);
   } catch (err: any) {
     console.log(err);
     return res.status(500).json({

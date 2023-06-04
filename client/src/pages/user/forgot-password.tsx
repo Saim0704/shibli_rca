@@ -1,15 +1,14 @@
 import { Button, Form, Input, Typography, message } from 'antd';
-import React, { Fragment, useState } from 'react';
-import { useRecoilValue } from 'recoil';
-import { uiAtom } from '../../utils/atoms';
+import React, { Fragment, useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import instance from '../../hooks/api';
+import { uiContext } from '../../hooks/ui';
 
 interface IProps {}
 
 const ForgotPassword: React.FC<IProps> = () => {
   const [isStep2, setIsStep2] = useState(false);
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
   const navigate = useNavigate();
   const [form] = Form.useForm();
   const reset = () => form.resetFields();

@@ -20,7 +20,7 @@ export const getUsers = async (req: Request, res: Response) => {
       ];
     }, []);
 
-    return res.status(200).json({ error: null, data: newUsers });
+    return res.status(200).json(newUsers);
   } catch (err: any) {
     console.log(err);
     return res.status(500).json({

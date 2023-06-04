@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, useLayoutEffect } from 'react';
+import React, { PropsWithChildren, useContext, useLayoutEffect } from 'react';
 import {
   Button,
   ConfigProvider,
@@ -11,19 +11,18 @@ import {
 } from 'antd';
 import enUs from 'antd/locale/en_US';
 import constants from '../utils/constants';
-import { useRecoilState } from 'recoil';
 import { UserOutlined } from '@ant-design/icons';
-import { uiAtom } from '../utils/atoms';
 import { useNavigate } from 'react-router-dom';
 import useSession from '../hooks/session';
 import Loading from './loading';
+import { uiContext } from '../hooks/ui';
 
 interface IContainerProps extends PropsWithChildren {}
 const AppContainer: React.FC<IContainerProps> = ({ children }) => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
-  const [ui, setUi] = useRecoilState(uiAtom);
+  const [ui, setUi] = useContext(uiContext);
   const navigate = useNavigate();
   const {
     me: { authenticated, user },

@@ -48,7 +48,7 @@ const Principles = () => {
   return (
     <Row
       justify='center'
-      className='lg:py-12 md:px-8 xl:px-32 md:relative md:-top-[100px] -mb-20 md:z-10 px-4'
+      className='lg:py-12 md:px-8 xl:px-32 md:relative md:-top-[180px] -mb-40 md:z-10 px-4'
     >
       {principles.map((item) => {
         return (

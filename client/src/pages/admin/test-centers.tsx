@@ -3,7 +3,6 @@ import { Form, Input, TableProps } from 'antd';
 import { ITestCenter } from '../../types/models';
 import AdminContainer from '../../components/adminContainer';
 import CustomTable from '../../components/table';
-import { testCenterAtom } from '../../utils/atoms';
 interface IProps {}
 
 const TestCentres: React.FC<IProps> = () => {
@@ -28,7 +27,6 @@ const TestCentres: React.FC<IProps> = () => {
           scroll={{ x: 800 }}
           tableColumns={columns}
           addButtonLabel='Add Test Center'
-          recoilAtom={testCenterAtom}
           AddFormInner={
             <>
               <Form.Item

@@ -1,13 +1,13 @@
 import { Form, Image, Input, TableProps } from 'antd';
-import { useRecoilValue } from 'recoil';
-import { galleryAtom, uiAtom } from '../../utils/atoms';
 import { IGallery } from '../../types/models';
 import AdminContainer from '../../components/adminContainer';
 import CustomTable from '../../components/table';
 import ImageUploader from '../../components/uploadImage';
+import { useContext } from 'react';
+import { uiContext } from '../../hooks/ui';
 
 const Gallery = () => {
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
 
   const columns: TableProps<IGallery>['columns'] = [
     {
@@ -46,7 +46,6 @@ const Gallery = () => {
           scroll={{ x: 800 }}
           tableColumns={columns}
           addButtonLabel='Add Gallery'
-          recoilAtom={galleryAtom}
           AddFormInner={
             <>
               <Form.Item

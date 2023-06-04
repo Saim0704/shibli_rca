@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { IEvent } from '../../types/models';
 import AdminContainer from '../../components/adminContainer';
 import CustomTable from '../../components/table';
-import { eventsAtom } from '../../utils/atoms';
 import EventForm from '../../components/EventForm';
 
 const Events = () => {
@@ -41,7 +40,6 @@ const Events = () => {
           }}
           tableColumns={columns}
           addButtonLabel='Add Event'
-          recoilAtom={eventsAtom}
           AddFormInner={
             <EventForm quillValue={quillValue} setValue={setQuillValue} />
           }

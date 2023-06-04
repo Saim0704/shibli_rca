@@ -1,15 +1,14 @@
 import constants from '../utils/constants';
 import { Layout } from 'antd';
-import React, { Fragment, PropsWithChildren } from 'react';
-import { useRecoilValue } from 'recoil';
-import { uiAtom } from '../utils/atoms';
+import React, { Fragment, PropsWithChildren, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useSession from '../hooks/session';
+import { uiContext } from '../hooks/ui';
 
 interface IProps extends PropsWithChildren {}
 
 const UserHeader: React.FC<IProps> = ({ children }) => {
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
   const navigate = useNavigate();
   const {
     me: { authenticated, user },

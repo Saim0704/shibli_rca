@@ -1,9 +1,8 @@
 import { Button, Checkbox, DatePicker, Form, Input, Typography } from 'antd';
 import { IRegisterPayload } from './stepper';
-import React, { Fragment } from 'react';
-import { useRecoilValue } from 'recoil';
-import { uiAtom } from '../../utils/atoms';
+import React, { Fragment, useContext } from 'react';
 import dayjs from 'dayjs';
+import { uiContext } from '../../hooks/ui';
 
 interface IProps {
   payload: IRegisterPayload;
@@ -14,7 +13,7 @@ const EarlierCompetitiveExamsContainer: React.FC<IProps> = ({
   payload,
   setPayload,
 }) => {
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
 
   const onEarlierCompetitiveExamsChange = (
     name: string,

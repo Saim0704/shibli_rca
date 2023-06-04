@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Form, Input, Button, Typography, message } from 'antd';
-import { useRecoilValue } from 'recoil';
 import { useNavigate } from 'react-router-dom';
 import useSession from '../../hooks/session';
-import { uiAtom } from '../../utils/atoms';
 import Loading from '../../components/loading';
 import instance from '../../hooks/api';
+import { uiContext } from '../../hooks/ui';
 
 const Auth = () => {
   const navigate = useNavigate();
@@ -16,7 +15,7 @@ const Auth = () => {
     login,
   } = useSession();
   const [authType, setAuthType] = useState<'login' | 'register'>('login');
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
 
   React.useEffect(() => {
     if (authenticated) {

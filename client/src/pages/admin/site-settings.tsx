@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Input, message } from 'antd';
-import { useRecoilValue } from 'recoil';
-import { uiAtom } from '../../utils/atoms';
 import AdminContainer from '../../components/adminContainer';
 import ConfigForm from '../../components/configForm';
 import instance from '../../hooks/api';
+import { uiContext } from '../../hooks/ui';
 
 interface IProps {}
 
@@ -20,7 +19,7 @@ const splitCamelCase = (str: string) => {
 };
 
 const SiteSettings: React.FC<IProps> = () => {
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
   const [config, setConfig] = React.useState<IConfig[]>([]);
 
   useEffect(() => {

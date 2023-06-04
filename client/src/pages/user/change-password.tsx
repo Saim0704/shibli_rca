@@ -1,10 +1,10 @@
 import { Button, Form, Input, Typography, message } from 'antd';
-import { useRecoilValue } from 'recoil';
-import { uiAtom } from '../../utils/atoms';
 import instance from '../../hooks/api';
+import { useContext } from 'react';
+import { uiContext } from '../../hooks/ui';
 
 const ChangePassword = () => {
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
   const [form] = Form.useForm();
 
   const onFinish = async (values: any) => {

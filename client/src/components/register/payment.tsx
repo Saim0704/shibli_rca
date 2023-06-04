@@ -1,8 +1,7 @@
 import { Form, Image, Input, Typography } from 'antd';
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext } from 'react';
 import { IRegisterPayload } from './stepper';
-import { useRecoilValue } from 'recoil';
-import { uiAtom } from '../../utils/atoms';
+import { uiContext } from '../../hooks/ui';
 
 interface IProps {
   payload: IRegisterPayload;
@@ -10,7 +9,7 @@ interface IProps {
 }
 
 const Payment: React.FC<IProps> = ({ payload, setPayload }) => {
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
 
   return (
     <Fragment>

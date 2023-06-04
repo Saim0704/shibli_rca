@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ReactQuill from 'react-quill';
 import debounce from 'lodash.debounce';
-import { useRecoilValue } from 'recoil';
 import 'react-quill/dist/quill.snow.css';
 import { DatePicker, Form, Input } from 'antd';
-import { uiAtom } from '../utils/atoms';
+import { uiContext } from '../hooks/ui';
 
 interface IProps {
   quillValue: string;
@@ -14,7 +13,7 @@ interface IProps {
 const EventForm: React.FC<IProps> = ({ quillValue, setValue }) => {
   const onChange = debounce((val) => setValue(val), 200);
 
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
   return (
     <>
       <Form.Item

@@ -1,9 +1,8 @@
 import { DatePicker, Form, Input, Typography } from 'antd';
 import dayjs from 'dayjs';
 import { IRegisterPayload } from './stepper';
-import React, { Fragment } from 'react';
-import { useRecoilValue } from 'recoil';
-import { uiAtom } from '../../utils/atoms';
+import React, { Fragment, useContext } from 'react';
+import { uiContext } from '../../hooks/ui';
 
 interface IEducationContainerProps {
   education: IRegisterPayload['education']['matriculation'];
@@ -17,7 +16,7 @@ const EducationContainer: React.FC<IEducationContainerProps> = ({
   name,
   onChange,
 }) => {
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
 
   return (
     <Fragment>

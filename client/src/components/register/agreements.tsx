@@ -1,10 +1,9 @@
-import { useRecoilValue } from 'recoil';
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { Fragment, useContext, useEffect, useState } from 'react';
 import { IRegisterPayload } from './stepper';
 import { Checkbox, Form, Select, Typography } from 'antd';
 import { ITestCenter } from '../../types/models';
-import { uiAtom } from '../../utils/atoms';
 import instance from '../../hooks/api';
+import { uiContext } from '../../hooks/ui';
 
 interface IProps {
   payload: IRegisterPayload;
@@ -13,7 +12,7 @@ interface IProps {
 
 const Agreements: React.FC<IProps> = ({ payload, setPayload }) => {
   const [testCentres, setTestCenters] = useState<ITestCenter[]>([]);
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
 
   const onChange = (name: string, value: boolean) => {
     setPayload((prev) => ({

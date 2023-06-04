@@ -1,10 +1,9 @@
 import { DatePicker, Form, Input, Select } from 'antd';
 import dayjs from 'dayjs';
 import { IRegisterPayload } from './stepper';
-import React, { Fragment } from 'react';
-import { useRecoilValue } from 'recoil';
-import { uiAtom } from '../../utils/atoms';
+import React, { Fragment, useContext } from 'react';
 import { toSentenceCase } from '../../utils/strings';
+import { uiContext } from '../../hooks/ui';
 
 interface IProps {
   payload: IRegisterPayload;
@@ -12,7 +11,7 @@ interface IProps {
 }
 
 const BasicInfo: React.FC<IProps> = ({ payload, setPayload }) => {
-  const { isMobile } = useRecoilValue(uiAtom);
+  const [{ isMobile }] = useContext(uiContext);
 
   const onChange = (name: string, value: any) => {
     setPayload((prev) => ({ ...prev, [name]: value }));

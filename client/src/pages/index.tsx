@@ -44,7 +44,7 @@ const Home = () => {
           ))}
         </Carousel>
 
-        <div className='relative -top-[120px] flex items-center justify-center flex-col'>
+        <div className='relative -top-[150px] flex items-center justify-center flex-col'>
           <Button
             className='w-[250px] h-[60px] font-bold text-lg'
             type='primary'
