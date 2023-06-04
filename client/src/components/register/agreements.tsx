@@ -64,7 +64,7 @@ const Agreements: React.FC<IProps> = ({ payload, setPayload }) => {
         <Select
           size={isMobile ? 'middle' : 'large'}
           placeholder='Select Your Test Center'
-          options={testCentres.map((t: ITestCenter) => ({
+          options={(testCentres || []).map((t: ITestCenter) => ({
             label: t.address,
             value: t._id,
           }))}
