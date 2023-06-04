@@ -12,3 +12,24 @@ export const getAllRegistrations = async (req: Request, res: Response) => {
     });
   }
 };
+
+export const registerForExam = async (req: Request, res: Response) => {
+  try {
+    const count = await Registration.countDocuments();
+    const rollNumber = `${String(new Date().getFullYear()).slice(2, 4)}${String(
+      count + 1
+    ).padStart(4, '0')}`;
+    const registration = new Registration({
+      ...req.body,
+      rollNumber: rollNumber,
+      registerComplete: true,
+    });
+    await registration.save();
+    return res.status(200).json({ message: 'Registration created' });
+  } catch (err: any) {
+    console.log(err);
+    return res.status(500).json({
+      message: err.message || 'Internal server error',
+    });
+  }
+};

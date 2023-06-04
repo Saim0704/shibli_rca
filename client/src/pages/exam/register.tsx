@@ -105,11 +105,11 @@ const Register = () => {
                 </div>
               </Fragment>
             ))}
-          </div>
+          </div>,
+          5 // 5 seconds
         );
         return;
       }
-
       await instance.post(
         '/register',
         { ...payload, user: user?._id },

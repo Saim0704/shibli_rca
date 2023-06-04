@@ -22,16 +22,25 @@ export const validateRegister = (payload: any) => {
       errors.push(`${camelCaseToSentenceCase(t)} is required`);
   });
 
+  if (payload.mobileNumber.length !== 10) {
+    errors.push('Mobile number should be of 10 digits');
+  }
+
   ['permanentAddress', 'correspondenceAddress'].forEach((t) => {
     ['postalCode', 'cityOrTown', 'district', 'state'].forEach((i) => {
       // @ts-ignore
-      if (!payload[t][i] || payload[t][i] === '')
+      if (!payload[t][i] || payload[t][i] === '') {
         errors.push(
           `${camelCaseToSentenceCase(i)} in ${camelCaseToSentenceCase(
             t
           )} is required`
         );
+      }
     });
+
+    if (String(payload[t].postalCode).length !== 6) {
+      errors.push('Postal code should be of 6 digits');
+    }
   });
 
   Object.entries(payload.education).forEach(([key, value]: any) => {
@@ -42,6 +51,13 @@ export const validateRegister = (payload: any) => {
       );
       return;
     }
+    if (value.percentage < 0 || value.percentage > 100) {
+      errors.push(
+        `Percentage in ${camelCaseToSentenceCase(
+          'education'
+        )} should be between 0 and 100`
+      );
+    }
   });
 
   if (payload.earlierCompetitiveExams.length > 0) {
@@ -51,6 +67,13 @@ export const validateRegister = (payload: any) => {
         if (!t[k] || t[k] === '') errors.push(`${k} in ${t} is required`);
       });
     });
+  }
+
+  if (
+    !payload.agreeToTerms.informationIsCorrect ||
+    !payload.agreeToTerms.rightToChange
+  ) {
+    errors.push('Please agree to all the terms and conditions');
   }
 
   return errors;

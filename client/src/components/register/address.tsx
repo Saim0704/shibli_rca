@@ -94,7 +94,7 @@ const AddressContainer: React.FC<IInnerProps> = ({
           disabled={disabled}
           size={isMobile ? 'middle' : 'large'}
           placeholder='Enter City Or Town'
-          value={address.city}
+          value={address.cityOrTown}
           onChange={(e) => onChange('cityOrTown', e.target.value)}
         />
       </Form.Item>

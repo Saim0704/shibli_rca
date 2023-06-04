@@ -4,7 +4,7 @@ import { IUser } from 'models/user';
 import { ITestCenter } from 'models/testCenter';
 
 export interface IAddress {
-  city: string;
+  cityOrTown: string;
   state: string;
   district: string;
   landMark: string;

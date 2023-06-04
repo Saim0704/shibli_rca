@@ -17,7 +17,7 @@ const Catch = (component: any) =>
     }
 
     componentDidCatch(error: any, info: any) {
-      console.log(error, info);
+      // console.log(error, info);
     }
 
     render() {

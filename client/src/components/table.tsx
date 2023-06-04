@@ -85,11 +85,11 @@ export default function CustomTable<RecordType = unknown>({
     useState<IActionModal>(initialActionsModal);
 
   const handleEdit = async () => {
-    console.log(actionModal.data);
+    // console.log(actionModal.data);
   };
 
   const handleDelete = async () => {
-    console.log(actionModal.data);
+    // console.log(actionModal.data);
   };
 
   // const handleMoreInfo = async () => {

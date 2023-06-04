@@ -54,7 +54,7 @@ export interface IOtp {
 }
 
 export interface IAddress {
-  city: string;
+  cityOrTown: string;
   state: string;
   district: string;
   landMark: string;

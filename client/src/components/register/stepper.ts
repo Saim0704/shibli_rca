@@ -31,14 +31,14 @@ export type Addresses = Pick<
 
 const addresses: Addresses = {
   correspondenceAddress: {
-    city: '',
+    cityOrTown: '',
     district: '',
     landMark: '',
     postalCode: '',
     state: '',
   },
   permanentAddress: {
-    city: '',
+    cityOrTown: '',
     district: '',
     landMark: '',
     postalCode: '',
@@ -73,8 +73,8 @@ export type IAgreements = Pick<
   'agreeToTerms'
 >['agreeToTerms'];
 const agreeToTerms: IAgreements = {
-  informationIsCorrect: false,
-  rightToChange: false,
+  informationIsCorrect: true,
+  rightToChange: true,
 };
 
 export type IUploads = Pick<
