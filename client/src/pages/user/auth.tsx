@@ -33,13 +33,19 @@ const Auth = () => {
   ) => {
     if (!name || !email || !password)
       message.error('Please enter all the fields');
-    await instance.post('/create-account', { email, password, name });
+    try {
+      await instance.post('/create-account', { email, password, name });
+    } catch (err: any) {
+      message.error('User Already exists!');
+    }
   };
 
   const onFinish = async (values: any) => {
     try {
-      if (authType === 'register')
+      if (authType === 'register') {
         await createAccount(values.name, values.email, values.password);
+        return;
+      }
 
       const res = await login({
         email: values.email,

@@ -34,6 +34,7 @@ import {
   getAllRegistrations,
   registerForExam,
   changeTestCenter,
+  deleteRegistration,
 } from 'routes/registration';
 import { getProfile, initialGet } from 'routes/misc';
 import mongoose from 'mongoose';
@@ -111,6 +112,7 @@ app.delete('/test-centers', checkAuth, deleteTestCenter);
 app.get('/users', checkAuth, getUsers);
 
 app.get('/registrations', checkAuth, getAllRegistrations);
+app.delete('/registrations', checkAuth, deleteRegistration);
 app.patch('/registrations/test-center', checkAuth, changeTestCenter);
 
 app.post('/upload', checkAuth, upload.single('file'), (req, res) => {

@@ -27,7 +27,7 @@ const Agreements: React.FC<IProps> = ({ payload, setPayload }) => {
   useEffect(() => {
     const getTestCenters = async () => {
       const { data } = await instance.get('/test-centers');
-      setTestCenters(data.data);
+      setTestCenters(data);
     };
     getTestCenters().then().catch(console.log);
   }, []);

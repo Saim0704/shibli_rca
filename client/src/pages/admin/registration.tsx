@@ -1,4 +1,4 @@
-import { Button, Form, Modal, Select, TableProps, message } from 'antd';
+import { Button, Form, Image, Modal, Select, TableProps, message } from 'antd';
 import React, { useContext, useState } from 'react';
 import { IRegistration } from '../../types/models';
 import AdminContainer from '../../components/adminContainer';
@@ -8,6 +8,7 @@ import instance from '../../hooks/api';
 import { useQuery } from '@tanstack/react-query';
 import useSession from '../../hooks/session';
 import { uiContext } from '../../hooks/ui';
+import { DeleteOutlined, EditOutlined } from '@ant-design/icons';
 
 interface IProps {}
 
@@ -30,6 +31,18 @@ const Registration: React.FC<IProps> = () => {
   });
 
   const columns: TableProps<IRegistration>['columns'] = [
+    {
+      title: 'Image',
+      dataIndex: 'photograph',
+      key: 'photograph',
+      render: (t) => <Image src={t} alt='photograph' width={50} />,
+    },
+    {
+      title: 'Signature',
+      dataIndex: 'signature',
+      key: 'signature',
+      render: (t) => <Image src={t} alt='photograph' width={50} />,
+    },
     {
       title: 'Name',
       dataIndex: 'user',
@@ -65,6 +78,28 @@ const Registration: React.FC<IProps> = () => {
   const handleChangeTestCenter = (record: IRegistration) => {
     setModal({ open: true, data: record });
     console.log(record);
+  };
+
+  const handleDeleteRegistration = (record: IRegistration) => {
+    try {
+      Modal.confirm({
+        title: 'Are you sure you want to delete this registration?',
+        onCancel: () => {},
+        onOk: async () => {
+          await instance.delete(`/registrations`, {
+            data: { _id: record._id },
+            headers: { Authorization: `Bearer ${getToken()}` },
+          });
+          message.success('Registration Deleted');
+        },
+        okText: 'Delete',
+        cancelText: 'Cancel',
+        okButtonProps: { danger: true },
+      });
+    } catch (err: any) {
+      console.log(err);
+      message.error("Couldn't delete registration");
+    }
   };
 
   const handleSubmitTestCenter = (values: any) => {
@@ -133,9 +168,19 @@ const Registration: React.FC<IProps> = () => {
           tableColumns={columns}
           AddFormInner={<></>}
           moreActions={(record) => (
-            <Button onClick={() => handleChangeTestCenter(record)}>
-              Change Test Center
-            </Button>
+            <div className='flex gap-2'>
+              <Button
+                onClick={() => handleChangeTestCenter(record)}
+                icon={<EditOutlined />}
+              />
+
+              <Button
+                type='primary'
+                danger
+                onClick={() => handleDeleteRegistration(record)}
+                icon={<DeleteOutlined />}
+              />
+            </div>
           )}
         />
       </div>
