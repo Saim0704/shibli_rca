@@ -35,7 +35,7 @@ const useSession = () => {
       startLoading();
       const token = getToken();
       if (!token) {
-        navigate('/user/auth');
+        navigate('/');
         return;
       }
 
