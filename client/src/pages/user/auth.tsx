@@ -35,6 +35,7 @@ const Auth = () => {
       message.error('Please enter all the fields');
     try {
       await instance.post('/create-account', { email, password, name });
+      message.success('Account created successfully!');
     } catch (err: any) {
       message.error('User Already exists!');
     }
@@ -42,10 +43,8 @@ const Auth = () => {
 
   const onFinish = async (values: any) => {
     try {
-      if (authType === 'register') {
+      if (authType === 'register')
         await createAccount(values.name, values.email, values.password);
-        return;
-      }
 
       const res = await login({
         email: values.email,

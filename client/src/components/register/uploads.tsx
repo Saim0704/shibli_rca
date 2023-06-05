@@ -45,14 +45,14 @@ const Uploads: React.FC<IProps> = ({ payload, setPayload }) => {
         required
         handleImageUrl={(imgUrl) => handleImageFile('signature', imgUrl)}
       />
-      <ImageUploader
+      {/* <ImageUploader
         upload={true}
         label='Last Semester Certificate'
         name='lastSemesterCertificate'
         handleImageUrl={(imgUrl) =>
           handleImageFile('lastSemesterCertificate', imgUrl)
         }
-      />
+      /> */}
     </Fragment>
   );
 };
