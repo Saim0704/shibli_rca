@@ -1,6 +1,6 @@
 import { message } from 'antd';
-import React, { Suspense, useEffect, useMemo } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React, { Fragment, Suspense, useEffect, useMemo } from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import AppContainer from './components/root';
 import ErrorBoundary from './components/errorBoundary';
 import useSession from './hooks/session';
@@ -97,6 +97,15 @@ const App = () => {
             {routes.map(({ path, Component, key }) => {
               return <Route key={key} path={path} Component={Component} />;
             })}
+            {!authenticated ? (
+              <Fragment>
+                {[...userRoutes, ...adminRoutes].map((t) => (
+                  <Route path={t.path} element={<Navigate to='/user/auth' />} />
+                ))}
+              </Fragment>
+            ) : (
+              <></>
+            )}
             <Route path='*' Component={NotFound} />
           </Routes>
         </AppContainer>
