@@ -72,7 +72,17 @@ const AddressContainer: React.FC<IInnerProps> = ({
       <Form.Item
         name={`${name}.postalCode`}
         label='Postal Code'
-        rules={[{ required: true }]}
+        rules={[
+          { required: true },
+          {
+            validator: (_, value) => {
+              if (value && value.toString().length !== 6) {
+                return Promise.reject('Postal Code must be 6 digits long');
+              }
+              return Promise.resolve('');
+            },
+          },
+        ]}
       >
         <InputNumber
           disabled={disabled}

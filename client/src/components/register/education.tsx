@@ -38,7 +38,17 @@ const EducationContainer: React.FC<IEducationContainerProps> = ({
       <Form.Item
         name={`${name}.percentage`}
         label='Percentage'
-        rules={[{ required: true }]}
+        rules={[
+          { required: true },
+          {
+            validator: (_, value) => {
+              if (value > 100 || value < 0) {
+                return Promise.reject('Percentage must be between 0 and 100');
+              }
+              return Promise.resolve('');
+            },
+          },
+        ]}
       >
         <Input
           size={isMobile ? 'middle' : 'large'}

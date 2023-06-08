@@ -81,6 +81,7 @@ const BasicInfo: React.FC<IProps> = ({ payload, setPayload }) => {
         rules={[{ required: true }]}
       >
         <DatePicker
+          format='DD-MM-YYYY'
           style={{ width: '100%' }}
           size={isMobile ? 'middle' : 'large'}
           placeholder='Enter Date of Birth'
@@ -94,7 +95,10 @@ const BasicInfo: React.FC<IProps> = ({ payload, setPayload }) => {
       <Form.Item
         label='Mobile Number'
         name='mobileNumber'
-        rules={[{ required: true }]}
+        rules={[
+          { required: true },
+          { len: 10, message: 'Mobile Number should be of 10 digits' },
+        ]}
       >
         <Input
           type='tel'

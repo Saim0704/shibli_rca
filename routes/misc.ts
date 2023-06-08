@@ -6,8 +6,6 @@ import mongoose from 'mongoose';
 
 export const initialGet = async (req: Request, res: Response) => {
   try {
-    if (!req.authenticated) throw new Error('Unauthorized');
-
     const registration = await Registration.findOne({
       user: new mongoose.Types.ObjectId(req.user?._id),
     }).populate('user');

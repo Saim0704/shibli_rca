@@ -3,7 +3,6 @@ import { camelCaseToSentenceCase } from '../../utils/strings';
 export const validateRegister = (payload: any) => {
   const errors: string[] = [];
   [
-    'currentStep',
     'gender',
     'fatherName',
     'motherName',
@@ -22,7 +21,7 @@ export const validateRegister = (payload: any) => {
       errors.push(`${camelCaseToSentenceCase(t)} is required`);
   });
 
-  if (payload.mobileNumber.length !== 10) {
+  if (payload.mobileNumber && String(payload.mobileNumber).length !== 10) {
     errors.push('Mobile number should be of 10 digits');
   }
 

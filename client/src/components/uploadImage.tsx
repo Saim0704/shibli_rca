@@ -90,6 +90,12 @@ const ImageUploader: React.FC<IProps> = ({
               Choose a single image from your device
             </p>
 
+            <br />
+
+            <Typography.Title level={5}>
+              Image must not exceed 4.5 MB in size
+            </Typography.Title>
+
             <Typography.Text type='danger'>
               Please wait for the image to upload before submitting the form.
               Once, preview is visible, you can submit the form.

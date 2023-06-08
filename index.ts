@@ -126,14 +126,14 @@ app.get('/profile', checkAuth, getProfile);
 
 const port = process.env.PORT || 4000;
 const startServer = async () => {
-  try {
-    await mongoose.connect(process.env.MONGO_URI!!);
-    console.log('Connected to the database');
-    app.listen(port, () => console.log('Server Ready on: ' + port));
-  } catch (err) {
-    console.log(err);
-    process.exit(1);
-  }
+  await mongoose.connect(process.env.MONGO_URI!!);
+  console.log('Connected to the database');
+  app.listen(port, () => console.log('Server Ready on: ' + port));
 };
 
-startServer().then().catch();
+startServer()
+  .then()
+  .catch((err) => {
+    console.log(err);
+    process.exit(1);
+  });

@@ -1,5 +1,5 @@
 import React, { Fragment, useContext } from 'react';
-import { Form, InputNumber } from 'antd';
+import { Form, Input } from 'antd';
 import ImageUploader from '../uploadImage';
 import { IRegisterPayload } from './stepper';
 import { uiContext } from '../../hooks/ui';
@@ -20,13 +20,13 @@ const Uploads: React.FC<IProps> = ({ payload, setPayload }) => {
   return (
     <Fragment>
       <Form.Item label='Aadhar Card Number' name='aadharCard'>
-        <InputNumber
+        <Input
           size={isMobile ? 'middle' : 'large'}
           className='w-full'
           placeholder='Enter Aadhar Card Number'
           value={payload.aadharCard}
-          onChange={(val) =>
-            setPayload((p) => ({ ...p, aadharCard: p.aadharCard || val || '' }))
+          onChange={(e) =>
+            setPayload((p) => ({ ...p, aadharCard: e.target.value }))
           }
         />
       </Form.Item>

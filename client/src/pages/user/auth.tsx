@@ -38,6 +38,7 @@ const Auth = () => {
       message.success('Account created successfully!');
     } catch (err: any) {
       message.error('User Already exists!');
+      throw new Error('User Already exists!');
     }
   };
 

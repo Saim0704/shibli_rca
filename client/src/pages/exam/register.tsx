@@ -90,31 +90,31 @@ const Register = () => {
   ];
 
   const handleRegister = async () => {
-    try {
-      const errors = validateRegister(payload);
-      if (!user?._id) errors.push("User doesn't exist");
+    const errors = validateRegister(payload);
+    if (!user?._id) errors.push("User doesn't exist");
 
-      if (errors.length > 0) {
-        message.error(
-          <div className='w-full max-w-[350px] flex gap-2 flex-col items-center'>
-            {errors.map((t) => (
-              <Fragment key={t}>
-                <div className='w-full bg-red-200 rounded-md px-2 py-1'>
-                  {t}
-                </div>
-              </Fragment>
-            ))}
-          </div>,
-          5 // 5 seconds
-        );
-        return;
-      }
+    if (errors.length > 0) {
+      message.error(
+        <div className='w-full max-w-[350px] flex gap-2 flex-col items-center'>
+          {errors.map((t) => (
+            <Fragment key={t}>
+              <div className='w-full bg-red-200 rounded-md px-2 py-1'>{t}</div>
+            </Fragment>
+          ))}
+        </div>,
+        5 // 5 seconds
+      );
+      return;
+    }
+
+    try {
       await instance.post(
         '/register',
         { ...payload, user: user?._id },
         { headers: { Authorization: `Bearer ${getToken()}` } }
       );
       setPayload(defaultPayload);
+      form.resetFields();
       message.success('Successfully registered');
     } catch (err: any) {
       console.log(err);
