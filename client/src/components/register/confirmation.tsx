@@ -179,7 +179,12 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
           {payload.aadharCard}
         </Descriptions.Item>
       </Descriptions>
-      {['photograph', 'signature', 'lastSemesterCertificate'].map((t) => {
+      {[
+        'photograph',
+        'signature',
+        'lastSemesterCertificate',
+        'transaction',
+      ].map((t) => {
         // @ts-ignore
         if (!payload[t]) return null;
         // @ts-ignore

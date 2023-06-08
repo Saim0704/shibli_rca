@@ -2,6 +2,7 @@ import { Form, Image, Input, Typography } from 'antd';
 import React, { Fragment, useContext } from 'react';
 import { IRegisterPayload } from './stepper';
 import { uiContext } from '../../hooks/ui';
+import ImageUploader from '../uploadImage';
 
 interface IProps {
   payload: IRegisterPayload;
@@ -10,6 +11,11 @@ interface IProps {
 
 const Payment: React.FC<IProps> = ({ payload, setPayload }) => {
   const [{ isMobile }] = useContext(uiContext);
+
+  const handleImageFile = async (name: string, imgUrl: string) => {
+    if (!imgUrl) return;
+    setPayload((prev) => ({ ...prev, [name]: imgUrl }));
+  };
 
   return (
     <Fragment>
@@ -26,6 +32,10 @@ const Payment: React.FC<IProps> = ({ payload, setPayload }) => {
         Complete payment and enter the transaction ID below
       </Typography.Text>
 
+      <Typography.Title level={5}>
+        The registration amount is 300 INR
+      </Typography.Title>
+
       <Form.Item
         name='transactionId'
         label='Transaction ID'
@@ -40,6 +50,18 @@ const Payment: React.FC<IProps> = ({ payload, setPayload }) => {
           }
         />
       </Form.Item>
+
+      <Typography.Title level={5}>
+        Upload the screenshot of the transaction as a proof of the transaction
+      </Typography.Title>
+
+      <ImageUploader
+        upload={true}
+        label='Transaction Proof'
+        name='transaction'
+        required
+        handleImageUrl={(imgUrl) => handleImageFile('transaction', imgUrl)}
+      />
     </Fragment>
   );
 };

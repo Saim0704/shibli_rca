@@ -102,4 +102,5 @@ export const defaultPayload: IRegisterPayload = {
   rollNumber: '',
   category: '',
   languageOfExam: '',
+  transaction: '',
 };

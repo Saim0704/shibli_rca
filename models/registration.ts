@@ -57,6 +57,7 @@ export interface IRegistration extends BaseModel {
   aadharCard?: string;
   lastSemesterCertificate?: string;
   deleted?: boolean;
+  transaction: string;
 }
 
 export const genders = ['M', 'F', 'O'] as const;
@@ -124,6 +125,7 @@ const registrationSchema = new mongoose.Schema<IRegistration>(
         cleared: { type: Boolean, required: true },
       },
     ],
+    transaction: { type: String, required: true },
   },
   { timestamps: true }
 );

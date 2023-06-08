@@ -64,6 +64,17 @@ const Registration: React.FC<IProps> = () => {
       ),
       width: 80,
     },
+    {
+      title: 'Transaction SS',
+      dataIndex: 'transaction',
+      key: 'transaction',
+      render: (t) => <Image src={t} alt='transaction' width={50} />,
+    },
+    {
+      title: 'Txn ID',
+      dataIndex: 'transactionId',
+      key: 'transactionId',
+    },
     { title: 'Roll Number', dataIndex: 'rollNumber', key: 'rollNumber' },
     { title: 'Category', dataIndex: 'category', key: 'category' },
     { title: 'Mobile Number', dataIndex: 'mobileNumber', key: 'mobileNumber' },

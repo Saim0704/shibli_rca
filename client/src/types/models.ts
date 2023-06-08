@@ -106,6 +106,7 @@ export interface IRegistration extends BaseModel {
   signature: string;
   aadharCard?: string;
   lastSemesterCertificate?: string;
+  transaction: string;
 }
 
 export const genders = ['M', 'F', 'O'] as const;
