@@ -29,7 +29,7 @@ export interface IRegistration extends BaseModel {
   gender: string;
   fatherName: string;
   motherName: string;
-  dateOfBirth: Date; // also calculate age from this
+  dateOfBirth: string; // also calculate age from this
   mobileNumber: string;
   phoneNumber?: string;
   permanentAddress: IAddress;
@@ -71,9 +71,9 @@ const addressSchema = {
 };
 
 const educationSchema = {
-  passYear: { type: Number, required: true },
-  percentage: { type: Number, required: true },
-  boardOrUni: { type: String },
+  passYear: { type: Number, required: true, default: 0 },
+  percentage: { type: Number, required: true, default: 0 },
+  boardOrUni: { type: String, default: '' },
 };
 
 const registrationSchema = new mongoose.Schema<IRegistration>(
@@ -83,7 +83,7 @@ const registrationSchema = new mongoose.Schema<IRegistration>(
     gender: { type: String, enum: genders, required: true },
     fatherName: { type: String, required: true },
     motherName: { type: String, required: true },
-    dateOfBirth: { type: Date, required: true },
+    dateOfBirth: { type: String, required: true },
     mobileNumber: { type: String, required: true },
     phoneNumber: { type: String },
     permanentAddress: addressSchema,
@@ -106,8 +106,8 @@ const registrationSchema = new mongoose.Schema<IRegistration>(
     },
     transactionId: { type: String, required: true },
     agreeToTerms: {
-      informationIsCorrect: { type: Boolean, required: true },
-      rightToChange: { type: Boolean, required: true },
+      informationIsCorrect: { type: Boolean, required: true, default: true },
+      rightToChange: { type: Boolean, required: true, default: true },
     },
     languageOfExam: { type: String, required: true },
     category: { type: String, required: true },
@@ -120,9 +120,9 @@ const registrationSchema = new mongoose.Schema<IRegistration>(
     deleted: { type: Boolean, default: false },
     earlierCompetitiveExams: [
       {
-        name: { type: String, required: true },
-        year: { type: Number, required: true },
-        cleared: { type: Boolean, required: true },
+        name: { type: String, default: '' },
+        year: { type: Number, required: true, default: 0 },
+        cleared: { type: Boolean, default: false },
       },
     ],
     transaction: { type: String, required: true },
