@@ -1,4 +1,3 @@
-import dayjs from 'dayjs';
 import React, { Fragment, useContext } from 'react';
 import { IRegisterPayload } from './stepper';
 import {
@@ -50,7 +49,7 @@ const Confirmation: React.FC<IProps> = ({ payload }) => {
 
         {payload.dateOfBirth ? (
           <Descriptions.Item label='Date of Birth'>
-            {dayjs(payload.dateOfBirth).format('DD-MM-YYYY')}
+            {payload.dateOfBirth as any}
           </Descriptions.Item>
         ) : null}
       </Descriptions>
