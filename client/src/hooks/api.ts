@@ -9,7 +9,6 @@ const instance = axios.create({
     Authorization: `Bearer ${getToken()}`,
     'Access-Control-Allow-Origin': '*',
   },
-  timeout: 5000,
 });
 
 export default instance;
