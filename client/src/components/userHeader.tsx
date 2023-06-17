@@ -41,6 +41,7 @@ const UserHeader: React.FC<IProps> = ({ children }) => {
                     fontSize: isMobile ? 15 : 20,
                     fontWeight: 'bold',
                     color: 'white',
+                    cursor: 'pointer',
                   }}
                   onClick={() => navigate(item.to)}
                 >
