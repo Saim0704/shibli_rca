@@ -21,6 +21,11 @@ const AdminContainer: React.FC<IProps> = ({ children }) => {
       onClick: () => navigate('/admin/registration'),
     },
     {
+      key: 'users',
+      label: 'Users',
+      onClick: () => navigate('/admin/users'),
+    },
+    {
       key: 'gallery',
       label: 'Gallery',
       onClick: () => navigate('/admin/gallery'),

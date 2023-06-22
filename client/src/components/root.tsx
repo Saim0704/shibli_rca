@@ -51,6 +51,11 @@ const AppContainer: React.FC<IContainerProps> = ({ children }) => {
             onClick: () => navigate('/admin/registration'),
           },
           {
+            key: 'users',
+            label: 'Admin - Users',
+            onClick: () => navigate('/admin/users'),
+          },
+          {
             key: 'gallery',
             label: 'Admin - Gallery',
             onClick: () => navigate('/admin/gallery'),

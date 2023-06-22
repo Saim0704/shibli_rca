@@ -6,6 +6,7 @@ import ErrorBoundary from './components/errorBoundary';
 import useSession from './hooks/session';
 import Loading from './components/loading';
 import ForgotPassword from './pages/user/forgot-password';
+import AllUsers from './pages/admin/users';
 
 const Registration = React.lazy(() => import('./pages/admin/registration'));
 const Gallery = React.lazy(() => import('./pages/admin/gallery'));
@@ -40,8 +41,8 @@ const adminRoutes: IRoute[] = [
   { path: '/admin/registration', Component: Registration },
   { path: '/admin/site-settings', Component: SiteSettings },
   { path: '/admin/test-centers', Component: TestCentres },
-	{ path: '/user/change-password', Component: ChangePassword },
-
+  { path: '/admin/users', Component: AllUsers },
+  { path: '/user/change-password', Component: ChangePassword },
 ];
 
 const userRoutes: IRoute[] = [
@@ -60,11 +61,11 @@ const otherRoutes: IRoute[] = [
 
 const unAuthRoutes: IRoute[] = [
   { path: '/', Component: Home },
-	{ path: '/user/auth', Component: Auth },
-	{
-		path: '/user/forgot-password',
-		Component: ForgotPassword,
-	},
+  { path: '/user/auth', Component: Auth },
+  {
+    path: '/user/forgot-password',
+    Component: ForgotPassword,
+  },
 ];
 
 const App = () => {
