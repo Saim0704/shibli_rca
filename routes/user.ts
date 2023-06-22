@@ -5,9 +5,6 @@ export const getUsers = async (req: Request, res: Response) => {
   try {
     const users = await User.find({}).sort({ createdAt: -1 }).lean();
     const newUsers = users.reduce((acc: any, user: any) => {
-      // if (session && (session?.user as IUser)._id === user._id) {
-      //   return acc;
-      // }
       return [
         ...acc,
         {

@@ -351,6 +351,7 @@ export default function CustomTable<RecordType = unknown>({
               pageSize: 10,
               total: tableData.data.length,
               onChange: (page) => setPage(page),
+              pageSizeOptions: [],
             }}
             {...props}
           />

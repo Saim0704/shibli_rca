@@ -5,9 +5,9 @@ export const getAllRegistrations = async (req: Request, res: Response) => {
   try {
     const allRegistrations = await Registration.find({ deleted: false })
       .sort({ createdAt: -1 })
-      .lean()
       .populate('user')
-      .populate('testCenter');
+      .populate('testCenter')
+      .lean();
     return res.status(200).json(allRegistrations);
   } catch (err: any) {
     console.log(err);

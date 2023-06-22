@@ -3,7 +3,7 @@ import { Gallery, IGallery } from 'models/gallery';
 
 export const getGallery = async (req: Request, res: Response) => {
   try {
-    const gallery = await Gallery.find({});
+    const gallery = await Gallery.find({}).sort({ createdAt: -1 }).lean();
     return res.status(200).json(gallery);
   } catch (err: any) {
     console.log(err);

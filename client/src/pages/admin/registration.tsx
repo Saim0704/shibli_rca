@@ -36,31 +36,35 @@ const Registration: React.FC<IProps> = () => {
       title: 'Photograph',
       dataIndex: 'photograph',
       key: 'photograph',
+      width: 100,
       render: (t) => <Image src={t} alt='photograph' width={50} />,
     },
     {
       title: 'Signature',
       dataIndex: 'signature',
       key: 'signature',
+      width: 90,
       render: (t) => <Image src={t} alt='photograph' width={50} />,
     },
     {
       title: 'Name',
       dataIndex: 'user',
       key: 'name',
+      width: 150,
       render: (user) => user?.name,
+    },
+    {
+      title: 'Roll No.',
+      dataIndex: 'rollNumber',
+      key: 'rollNumber',
+      width: 100,
     },
     {
       title: 'Email',
       dataIndex: 'user',
       key: 'email',
+      width: 220,
       render: (user) => user?.email,
-    },
-    {
-      title: 'Created At',
-      dataIndex: 'createdAt',
-      key: 'createdAt',
-      render: (date) => dayjs(date).format('DD-MM-YYYY HH:mm A'),
     },
     {
       title: 'Gender',
@@ -69,22 +73,46 @@ const Registration: React.FC<IProps> = () => {
       render: (t) => (
         <>{t === 'M' ? 'Male' : t === 'F' ? 'Female' : 'Others'}</>
       ),
-      width: 80,
+      width: 70,
     },
     {
-      title: 'Transaction SS',
+      title: 'Created At',
+      dataIndex: 'createdAt',
+      key: 'createdAt',
+      width: 100,
+      render: (date) => (
+        <>
+          {dayjs(date).format('DD-MM-YYYY')}
+          <br />
+          {dayjs(date).format('HH:mm A')}
+        </>
+      ),
+    },
+    {
+      title: 'Txn SS',
       dataIndex: 'transaction',
       key: 'transaction',
+      width: 80,
       render: (t) => <Image src={t} alt='transaction' width={50} />,
     },
-    { title: 'Txn ID', dataIndex: 'transactionId', key: 'transactionId' },
-    { title: 'Roll Number', dataIndex: 'rollNumber', key: 'rollNumber' },
-    { title: 'Category', dataIndex: 'category', key: 'category' },
-    { title: 'Mobile Number', dataIndex: 'mobileNumber', key: 'mobileNumber' },
+    {
+      title: 'Txn ID',
+      dataIndex: 'transactionId',
+      key: 'transactionId',
+      width: 150,
+    },
+    { title: 'Category', dataIndex: 'category', key: 'category', width: 160 },
+    {
+      title: 'Mobile No.',
+      dataIndex: 'mobileNumber',
+      key: 'mobileNumber',
+      width: 120,
+    },
     {
       title: 'Test Center',
       dataIndex: 'testCenter',
       key: 'testCenter',
+      width: 160,
       render: (t) => t?.address,
     },
   ];
@@ -141,7 +169,6 @@ const Registration: React.FC<IProps> = () => {
   };
 
   const infoTransformer = (data: IRegistration) => {
-    console.log(data);
     return <RegistrationInfo data={data} />;
   };
 
@@ -156,7 +183,7 @@ const Registration: React.FC<IProps> = () => {
         <Form form={form} layout='vertical' onFinish={handleSubmitTestCenter}>
           <Form.Item
             name='testCenter'
-            label='Choose Test Center'
+            label='Choose New Test Center'
             rules={[{ required: true, message: 'Test Center is required' }]}
           >
             <Select
@@ -180,6 +207,7 @@ const Registration: React.FC<IProps> = () => {
             post: '/registrations',
           }}
           tableColumns={columns}
+          scroll={{ x: 1500 }}
           AddFormInner={<></>}
           moreActions={(record) => (
             <div className='flex gap-2'>

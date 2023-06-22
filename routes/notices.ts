@@ -3,7 +3,7 @@ import { INotice, Notice } from 'models/notice';
 
 export const getNotices = async (req: Request, res: Response) => {
   try {
-    const notices = await Notice.find({});
+    const notices = await Notice.find({}).sort({ createdAt: -1 }).lean();
     return res.status(200).json(notices);
   } catch (err: any) {
     console.log(err);
