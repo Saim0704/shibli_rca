@@ -35,6 +35,11 @@ const EducationContainer: React.FC<IEducationContainerProps> = ({
         />
       </Form.Item>
 
+      <Typography.Text>
+        {name === 'Graduation'
+          ? 'If your result is awaited, please enter 10 in the percentage section'
+          : ''}
+      </Typography.Text>
       <Form.Item
         name={`${name}.percentage`}
         label='Percentage - ( Do not include % sign )'
