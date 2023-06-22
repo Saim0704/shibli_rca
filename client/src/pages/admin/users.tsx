@@ -11,6 +11,7 @@ const AllUsers: React.FC<IProps> = () => {
   const columns: TableProps<IUser>['columns'] = [
     { title: 'Name', dataIndex: 'name' },
     { title: 'Email', dataIndex: 'email' },
+    { title: 'User Type', dataIndex: 'type' },
     {
       title: 'Created At',
       dataIndex: 'createdAt',
@@ -27,10 +28,10 @@ const AllUsers: React.FC<IProps> = () => {
             get: '/users',
           }}
           AddFormInner={null}
-          scroll={{ x: 800 }}
+          scroll={{ x: 700 }}
           tableColumns={columns}
           pagination={{
-            pageSize: 80,
+            pageSize: 100,
           }}
         />
       </div>
