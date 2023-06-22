@@ -4,6 +4,7 @@ import { Registration } from 'models/registration';
 export const getAllRegistrations = async (req: Request, res: Response) => {
   try {
     const allRegistrations = await Registration.find({ deleted: false })
+      .sort({ createdAt: -1 })
       .lean()
       .populate('user')
       .populate('testCenter');

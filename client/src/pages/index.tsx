@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useContext, useEffect, useState } from 'react';
 import { Button, Card, Carousel, Image, Typography } from 'antd';
 import { IEvent, IGallery, INotice } from '../types/models';
 import { useNavigate } from 'react-router-dom';
@@ -7,9 +7,11 @@ import UserHeader from '../components/userHeader';
 import MainCarousel from '../components/mainCarousel';
 import Principles from '../components/principles';
 import instance from '../hooks/api';
+import { authContext } from '../hooks/auth';
 
 const Home = () => {
   const navigate = useNavigate();
+  const [auth] = useContext(authContext);
   const [notices, setNotices] = useState<INotice[]>([]);
   const [gallery, setGallery] = useState<IGallery[]>([]);
   const [events, setEvents] = useState<IEvent[]>([]);
@@ -44,18 +46,20 @@ const Home = () => {
           ))}
         </Carousel>
 
-        <div className='relative -top-[150px] flex items-center justify-center flex-col'>
-          <Button
-            className='w-[250px] h-[60px] font-bold text-lg'
-            type='primary'
-            onClick={() => navigate('/exam/register')}
-          >
-            Register for Exam
-          </Button>
-          <Typography.Text className='block font-bold text-lg text-red-700 bg-white bg-opacity-40 rounded-md py-1 px-4 mt-2 backdrop:opacity-10'>
-            You have to create account First
-          </Typography.Text>
-        </div>
+        {auth.authenticated && auth.user && auth.user.type !== 'ADMIN' ? (
+          <div className='relative -top-[150px] flex items-center justify-center flex-col'>
+            <Button
+              className='w-[250px] h-[60px] font-bold text-lg'
+              type='primary'
+              onClick={() => navigate('/exam/register')}
+            >
+              Register for Exam
+            </Button>
+            <Typography.Text className='block font-bold text-lg text-red-700 bg-white bg-opacity-40 rounded-md py-1 px-4 mt-2 backdrop:opacity-10'>
+              You have to create account First
+            </Typography.Text>
+          </div>
+        ) : null}
 
         <Principles />
 

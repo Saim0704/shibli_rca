@@ -9,6 +9,7 @@ import { useQuery } from '@tanstack/react-query';
 import useSession from '../../hooks/session';
 import { uiContext } from '../../hooks/ui';
 import { DeleteOutlined, EditOutlined } from '@ant-design/icons';
+import dayjs from 'dayjs';
 
 interface IProps {}
 
@@ -32,7 +33,7 @@ const Registration: React.FC<IProps> = () => {
 
   const columns: TableProps<IRegistration>['columns'] = [
     {
-      title: 'Image',
+      title: 'Photograph',
       dataIndex: 'photograph',
       key: 'photograph',
       render: (t) => <Image src={t} alt='photograph' width={50} />,
@@ -47,13 +48,19 @@ const Registration: React.FC<IProps> = () => {
       title: 'Name',
       dataIndex: 'user',
       key: 'name',
-      render: (user) => user.name,
+      render: (user) => user?.name,
     },
     {
       title: 'Email',
       dataIndex: 'user',
       key: 'email',
-      render: (user) => user.email,
+      render: (user) => user?.email,
+    },
+    {
+      title: 'Created At',
+      dataIndex: 'createdAt',
+      key: 'createdAt',
+      render: (date) => dayjs(date).format('DD-MM-YYYY HH:mm A'),
     },
     {
       title: 'Gender',
@@ -70,11 +77,7 @@ const Registration: React.FC<IProps> = () => {
       key: 'transaction',
       render: (t) => <Image src={t} alt='transaction' width={50} />,
     },
-    {
-      title: 'Txn ID',
-      dataIndex: 'transactionId',
-      key: 'transactionId',
-    },
+    { title: 'Txn ID', dataIndex: 'transactionId', key: 'transactionId' },
     { title: 'Roll Number', dataIndex: 'rollNumber', key: 'rollNumber' },
     { title: 'Category', dataIndex: 'category', key: 'category' },
     { title: 'Mobile Number', dataIndex: 'mobileNumber', key: 'mobileNumber' },
