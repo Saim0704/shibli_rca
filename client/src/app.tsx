@@ -5,6 +5,7 @@ import AppContainer from './components/root';
 import ErrorBoundary from './components/errorBoundary';
 import useSession from './hooks/session';
 import Loading from './components/loading';
+import ForgotPassword from './pages/user/forgot-password';
 
 const Registration = React.lazy(() => import('./pages/admin/registration'));
 const Gallery = React.lazy(() => import('./pages/admin/gallery'));
@@ -32,14 +33,15 @@ interface IRoute {
 }
 
 const adminRoutes: IRoute[] = [
-  { path: '/admin/registration', Component: Registration },
-  { path: '/admin/gallery', Component: Gallery },
-  { path: '/admin/events', Component: Events },
-  { path: '/admin/notices', Component: Notices },
-  { path: '/admin/test-centers', Component: TestCentres },
   { path: '/admin/current-affairs', Component: CurrentAffairs },
+  { path: '/admin/events', Component: Events },
+  { path: '/admin/gallery', Component: Gallery },
+  { path: '/admin/notices', Component: Notices },
+  { path: '/admin/registration', Component: Registration },
   { path: '/admin/site-settings', Component: SiteSettings },
-  { path: '/user/change-password', Component: ChangePassword },
+  { path: '/admin/test-centers', Component: TestCentres },
+	{ path: '/user/change-password', Component: ChangePassword },
+
 ];
 
 const userRoutes: IRoute[] = [
@@ -57,8 +59,12 @@ const otherRoutes: IRoute[] = [
 ];
 
 const unAuthRoutes: IRoute[] = [
-  { path: '/user/auth', Component: Auth },
   { path: '/', Component: Home },
+	{ path: '/user/auth', Component: Auth },
+	{
+		path: '/user/forgot-password',
+		Component: ForgotPassword,
+	},
 ];
 
 const App = () => {
