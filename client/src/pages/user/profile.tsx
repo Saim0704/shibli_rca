@@ -1,9 +1,11 @@
 import { Typography } from 'antd';
-import { Fragment, useEffect } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 // import { useReactToPrint } from 'react-to-print';
 // import { IRegistration, ITestCenter } from '../../types/models';
 import { useNavigate } from 'react-router-dom';
 import instance from '../../hooks/api';
+import useSession from '../../hooks/session';
+import Loading from '../../components/loading';
 
 // interface IProfileProps {
 //   data: IRegistration & {
@@ -22,20 +24,40 @@ import instance from '../../hooks/api';
 
 const Profile = () => {
   const navigate = useNavigate();
-  // const [props, setProps] = useState<IProps | null>(null);
+  const {
+    me: { authenticated, loading, user },
+  } = useSession();
+  const [pageLoading, setPageLoading] = useState(true);
 
-  useEffect(() => {
-    const getData = async () => {
-      // NOT EXISTS
+  const getInitialData = async () => {
+    if (loading) return;
+    if (!authenticated) {
+      navigate('/user/auth?redirect=exam-register', { replace: true });
+      return;
+    }
+
+    if (user?.type === 'ADMIN') {
+      navigate('/', { replace: true });
+      return;
+    }
+
+    try {
+      setPageLoading(true);
       const { data } = await instance.get('/profile');
       if (!data || !data.registration || !data.registration.registerComplete) {
-        navigate('/exam/register');
+        navigate('/exam/register', { replace: true });
         return;
       }
-      // setProps(data);
-    };
-    getData().then().catch(console.log);
-  }, []);
+    } catch (err: any) {
+      console.log(err);
+    } finally {
+      setPageLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    getInitialData();
+  }, [loading, user, authenticated]);
 
   // const data: IProfileProps['data'] = {
   //   ...(props?.registration as IRegistration),
@@ -48,6 +70,8 @@ const Profile = () => {
   // const printPdf = useReactToPrint({
   //   content: () => printContainerRef.current,
   // });
+
+  if (pageLoading) return <Loading loading={pageLoading} />;
 
   return (
     <Fragment>

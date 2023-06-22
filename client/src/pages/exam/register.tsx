@@ -28,38 +28,52 @@ import useSession from '../../hooks/session';
 import { useNavigate } from 'react-router-dom';
 import instance from '../../hooks/api';
 import { uiContext } from '../../hooks/ui';
+import Loading from '../../components/loading';
 
 const Register = () => {
   const [form] = Form.useForm();
   const [payload, setPayload] = useState<IRegisterPayload>(defaultPayload);
   const [{ isMobile }] = useContext(uiContext);
   const navigate = useNavigate();
+  const [pageLoading, setPageLoading] = useState(true);
 
   const {
     me: { authenticated, loading, user },
     getToken,
   } = useSession();
 
-  useEffect(() => {
+  const checkRegister = async () => {
     if (loading) return;
-    else if (!authenticated) {
+    if (!authenticated) {
       navigate('/user/auth?redirect=exam-register', { replace: true });
-    } else if (user?.type === 'ADMIN') {
-      navigate('/user/auth', { replace: true });
-    } else {
-      const getInitialData = async () => {
-        const { data } = await instance.get('/initial');
-        if (data.registration && data.testCenter) {
-          if (data.registration.registerComplete) {
-            navigate('/user/profile', { replace: true });
-          } else {
-            setPayload((prev) => ({ ...prev, ...data.registration }));
-          }
-        }
-      };
-      getInitialData().then().catch(console.log);
+      return;
     }
-  }, []);
+
+    if (user?.type === 'ADMIN') {
+      navigate('/', { replace: true });
+      return;
+    }
+
+    try {
+      setPageLoading(true);
+      const { data } = await instance.get('/initial');
+      if (data.registration && data.testCenter) {
+        if (data.registration.registerComplete) {
+          navigate('/user/profile', { replace: true });
+        } else {
+          setPayload((prev) => ({ ...prev, ...data.registration }));
+        }
+      }
+    } catch (err: any) {
+      console.log(err);
+    } finally {
+      setPageLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    checkRegister().then().catch(console.log);
+  }, [authenticated, user, loading]);
 
   const setStep = (step: number) => () => {
     setPayload((prev) => ({ ...prev, currentStep: step }));
@@ -125,6 +139,8 @@ const Register = () => {
   const commonStepStyles: React.CSSProperties = {
     cursor: 'pointer',
   };
+
+  if (pageLoading) return <Loading loading={pageLoading} />;
 
   return (
     <Fragment>

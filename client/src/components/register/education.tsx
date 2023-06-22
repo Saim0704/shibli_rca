@@ -1,4 +1,4 @@
-import { DatePicker, Form, Input, Typography } from 'antd';
+import { DatePicker, Form, Input, InputNumber, Typography } from 'antd';
 import dayjs from 'dayjs';
 import { IRegisterPayload } from './stepper';
 import React, { Fragment, useContext } from 'react';
@@ -37,24 +37,23 @@ const EducationContainer: React.FC<IEducationContainerProps> = ({
 
       <Form.Item
         name={`${name}.percentage`}
-        label='Percentage'
+        label='Percentage - ( Do not include % sign )'
         rules={[
           { required: true },
           {
-            validator: (_, value) => {
-              if (value > 100 || value < 0) {
-                return Promise.reject('Percentage must be between 0 and 100');
-              }
-              return Promise.resolve('');
-            },
+            validator: (_, value) =>
+              value > 100 || value < 0
+                ? Promise.reject('Percentage must be between 0 and 100')
+                : Promise.resolve(''),
           },
         ]}
       >
-        <Input
+        <InputNumber
+          className='w-full'
           size={isMobile ? 'middle' : 'large'}
           placeholder='Enter Percentage'
           value={education.percentage}
-          onChange={(e) => onChange('percentage', e.target.value)}
+          onChange={(num) => onChange('percentage', num)}
         />
       </Form.Item>
 
