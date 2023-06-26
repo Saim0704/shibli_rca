@@ -40,6 +40,7 @@ import { getProfile, initialGet } from 'routes/misc';
 import mongoose from 'mongoose';
 import { checkAuth } from 'middlewares/auth';
 import { upload } from 'middlewares/upload';
+import { getAdmitCard } from 'routes/admit-card';
 
 const app = express();
 mongoose.set('debug', true);
@@ -49,8 +50,6 @@ app.use(
       'https://shiblirca.in',
       'http://localhost:3000',
       'https://shiblirca.netlify.app',
-      'https://647793280995750909f5cb8c--shiblirca.netlify.app',
-      'https://6478a013330dda08ae3fde07--shiblirca.netlify.app',
     ],
     credentials: true,
   })
@@ -123,6 +122,7 @@ app.post('/register', checkAuth, registerForExam);
 
 app.get('/initial', checkAuth, initialGet);
 app.get('/profile', checkAuth, getProfile);
+app.post('/admit-card/:id', checkAuth, getAdmitCard);
 
 const port = process.env.PORT || 4000;
 const startServer = async () => {

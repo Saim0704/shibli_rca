@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" style="box-sizing: border-box; margin: 0; padding: 0">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shibli RCA Admit Card</title>
+    <style>
+      body {
+        border-width: 1px;
+        border-color: black;
+        border-style: dashed;
+        background: white;
+        color: black;
+        margin: 0;
+      }
+
+      hr {
+        margin-top: 3px;
+        margin-bottom: 3px;
+      }
+
+      .inner-padding {
+        padding: 5px;
+      }
+
+      .top-user-details {
+        font-size: small;
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+
+      .top-actual-image {
+        height: 100%;
+        max-width: 100%;
+      }
+
+      .top-image-container {
+        border: 1px solid black;
+        width: 120px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: xx-small;
+      }
+
+      .middle-signature-box-container {
+        display: grid;
+        border-bottom: 1px solid black;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 8px;
+      }
+
+      .middle-signature-box {
+        border: 1px solid black;
+      }
+
+      .middle-signature-box > .empty-div {
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid black;
+      }
+
+      .middle-signature-box > .description-div {
+        font-size: small;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: 45px;
+      }
+
+      .middle-signature-box > .description-div > p {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: x-small;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inner-padding" style="display: flex; padding-bottom: 0">
+      <img
+        style="height: 60px; width: 60px"
+        src="https://shiblirca.in/favicon.ico"
+        alt="Shibli RCA Logo"
+      />
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          flex-grow: 1;
+        "
+      >
+        <h4 style="font-weight: bolder; margin-top: 0; margin-bottom: 0">
+          SHIBLI RESIDENTIAL COACHING ACADEMY
+        </h4>
+        <p style="margin-top: 0; margin-bottom: 0">
+          Azamgarh, Uttar Pradesh 276001
+        </p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="inner-padding">
+      <h4 style="text-align: center; margin-top: 0">
+        <u>ADMIT CARD (SHIBLI RCA ENTRANCE TEST 2023-24)</u>
+      </h4>
+      <div
+        style="
+          display: flex;
+          font-size: small;
+          padding-left: 5px;
+          padding-right: 5px;
+        "
+      >
+        <div style="font-size: small; flex-grow: 1">
+          <p class="top-user-details">
+            <b>DATE OF TEST</b> &nbsp; : &nbsp; 10-07-2023
+          </p>
+          <p class="top-user-details">
+            <b>TIME OF TEST</b> &nbsp; : &nbsp; 10:00 AM TO 01:00 PM
+          </p>
+
+          <p class="top-user-details">
+            <b>ROLL NUMBER</b> &nbsp; : &nbsp; <%= rollNumber %>
+          </p>
+          <p class="top-user-details">
+            <b>NAME</b> &nbsp; : &nbsp; <%= name %>
+          </p>
+          <p class="top-user-details">
+            <b>FATHER&apos;S NAME</b> &nbsp; : &nbsp; <%= fatherName %>
+          </p>
+          <p class="top-user-details">
+            <b>GENDER</b> &nbsp; : &nbsp; <%= gender %>
+          </p>
+          <p class="top-user-details">
+            <b>CATEGORY</b> &nbsp; : &nbsp; <%= category %>
+          </p>
+          <p class="top-user-details">
+            <b>CENTRE</b> &nbsp; : &nbsp; <%= centre %>
+          </p>
+        </div>
+
+        <div style="display: flex; font-size: x-small">
+          <div class="top-image-container">
+            AFFIX YOUR RECENT PASSPORT SIZE PHOTOGRAPH WHICH SHOULD MATCH WITH
+            THE ONE UPLOADED IN THE ONLINE APPLICATION
+          </div>
+
+          <div class="top-image-container">
+            <img
+              class="top-actual-image"
+              src="<%= photo %>"
+              alt="PHOTOGRAPH UPLOADED THROUGH PORTAL"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="inner-padding middle-signature-box-container">
+      <div class="middle-signature-box">
+        <div class="empty-div">
+          <img
+            class="top-actual-image"
+            src="<%= signature %>"
+            alt="Candidate Signature"
+          />
+        </div>
+        <div class="description-div">
+          <b>Uploaded Signature of the Candidate</b>
+        </div>
+      </div>
+
+      <div class="middle-signature-box">
+        <div class="empty-div"></div>
+        <div class="description-div">
+          <b>Candidate&apos;s Signature</b>
+          <p>
+            (To be Signed in the presence of Invigilator at the time of Test)
+          </p>
+        </div>
+      </div>
+
+      <div class="middle-signature-box">
+        <div class="empty-div"></div>
+        <div class="description-div">
+          <b>Invigilator&apos;s Signature</b>
+          <p>
+            (Candidate&apos;s signature obtained in my presence and photograph)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="font-size: small; padding-left: 1rem; padding-right: 1rem">
+      Note: Candidate's signature should tally with the signature uploaded. In
+      case of discrepancy, candidate will not be allowed to appear in the test.
+    </div>
+
+    <hr />
+
+    <div style="float: right; margin-right: 30px; font-size: small">
+      <img
+        style="height: 50px"
+        src="https://drive.google.com/uc?export=view&id=1ZGrNNFCplRrkFVnynzCNioSTtyoTa0uO"
+        alt="Shibli RCA Controller of Examinations"
+      />
+
+      <p style="text-align: center; margin-top: 0; margin-bottom: 0">
+        <b>Controller of Examinations</b>
+      </p>
+      <p style="text-align: center; margin-top: 0; margin-bottom: 0">
+        SHIBLI RCA
+      </p>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h5 style="text-align: center; margin-bottom: 0">
+      <u>Important Instructions for Candidate</u>
+    </h5>
+    <div class="inner-padding" style="padding-left: 0">
+      <ol style="font-size: small">
+        <li>
+          Please affix your recent self-attested passport size coloured
+          photograph in the space provided above.
+        </li>
+        <li>
+          Keep a photocopy of this Admit Card with you for your future reference
+          as this copy will be collected by the Invigilator.
+        </li>
+        <li>
+          The candidate, before appearing in the written examination, should
+          satisfy himself/herself regarding eligibility criteria for the
+          programme with regard to prescribed qualification as mentioned in the
+          Detailed Notification.
+        </li>
+        <li>
+          The candidate must mark the answer in the OMR Sheet by completely
+          darkening the relevant circle using BLUE/BLACK ball point pen only.
+        </li>
+        <li>
+          Change of answer is not permitted. Any change in answer by way of
+          using the white/correction fluid, rubbing, erasing, smudging will
+          entail cancellation of OMR Sheet.
+        </li>
+        <li>
+          Appearance in the written examination is, however, provisional and
+          does not entitle the candidate for any claim for the admission. The
+          candidate will be treated as de-barred ab-initio at any stage of the
+          entrance process in case he/she does not fulfill any eligibility
+          conditions for the admission.
+        </li>
+        <li>The OMR Sheet will not be replaced in any circumstances.</li>
+        <li>
+          Candidates are advised to make sure about the location of their
+          examination centre in advance so that they reach the examination
+          centre on the specified date at least 30 minutes before commencement
+          of the examination. No candidate will be allowed to enter the
+          Examination Hall after 10 minutes of the start of exam.
+        </li>
+        <li>
+          The candidate has to appear at the allotted centre only, failing which
+          his/her candidature will stand cancelled.
+        </li>
+        <li>
+          No candidate will be permitted to leave the examination centre before
+          the end of exam.
+        </li>
+        <li>
+          Before leaving the examination hall, the candidate must deposit
+          his/her Admit Card, OMR Sheet and Descriptive Answer Sheet. Failure to
+          do so would result in cancellation of candidature.
+        </li>
+        <li>
+          Use of MOBILE PHONE, BLUETOOTH DEVICE, ELECTRONIC/SMART WATCH or any
+          other communication device or any other electronic gadgets like
+          CALCULATOR, etc or any other material inside the examination room is
+          strictly prohibited.
+        </li>
+        <li>
+          Any candidate found using unfair means or violating any instructions
+          or found involved in any undesirable activity will be de-barred from
+          the examination.
+        </li>
+        <li>
+          The candidate must show Government issued Identity Card: Driving
+          License, PAN Card, Aadhaar etc. to the invigilator during examination
+          for verification.
+        </li>
+        <li>
+          Impersonation, use of unfair means shall lead to cancellation of the
+          candidate over & above other suitable action(s) against the candidate.
+          Candidate should bring their own stationary materials.
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
