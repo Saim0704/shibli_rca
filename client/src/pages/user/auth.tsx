@@ -50,7 +50,6 @@ const Auth = () => {
 
   const onFinish = async (values: any) => {
     try {
-      await form.validateFields();
       if (authType === 'register') {
         await createAccount(
           values.name,
