@@ -3,7 +3,7 @@ import { ITestCenter, TestCenter } from 'models/testCenter';
 
 export const getTestCenters = async (req: Request, res: Response) => {
   try {
-    const testCenters = await TestCenter.find({})
+    const testCenters = await TestCenter.find({ deleted: false })
       .sort({ createdAt: -1 })
       .lean();
     return res.status(200).json(testCenters);

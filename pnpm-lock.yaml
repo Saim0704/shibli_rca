@@ -51,7 +51,7 @@ devDependencies:
     version: 0.4.3
   '@rollup/plugin-typescript':
     specifier: ^11.1.1
-    version: 11.1.1(typescript@5.0.4)
+    version: 11.1.1(tslib@2.6.0)(typescript@5.0.4)
   '@types/bcrypt':
     specifier: ^5.0.0
     version: 5.0.0
@@ -76,6 +76,9 @@ devDependencies:
   rollup-plugin-includepaths:
     specifier: ^0.2.4
     version: 0.2.4
+  tslib:
+    specifier: ^2.6.0
+    version: 2.6.0
   typescript:
     specifier: ^5.0.4
     version: 5.0.4
@@ -184,7 +187,7 @@ packages:
       terser: 5.17.6
     dev: true
 
-  /@rollup/plugin-typescript@11.1.1(typescript@5.0.4):
+  /@rollup/plugin-typescript@11.1.1(tslib@2.6.0)(typescript@5.0.4):
     resolution: {integrity: sha512-Ioir+x5Bejv72Lx2Zbz3/qGg7tvGbxQZALCLoJaGrkNXak/19+vKgKYJYM3i/fJxvsb23I9FuFQ8CUBEfsmBRg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -199,6 +202,7 @@ packages:
     dependencies:
       '@rollup/pluginutils': 5.0.2
       resolve: 1.22.2
+      tslib: 2.6.0
       typescript: 5.0.4
     dev: true
 
@@ -407,7 +411,7 @@ packages:
     resolution: {integrity: sha512-x1FCFnFifvYDDzTaLII71vG5uvDwgtmDTEVWAxrgeiR8VjMONcCXJx7E+USjDtHlwFmt9MysbqgF9b9Vjr6w+w==}
     engines: {node: '>=4'}
     dependencies:
-      tslib: 2.5.2
+      tslib: 2.6.0
     dev: false
     optional: true
 
@@ -1825,10 +1829,8 @@ packages:
       punycode: 2.3.0
     dev: false
 
-  /tslib@2.5.2:
-    resolution: {integrity: sha512-5svOrSA2w3iGFDs1HibEVBGbDrAY82bFQ3HZ3ixB+88nsbsWQoKqDRb5UBYAUPEzbBn6dAp5gRNXglySbx1MlA==}
-    dev: false
-    optional: true
+  /tslib@2.6.0:
+    resolution: {integrity: sha512-7At1WUettjcSRHXCyYtTselblcHl9PJFFVKiCAy/bY97+BPZXSQ2wbq0P9s8tK2G7dFQfNnlJnPAiArVBVBsfA==}
 
   /type-check@0.3.2:
     resolution: {integrity: sha512-ZCmOJdvOWDBYJlzAoFkC+Q0+bUyEOS1ltgp1MGU03fqHG+dbi9tBFU2Rd9QKiDZFAYrhPh2JUf7rZRIuHRKtOg==}

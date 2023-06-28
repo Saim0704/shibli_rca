@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Form, Input, Button, Typography, message } from 'antd';
+import { Form, Input, Button, Typography, message, InputNumber } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import useSession from '../../hooks/session';
 import Loading from '../../components/loading';
@@ -29,12 +29,18 @@ const Auth = () => {
   const createAccount = async (
     name: string,
     email: string,
-    password: string
+    password: string,
+    mobile: number
   ) => {
-    if (!name || !email || !password)
+    if (!name || !email || !password || !mobile)
       message.error('Please enter all the fields');
     try {
-      await instance.post('/create-account', { email, password, name });
+      await instance.post('/create-account', {
+        email,
+        password,
+        name,
+        mobile: mobile.toString(),
+      });
       message.success('Account created successfully!');
     } catch (err: any) {
       message.error('User Already exists!');
@@ -44,9 +50,15 @@ const Auth = () => {
 
   const onFinish = async (values: any) => {
     try {
-      if (authType === 'register')
-        await createAccount(values.name, values.email, values.password);
-
+      await form.validateFields();
+      if (authType === 'register') {
+        await createAccount(
+          values.name,
+          values.email,
+          values.password,
+          values.mobile
+        );
+      }
       const res = await login({
         email: values.email,
         password: values.password,
@@ -95,7 +107,7 @@ const Auth = () => {
           onFinish={onFinish}
           onFinishFailed={onFinishFailed}
         >
-          {authType === 'register' && (
+          {authType === 'register' ? (
             <Form.Item
               label='Name'
               name='name'
@@ -106,7 +118,33 @@ const Auth = () => {
                 size={isMobile ? 'middle' : 'large'}
               />
             </Form.Item>
-          )}
+          ) : null}
+
+          {authType === 'register' ? (
+            <Form.Item
+              label='Mobile'
+              name='mobile'
+              rules={[
+                {
+                  required: true,
+                  message: 'Please enter your mobile number',
+                },
+                {
+                  validator: (_, value, callback) => {
+                    if (value.toString().length !== 10) {
+                      callback('Mobile number must be of 10 digits');
+                    }
+                  },
+                },
+              ]}
+            >
+              <InputNumber
+                className='w-full'
+                placeholder='Enter your Mobile Number'
+                size={isMobile ? 'middle' : 'large'}
+              />
+            </Form.Item>
+          ) : null}
 
           <Form.Item
             label='Email'
@@ -144,6 +182,7 @@ const Auth = () => {
                 type='primary'
                 size={isMobile ? 'middle' : 'large'}
                 htmlType='submit'
+                onClick={() => onFinish(form.getFieldsValue())}
               >
                 {authType === 'register' ? 'Create Account' : 'Login'}
               </Button>

@@ -41,14 +41,20 @@ export const getMeInitial = async (req: Request, res: Response) => {
 
 export const createAccount = async (req: Request, res: Response) => {
   try {
-    const { email, password, name } = req.body;
-    if (!email || !password || !name) throw new Error('Bad request');
+    const { email, password, name, mobile } = req.body;
+    if (!email || !password || !name || !mobile) throw new Error('Bad request');
 
     const hash = await getHash(password);
     const userExists = await User.findOne({ email });
     if (userExists) throw new Error('User already exists');
 
-    const user = new User<IUser>({ name, email, password: hash, type: 'USER' });
+    const user = new User<IUser>({
+      name,
+      email,
+      password: hash,
+      type: 'USER',
+      mobile,
+    });
     await user.save();
     return res.status(200).json({ message: 'User created' });
   } catch (err: any) {

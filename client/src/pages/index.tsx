@@ -38,7 +38,7 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <Fragment>
       <UserHeader>
         <Carousel autoplay arrows className='w-screen' dotPosition='top'>
           {[3, 1, 2, 4, 5, 6].map((n) => (
@@ -46,8 +46,8 @@ const Home = () => {
           ))}
         </Carousel>
 
-        {auth.authenticated && auth.user && auth.user.type !== 'ADMIN' ? (
-          <div className='relative -top-[150px] flex items-center justify-center flex-col'>
+        <div className='relative -top-[150px] flex items-center justify-center flex-col'>
+          {auth.authenticated && auth.user && auth.user.type !== 'ADMIN' ? (
             <Button
               className='w-[250px] h-[60px] font-bold text-lg'
               type='primary'
@@ -55,11 +55,12 @@ const Home = () => {
             >
               Register for Exam
             </Button>
+          ) : (
             <Typography.Text className='block font-bold text-lg text-red-700 bg-white bg-opacity-40 rounded-md py-1 px-4 mt-2 backdrop:opacity-10'>
               You have to create account First
             </Typography.Text>
-          </div>
-        ) : null}
+          )}
+        </div>
 
         <Principles />
 
@@ -179,7 +180,7 @@ const Home = () => {
           </Fragment>
         )}
       </UserHeader>
-    </>
+    </Fragment>
   );
 };
 

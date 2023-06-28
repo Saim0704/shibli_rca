@@ -9,6 +9,7 @@ export interface IUser extends BaseModel {
   password: string;
   email: string;
   type: IUserType;
+  mobile: string;
 }
 
 const userSchema = new mongoose.Schema<IUser>(
@@ -17,6 +18,7 @@ const userSchema = new mongoose.Schema<IUser>(
     password: { type: String, required: true },
     email: { type: String, required: true },
     type: { type: String, required: true, enum: UserTypes },
+    mobile: { type: String, required: true },
   },
   { timestamps: true }
 );
