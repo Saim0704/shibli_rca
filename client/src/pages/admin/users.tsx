@@ -11,6 +11,7 @@ const AllUsers: React.FC<IProps> = () => {
   const columns: TableProps<IUser>['columns'] = [
     { title: 'Name', dataIndex: 'name' },
     { title: 'Email', dataIndex: 'email' },
+    { title: 'Mobile', dataIndex: 'mobile' },
     { title: 'User Type', dataIndex: 'type' },
     {
       title: 'Created At',

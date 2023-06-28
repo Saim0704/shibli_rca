@@ -10,6 +10,7 @@ export const getUsers = async (req: Request, res: Response) => {
         {
           name: user.name,
           email: user.email,
+          mobile: user.mobile,
           type: user.type,
           createdAt: user.createdAt,
           updatedAt: user.updatedAt,
