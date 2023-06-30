@@ -33,17 +33,17 @@ const Registration: React.FC<IProps> = () => {
 
   const columns: TableProps<IRegistration>['columns'] = [
     {
-      title: 'Photograph',
+      title: 'Photo',
       dataIndex: 'photograph',
       key: 'photograph',
-      width: 100,
+      width: 80,
       render: (t) => <Image src={t} alt='photograph' width={50} />,
     },
     {
-      title: 'Signature',
+      title: 'Sig.',
       dataIndex: 'signature',
       key: 'signature',
-      width: 90,
+      width: 80,
       render: (t) => <Image src={t} alt='photograph' width={50} />,
     },
     {
@@ -57,7 +57,7 @@ const Registration: React.FC<IProps> = () => {
       title: 'Roll No.',
       dataIndex: 'rollNumber',
       key: 'rollNumber',
-      width: 100,
+      width: 80,
     },
     {
       title: 'Email',
@@ -76,6 +76,39 @@ const Registration: React.FC<IProps> = () => {
       width: 70,
     },
     {
+      title: 'Txn SS',
+      dataIndex: 'transaction',
+      key: 'transaction',
+      width: 80,
+      render: (t) => <Image src={t} alt='transaction' width={50} />,
+    },
+    {
+      title: 'Txn ID',
+      dataIndex: 'transactionId',
+      key: 'transactionId',
+      width: 130,
+    },
+    { title: 'Category', dataIndex: 'category', key: 'category', width: 120 },
+    {
+      title: 'Mobile No.',
+      dataIndex: 'mobileNumber',
+      key: 'mobileNumber',
+      width: 100,
+    },
+    {
+      title: 'Test Center',
+      dataIndex: 'testCenter',
+      key: 'testCenter',
+      width: 100,
+      render: (t) => t?.address,
+    },
+    {
+      title: 'Language',
+      dataIndex: 'languageOfExam',
+      key: 'languageOfExam',
+      width: 120,
+    },
+    {
       title: 'Created At',
       dataIndex: 'createdAt',
       key: 'createdAt',
@@ -87,33 +120,6 @@ const Registration: React.FC<IProps> = () => {
           {dayjs(date).format('HH:mm A')}
         </>
       ),
-    },
-    {
-      title: 'Txn SS',
-      dataIndex: 'transaction',
-      key: 'transaction',
-      width: 80,
-      render: (t) => <Image src={t} alt='transaction' width={50} />,
-    },
-    {
-      title: 'Txn ID',
-      dataIndex: 'transactionId',
-      key: 'transactionId',
-      width: 150,
-    },
-    { title: 'Category', dataIndex: 'category', key: 'category', width: 160 },
-    {
-      title: 'Mobile No.',
-      dataIndex: 'mobileNumber',
-      key: 'mobileNumber',
-      width: 120,
-    },
-    {
-      title: 'Test Center',
-      dataIndex: 'testCenter',
-      key: 'testCenter',
-      width: 160,
-      render: (t) => t?.address,
     },
   ];
 
