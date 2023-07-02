@@ -1,13 +1,22 @@
 import { Request, Response } from 'express';
 import { Registration } from 'models/registration';
+import { PaginatedRequestQueryParams } from './base';
 
-export const getAllRegistrations = async (req: Request, res: Response) => {
+export const getAllRegistrations = async (
+  req: PaginatedRequestQueryParams,
+  res: Response
+) => {
   try {
-    const allRegistrations = await Registration.find({ deleted: false })
-      .sort({ createdAt: -1 })
-      .populate('user')
-      .populate('testCenter')
-      .lean();
+    const allRegistrations = await Registration.paginate(
+      {},
+      {
+        sort: { createdAt: -1 },
+        lean: true,
+        populate: ['user', 'testCenter'],
+        page: req.query.pageNumber,
+        limit: req.query.pageSize,
+      }
+    );
     return res.status(200).json(allRegistrations);
   } catch (err: any) {
     console.log(err);

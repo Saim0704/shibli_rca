@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
-import { BaseModel } from 'models';
+import { BaseModel, Document, PaginateModel } from 'models';
+import paginate from 'mongoose-paginate-v2';
 
 export interface IEvent extends BaseModel {
   name: string;
@@ -22,4 +23,9 @@ const eventSchema = new mongoose.Schema<IEvent>(
   { timestamps: true }
 );
 
-export const Event = mongoose.model<IEvent>('Event', eventSchema);
+eventSchema.plugin(paginate);
+
+export const Event = mongoose.model<Document<IEvent>, PaginateModel<IEvent>>(
+  'Event',
+  eventSchema
+);

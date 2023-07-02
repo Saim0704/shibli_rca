@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
-import { BaseModel } from 'models';
+import { BaseModel, Document, PaginateModel } from 'models';
+import paginate from 'mongoose-paginate-v2';
 
 export const UserTypes = ['ADMIN', 'USER'] as const;
 export type IUserType = (typeof UserTypes)[number];
@@ -23,4 +24,9 @@ const userSchema = new mongoose.Schema<IUser>(
   { timestamps: true }
 );
 
-export const User = mongoose.model<IUser>('User', userSchema);
+userSchema.plugin(paginate);
+
+export const User = mongoose.model<Document<IUser>, PaginateModel<IUser>>(
+  'User',
+  userSchema
+);

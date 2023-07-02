@@ -1,5 +1,29 @@
 import { Request, Response } from 'express';
 import { ITestCenter, TestCenter } from 'models/testCenter';
+import { PaginatedRequestQueryParams } from './base';
+
+export const getTestCenterForAdmin = async (
+  req: PaginatedRequestQueryParams,
+  res: Response
+) => {
+  try {
+    const testCenters = await TestCenter.paginate(
+      {},
+      {
+        sort: { deleted: 1, createdAt: -1 },
+        lean: true,
+        page: req.query.pageNumber || 1,
+        limit: req.query.pageSize || 15,
+      }
+    );
+    return res.status(200).json(testCenters);
+  } catch (err: any) {
+    console.log(err);
+    return res.status(500).json({
+      message: err.message || 'Internal server error',
+    });
+  }
+};
 
 export const getTestCenters = async (req: Request, res: Response) => {
   try {

@@ -1,9 +1,21 @@
 import { Request, Response } from 'express';
 import { Gallery, IGallery } from 'models/gallery';
+import { PaginatedRequestQueryParams } from './base';
 
-export const getGallery = async (req: Request, res: Response) => {
+export const getGallery = async (
+  req: PaginatedRequestQueryParams,
+  res: Response
+) => {
   try {
-    const gallery = await Gallery.find({}).sort({ createdAt: -1 }).lean();
+    const gallery = await Gallery.paginate(
+      {},
+      {
+        sort: { createdAt: -1 },
+        lean: true,
+        page: req.query.pageNumber,
+        limit: req.query.pageSize,
+      }
+    );
     return res.status(200).json(gallery);
   } catch (err: any) {
     console.log(err);

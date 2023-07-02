@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
-import { BaseModel } from 'models';
+import { BaseModel, Document, PaginateModel } from 'models';
+import paginate from 'mongoose-paginate-v2';
 
 export interface IAchievement extends BaseModel {
   title: string;
@@ -18,7 +19,9 @@ const achievementSchema = new mongoose.Schema<IAchievement>(
   { timestamps: true }
 );
 
-export const Achievement = mongoose.model<IAchievement>(
-  'Achievement',
-  achievementSchema
-);
+achievementSchema.plugin(paginate);
+
+export const Achievement = mongoose.model<
+  Document<IAchievement>,
+  PaginateModel<IAchievement>
+>('Achievement', achievementSchema);

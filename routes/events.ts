@@ -1,9 +1,21 @@
 import { Request, Response } from 'express';
 import { Event, IEvent } from 'models/event';
+import { PaginatedRequestQueryParams } from './base';
 
-export const getEvents = async (req: Request, res: Response) => {
+export const getEvents = async (
+  req: PaginatedRequestQueryParams,
+  res: Response
+) => {
   try {
-    const events = await Event.find({}).sort({ createdAt: -1 }).lean();
+    const events = await Event.paginate(
+      {},
+      {
+        sort: { createdAt: -1 },
+        lean: true,
+        page: req.query.pageNumber,
+        limit: req.query.pageSize,
+      }
+    );
     return res.status(200).json(events);
   } catch (err: any) {
     console.log(err);

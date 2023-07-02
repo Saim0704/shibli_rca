@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
-import { BaseModel } from 'models';
+import { BaseModel, Document, PaginateModel } from 'models';
+import paginate from 'mongoose-paginate-v2';
 
 export interface INotice extends BaseModel {
   title: string;
@@ -16,4 +17,9 @@ const noticeSchema = new mongoose.Schema<INotice>(
   { timestamps: true }
 );
 
-export const Notice = mongoose.model<INotice>('Notice', noticeSchema);
+noticeSchema.plugin(paginate);
+
+export const Notice = mongoose.model<Document<INotice>, PaginateModel<INotice>>(
+  'Notice',
+  noticeSchema
+);

@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
-import { BaseModel } from 'models';
+import { BaseModel, Document, PaginateModel } from 'models';
+import paginate from 'mongoose-paginate-v2';
 
 export interface ITestCenter extends BaseModel {
   codeName: string;
@@ -16,7 +17,9 @@ const testCenterSchema = new mongoose.Schema<ITestCenter>({
   deleted: { type: Boolean, default: false },
 });
 
-export const TestCenter = mongoose.model<ITestCenter>(
-  'TestCenter',
-  testCenterSchema
-);
+testCenterSchema.plugin(paginate);
+
+export const TestCenter = mongoose.model<
+  Document<ITestCenter>,
+  PaginateModel<ITestCenter>
+>('TestCenter', testCenterSchema);

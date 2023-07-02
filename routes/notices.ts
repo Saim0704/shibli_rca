@@ -1,9 +1,21 @@
 import { Request, Response } from 'express';
 import { INotice, Notice } from 'models/notice';
+import { PaginatedRequestQueryParams } from './base';
 
-export const getNotices = async (req: Request, res: Response) => {
+export const getNotices = async (
+  req: PaginatedRequestQueryParams,
+  res: Response
+) => {
   try {
-    const notices = await Notice.find({}).sort({ createdAt: -1 }).lean();
+    const notices = await Notice.paginate(
+      {},
+      {
+        sort: { createdAt: -1 },
+        lean: true,
+        page: req.query.pageNumber,
+        limit: req.query.pageSize,
+      }
+    );
     return res.status(200).json(notices);
   } catch (err: any) {
     console.log(err);

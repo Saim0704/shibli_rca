@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
-import { BaseModel } from 'models';
+import { BaseModel, Document, PaginateModel } from 'models';
+import paginate from 'mongoose-paginate-v2';
 
 export interface IGallery extends BaseModel {
   name: string;
@@ -16,4 +17,9 @@ const gallerySchema = new mongoose.Schema<IGallery>(
   { timestamps: true }
 );
 
-export const Gallery = mongoose.model<IGallery>('Gallery', gallerySchema);
+gallerySchema.plugin(paginate);
+
+export const Gallery = mongoose.model<
+  Document<IGallery>,
+  PaginateModel<IGallery>
+>(',Gallery', gallerySchema);

@@ -24,16 +24,13 @@ const AllUsers: React.FC<IProps> = () => {
     <AdminContainer>
       <div className='m-4 bg-white rounded-md shadow-md'>
         <CustomTable<IUser>
-          tableTitle='All Users'
+          tableTitle='Users'
           endpoint={{
             get: '/users',
           }}
           AddFormInner={null}
           scroll={{ x: 700 }}
           tableColumns={columns}
-          pagination={{
-            pageSize: 100,
-          }}
         />
       </div>
     </AdminContainer>

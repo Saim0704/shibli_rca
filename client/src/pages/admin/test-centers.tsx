@@ -7,8 +7,13 @@ interface IProps {}
 
 const TestCentres: React.FC<IProps> = () => {
   const columns: TableProps<ITestCenter>['columns'] = [
-    { title: 'Code Name', dataIndex: 'codeName', width: 120 },
     { title: 'Address', dataIndex: 'address' },
+    {
+      title: 'Active',
+      dataIndex: 'deleted',
+      render: (deleted) => (deleted ? 'No' : 'Yes'),
+    },
+    { title: 'Code Name', dataIndex: 'codeName', width: 120 },
     { title: 'Mobile Number', dataIndex: 'mobileNumber' },
     { title: 'Email', dataIndex: 'email' },
   ];
@@ -19,7 +24,7 @@ const TestCentres: React.FC<IProps> = () => {
         <CustomTable<ITestCenter>
           tableTitle='Test Centres'
           endpoint={{
-            get: '/test-centers',
+            get: '/admin/test-centres',
             post: '/test-centers',
             put: '/test-centers',
           }}

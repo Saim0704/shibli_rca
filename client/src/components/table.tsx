@@ -73,13 +73,15 @@ export default function CustomTable<RecordType = unknown>({
   const [modal, setModal] = useState(initialState);
   const [form] = Form.useForm();
   const { getToken } = useSession();
-  const [page, setPage] = useState(1);
+  const [pageNumber, setPageNumber] = useState(1);
+  const [pageSize, setPageSize] = useState(15);
 
-  const { data: tableData } = useQuery({
-    queryKey: [tableTitle],
+  const tableQuery = useQuery({
+    queryKey: [tableTitle, pageNumber, pageSize],
     queryFn: () => {
       return instance.get(endpoint.get, {
         headers: { Authorization: `Bearer ${getToken()}` },
+        params: { pageNumber, pageSize, admin: true },
       });
     },
   });
@@ -177,7 +179,7 @@ export default function CustomTable<RecordType = unknown>({
   const allCols: TableProps<RecordType>['columns'] = [
     {
       title: 'Sl. No.',
-      render: (_, __, index) => `${(page - 1) * 10 + index + 1}.`,
+      render: (_, __, index) => `${(pageNumber - 1) * pageSize + index + 1}.`,
       width: 100,
       align: 'center',
     },
@@ -320,7 +322,10 @@ export default function CustomTable<RecordType = unknown>({
       </Modal>
 
       <div className='flex items-center justify-between m-[10px] gap-3 pt-[10px]'>
-        <Typography.Title level={4}>{tableTitle}</Typography.Title>
+        <Typography.Title level={4}>
+          {tableTitle} &nbsp; &nbsp; &nbsp; Total : &nbsp;
+          {tableQuery.isLoading ? 0 : tableQuery.data?.data.totalDocs}
+        </Typography.Title>
         <div className='flex items-center gap-3'>
           {addButtonLabel ? (
             <Button
@@ -335,27 +340,32 @@ export default function CustomTable<RecordType = unknown>({
       </div>
 
       <div style={{ width: '100%', overflowX: 'auto' }}>
-        {tableData ? (
-          <Table
-            size='small'
-            sticky
-            scroll={{ x: 1000 }}
-            // @ts-ignore
-            columns={allCols}
-            // @ts-ignore
-            rowKey={(record) => record._id}
-            // @ts-ignore
-            dataSource={tableData.data}
-            pagination={{
-              current: page,
-              pageSize: 10,
-              total: tableData.data.length,
-              onChange: (page) => setPage(page),
-              pageSizeOptions: [],
-            }}
-            {...props}
-          />
-        ) : null}
+        <Table
+          size='small'
+          sticky
+          scroll={{ x: 1000 }}
+          // @ts-ignore
+          columns={allCols}
+          // @ts-ignore
+          rowKey={(record) => record._id}
+          // @ts-ignore
+          dataSource={tableQuery.isLoading ? [] : tableQuery.data?.data.docs}
+          pagination={{
+            position: ['bottomRight'],
+            defaultPageSize: pageSize,
+            defaultCurrent: pageNumber,
+            total: tableQuery.isLoading ? 0 : tableQuery.data?.data.totalDocs,
+            hideOnSinglePage: true,
+            size: 'default',
+            onChange: (pageNo) => setPageNumber(pageNo),
+            pageSizeOptions: ['10', '15', '20', '25', '30'],
+            onShowSizeChange: (page, limit) => {
+              setPageSize(limit);
+              setPageNumber(page);
+            },
+          }}
+          {...props}
+        />
       </div>
     </>
   );

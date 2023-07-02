@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
-import { BaseModel } from 'models';
+import { BaseModel, Document, PaginateModel } from 'models';
+import paginate from 'mongoose-paginate-v2';
 
 export interface ITestimonial extends BaseModel {
   name: string;
@@ -18,7 +19,9 @@ const testimonialSchema = new mongoose.Schema<ITestimonial>(
   { timestamps: true }
 );
 
-export const Testimonial = mongoose.model<ITestimonial>(
-  'Testimonial',
-  testimonialSchema
-);
+testimonialSchema.plugin(paginate);
+
+export const Testimonial = mongoose.model<
+  Document<ITestimonial>,
+  PaginateModel<ITestimonial>
+>('Testimonial', testimonialSchema);

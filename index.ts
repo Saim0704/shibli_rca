@@ -25,7 +25,7 @@ import { getNotices } from 'routes/notices';
 import { createNotice } from 'routes/notices';
 import { updateNotice } from 'routes/notices';
 import { deleteNotice } from 'routes/notices';
-import { getTestCenters } from 'routes/test-centers';
+import { getTestCenterForAdmin, getTestCenters } from 'routes/test-centers';
 import { createTestCenter } from 'routes/test-centers';
 import { updateTestCenter } from 'routes/test-centers';
 import { deleteTestCenter } from 'routes/test-centers';
@@ -104,6 +104,7 @@ app.put('/notices', checkAuth, updateNotice);
 app.delete('/notices', checkAuth, deleteNotice);
 
 app.get('/test-centers', getTestCenters);
+app.get('/admin/test-centres', checkAuth, getTestCenterForAdmin);
 app.post('/test-centers', checkAuth, createTestCenter);
 app.put('/test-centers', checkAuth, updateTestCenter);
 app.delete('/test-centers', checkAuth, deleteTestCenter);

@@ -5,3 +5,6 @@ export interface BaseModel {
   createdAt?: Date;
   updatedAt?: Date;
 }
+
+export type Document<T> = Omit<mongoose.Document, '_id'> & T;
+export type PaginateModel<T> = mongoose.PaginateModel<Document<T>>;

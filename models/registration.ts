@@ -1,7 +1,8 @@
 import mongoose from 'mongoose';
-import { BaseModel } from 'models';
+import { BaseModel, Document, PaginateModel } from 'models';
 import { IUser } from 'models/user';
 import { ITestCenter } from 'models/testCenter';
+import paginate from 'mongoose-paginate-v2';
 
 export interface IAddress {
   cityOrTown: string;
@@ -130,7 +131,9 @@ const registrationSchema = new mongoose.Schema<IRegistration>(
   { timestamps: true }
 );
 
-export const Registration = mongoose.model<IRegistration>(
-  'Registration',
-  registrationSchema
-);
+registrationSchema.plugin(paginate);
+
+export const Registration = mongoose.model<
+  Document<IRegistration>,
+  PaginateModel<IRegistration>
+>('Registration', registrationSchema);
