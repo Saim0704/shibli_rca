@@ -1,4 +1,4 @@
-import { Typography } from 'antd';
+import { Typography, message } from 'antd';
 import { Fragment, useEffect, useState } from 'react';
 // import { useReactToPrint } from 'react-to-print';
 // import { IRegistration, ITestCenter } from '../../types/models';
@@ -45,7 +45,8 @@ const Profile = () => {
       setPageLoading(true);
       const { data } = await instance.get('/profile');
       if (!data || !data.registration || !data.registration.registerComplete) {
-        navigate('/exam/register', { replace: true });
+        message.error('You have not registered for the exam yet');
+        navigate('/', { replace: true });
         return;
       }
     } catch (err: any) {

@@ -91,11 +91,11 @@ const AppContainer: React.FC<IContainerProps> = ({ children }) => {
   const userHeaderItems: MenuProps['items'] =
     authenticated && user?.type === 'USER'
       ? [
-          {
-            key: 'register',
-            label: 'Register for Exam',
-            onClick: () => navigate('/exam/register'),
-          },
+          // {
+          //   key: 'register',
+          //   label: 'Register for Exam',
+          //   onClick: () => navigate('/exam/register'),
+          // },
           {
             key: 'profile',
             label: 'Profile',

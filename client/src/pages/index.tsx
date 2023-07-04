@@ -1,17 +1,13 @@
 import dayjs from 'dayjs';
-import { Fragment, useContext, useEffect, useState } from 'react';
-import { Button, Card, Carousel, Image, Typography } from 'antd';
+import { Fragment, useEffect, useState } from 'react';
+import { Card, Carousel, Image, Typography } from 'antd';
 import { IEvent, IGallery, INotice } from '../types/models';
-import { useNavigate } from 'react-router-dom';
 import UserHeader from '../components/userHeader';
 import MainCarousel from '../components/mainCarousel';
 import Principles from '../components/principles';
 import instance from '../hooks/api';
-import { authContext } from '../hooks/auth';
 
 const Home = () => {
-  const navigate = useNavigate();
-  const [auth] = useContext(authContext);
   const [notices, setNotices] = useState<INotice[]>([]);
   const [gallery, setGallery] = useState<IGallery[]>([]);
   const [events, setEvents] = useState<IEvent[]>([]);
@@ -46,7 +42,7 @@ const Home = () => {
           ))}
         </Carousel>
 
-        <div className='relative -top-[150px] flex items-center justify-center flex-col'>
+        {/* <div className='relative -top-[150px] flex items-center justify-center flex-col'>
           {auth.authenticated && auth.user && auth.user.type !== 'ADMIN' ? (
             <Button
               className='w-[250px] h-[60px] font-bold text-lg'
@@ -60,7 +56,7 @@ const Home = () => {
               You have to create account First
             </Typography.Text>
           )}
-        </div>
+        </div> */}
 
         <Principles />
 
