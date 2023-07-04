@@ -8,7 +8,7 @@ export const getAllRegistrations = async (
 ) => {
   try {
     const allRegistrations = await Registration.paginate(
-      {},
+      { deleted: false },
       {
         sort: { createdAt: -1 },
         lean: true,
