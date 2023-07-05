@@ -1,16 +1,20 @@
 import dayjs from 'dayjs';
 import { Fragment, useEffect, useState } from 'react';
-import { Card, Carousel, Image, Typography } from 'antd';
+import { Button, Card, Carousel, Image, Typography } from 'antd';
 import { IEvent, IGallery, INotice } from '../types/models';
 import UserHeader from '../components/userHeader';
 import MainCarousel from '../components/mainCarousel';
 import Principles from '../components/principles';
-import instance from '../hooks/api';
+import instance, { baseURL } from '../hooks/api';
+import useSession from '../hooks/session';
 
 const Home = () => {
   const [notices, setNotices] = useState<INotice[]>([]);
   const [gallery, setGallery] = useState<IGallery[]>([]);
   const [events, setEvents] = useState<IEvent[]>([]);
+  const {
+    me: { user, authenticated },
+  } = useSession();
 
   const getNotices = async () => {
     const { data } = await instance.get('/notices');
@@ -41,6 +45,20 @@ const Home = () => {
             <MainCarousel key={n} alt='carousel items' url={`/home${n}.jpeg`} />
           ))}
         </Carousel>
+
+        {authenticated && user && user.type !== 'ADMIN' ? (
+          <div className='relative -top-[150px] flex items-center justify-center flex-col'>
+            <Button
+              className='w-[250px] h-[60px] font-bold text-lg'
+              type='primary'
+              onClick={() =>
+                window.open(baseURL + '/admit-card/' + user?.email)
+              }
+            >
+              Download Admit Card
+            </Button>
+          </div>
+        ) : null}
 
         {/* <div className='relative -top-[150px] flex items-center justify-center flex-col'>
           {auth.authenticated && auth.user && auth.user.type !== 'ADMIN' ? (
