@@ -41,6 +41,7 @@ import mongoose from 'mongoose';
 import { checkAuth } from 'middlewares/auth';
 import { upload } from 'middlewares/upload';
 import { getAdmitCard, getAdmitCardByEmail } from 'routes/admit-card';
+import { getAllCenterHtmlData } from 'templates/attendance';
 
 const app = express();
 mongoose.set('debug', true);
@@ -129,6 +130,7 @@ const port = process.env.PORT || 4000;
 const startServer = async () => {
   await mongoose.connect(process.env.MONGO_URI!!);
   console.log('Connected to the database');
+  getAllCenterHtmlData();
   app.listen(port, () => console.log('Server Ready on: ' + port));
 };
 

@@ -4,3 +4,5 @@ build
 .env
 # Local Netlify folder
 .netlify
+data/attendancePdf
+
