@@ -23,7 +23,7 @@ const config = {
 		dev && run(),
 		!dev && terser()
 	],
-	external: ['cors', 'http', 'helmet', 'express', 'mongoose', 'dotenv/config', 'jsonwebtoken', 'bcrypt', 'nodemailer', 'multer', 'multer-storage-cloudinary', 'ejs', 'cloudinary']
+	external: ['cors', 'http', 'helmet', 'express', 'mongoose', 'dotenv/config', 'jsonwebtoken', 'bcrypt', 'nodemailer', 'multer', 'multer-storage-cloudinary', 'ejs', 'cloudinary', 'mongoose-paginate-v2']
 }
 
 export default config

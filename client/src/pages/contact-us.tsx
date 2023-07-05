@@ -44,17 +44,6 @@ const ContactUs: React.FC<IProps> = () => {
               <Typography.Text>Facebook</Typography.Text>
             </div>
           </div>
-
-          <br />
-
-          <Typography.Title level={5} className='font-bold'>
-            If you face any difficulty in filling the registration form, please
-            follow
-            <br />
-            <a href='https://docs.google.com/forms/d/e/1FAIpQLSdfDTtR_rvvNL9hRZIfwIKzcX3bYt_p2AT6Tgsig-1I3_unLA/viewform?usp=pp_url'>
-              this Google form link
-            </a>
-          </Typography.Title>
         </div>
       </UserHeader>
     </>

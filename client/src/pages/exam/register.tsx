@@ -1,3 +1,6 @@
+// import { Button, Form, message, Steps, Typography } from 'antd';
+// import { Fragment, useContext, useEffect, useState } from 'react';
+
 import { Typography } from 'antd';
 import { Fragment } from 'react';
 
@@ -19,6 +22,16 @@ import { Fragment } from 'react';
 // import instance from '../../hooks/api';
 // import { uiContext } from '../../hooks/ui';
 // import Loading from '../../components/loading';
+// import {
+//   BookOutlined,
+//   CheckCircleOutlined,
+//   DollarCircleOutlined,
+//   FileImageOutlined,
+//   HomeOutlined,
+//   InfoCircleOutlined,
+//   ReconciliationOutlined,
+//   SolutionOutlined,
+// } from '@ant-design/icons';
 
 const Register = () => {
   // const [form] = Form.useForm();

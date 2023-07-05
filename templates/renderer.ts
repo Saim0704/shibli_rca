@@ -1,14 +1,15 @@
 import ejs from 'ejs';
 
 interface IData {
-  photo: string;
-  signature: string;
-  rollNumber: string;
   name: string;
   fatherName: string;
-  gender: string;
+  rollNumber: string;
   category: string;
   centre: string;
+  gender: string;
+  photo: string;
+  signature: string;
+  language: string;
 }
 
 export const getRenderHtml = async (data: IData) => {

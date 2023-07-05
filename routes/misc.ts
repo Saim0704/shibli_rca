@@ -32,16 +32,14 @@ export const getProfile = async (req: Request, res: Response) => {
     const configs = await Config.find({}).lean();
     const registration = await Registration.findOne({
       user: new mongoose.Types.ObjectId(req.user?._id),
-    }).populate('user');
-    const testCenter = await TestCenter.findById(
-      registration?.testCenter
-    ).lean();
+    })
+      .populate('user')
+      .populate('testCenter');
 
     return res.status(200).json({
       dateOfExam: configs.find((c) => c.name === 'dateOfExam')?.value,
       timeOfExam: configs.find((c) => c.name === 'timeOfExam')?.value,
       registration,
-      testCenter,
     });
   } catch (err: any) {
     console.log(err);

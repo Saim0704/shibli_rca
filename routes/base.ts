@@ -1,9 +1,6 @@
 import { Request } from 'express';
 
-export type PaginatedRequestQueryParams<
-  Body = object,
-  Params = object
-> = Request<
+export type PaginatedRequestQueryParams<Body = any, Params = any> = Request<
   object,
   object,
   Body,

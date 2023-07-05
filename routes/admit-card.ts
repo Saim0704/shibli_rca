@@ -25,6 +25,7 @@ export const getAdmitCard = async (req: Request, res: Response) => {
       gender: registration.gender,
       photo: registration.photograph,
       signature: registration.signature,
+      language: registration.languageOfExam,
     });
     if (!html) throw new Error('Error in generating admit card');
     return res.status(200).send(html);
