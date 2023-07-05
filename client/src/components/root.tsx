@@ -16,6 +16,7 @@ import { useNavigate } from 'react-router-dom';
 import useSession from '../hooks/session';
 import Loading from './loading';
 import { uiContext } from '../hooks/ui';
+import { baseURL } from '../hooks/api';
 
 interface IContainerProps extends PropsWithChildren {}
 const AppContainer: React.FC<IContainerProps> = ({ children }) => {
@@ -96,6 +97,11 @@ const AppContainer: React.FC<IContainerProps> = ({ children }) => {
           //   label: 'Register for Exam',
           //   onClick: () => navigate('/exam/register'),
           // },
+          {
+            key: 'admitCard',
+            label: 'Get Admit Card',
+            onClick: () => window.open(baseURL + '/admit-card/' + user.email),
+          },
           {
             key: 'profile',
             label: 'Profile',

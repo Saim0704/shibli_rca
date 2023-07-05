@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <title>Shibli RCA Admit Card</title>
+    <script defer>
+      window.print();
+    </script>
     <style>
       body {
         border-width: 1px;
@@ -14,8 +17,8 @@
       }
 
       hr {
-        margin-top: 3px;
-        margin-bottom: 3px;
+        margin-top: 2px;
+        margin-bottom: 2px;
       }
 
       .inner-padding {
@@ -143,9 +146,6 @@
             <b>CATEGORY</b> &nbsp; : &nbsp; <%= category %>
           </p>
           <p class="top-user-details">
-            <b>CENTRE</b> &nbsp; : &nbsp; <%= centre %>
-          </p>
-          <p class="top-user-details">
             <b>LANGUAGE</b> &nbsp; : &nbsp; <%= language %>
           </p>
         </div>
@@ -165,6 +165,9 @@
           </div>
         </div>
       </div>
+      <p class="top-user-details" style="margin-left: 5px">
+        <b>CENTRE</b> &nbsp; : &nbsp; <%= centre %>
+      </p>
     </div>
 
     <hr />
@@ -198,7 +201,7 @@
         <div class="description-div">
           <b>Invigilator&apos;s Signature</b>
           <p>
-            (Candidate&apos;s signature obtained in my presence and photograph)
+            (Candidate&apos;s signature and photograph obtained in my presence)
           </p>
         </div>
       </div>
@@ -213,7 +216,7 @@
 
     <div style="float: right; margin-right: 30px; font-size: small">
       <img
-        style="height: 50px"
+        style="height: 45px; margin-top: 10px"
         src="https://drive.google.com/uc?export=view&id=1ZGrNNFCplRrkFVnynzCNioSTtyoTa0uO"
         alt="Shibli RCA Controller of Examinations"
       />
@@ -232,7 +235,7 @@
     <br />
 
     <h5 style="text-align: center; margin-bottom: 0">
-      <u>Important Instructions for Candidate</u>
+      <u style="margin-left: 2px">Important Instructions for Candidate</u>
     </h5>
     <div class="inner-padding" style="padding-left: 0">
       <ol style="font-size: small">

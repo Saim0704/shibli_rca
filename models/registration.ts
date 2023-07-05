@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
-import { BaseModel, Document, PaginateModel } from 'models';
 import { IUser } from 'models/user';
-import { ITestCenter } from 'models/testCenter';
 import paginate from 'mongoose-paginate-v2';
+import { ITestCenter } from 'models/testCenter';
+import { BaseModel, Document, PaginateModel } from 'models';
 
 export interface IAddress {
   cityOrTown: string;

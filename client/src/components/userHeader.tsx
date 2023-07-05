@@ -52,6 +52,26 @@ const UserHeader: React.FC<IProps> = ({ children }) => {
           </div>
         </Layout.Header>
       )}
+
+      <div className='marquee pt-3 font-md'>
+        <span className='text-white' style={{ fontSize: isMobile ? 14 : 16 }}>
+          Applications are closed for Civil Services Coaching Programme 2023-24
+          {/* <b
+            className='text-red-500 hover:text-red-800 cursor-pointer mx-4'
+            onClick={() => navigate('/exam/register')}
+          >
+            Register Here
+          </b> */}
+          &nbsp; &nbsp; -
+          <a
+            href='https://drive.google.com/file/d/1gqgTEwDjXUCm5YCx3L4iRBJONP8VK89Z/view'
+            target='_blank'
+            className='text-red-500 hover:text-red-800 cursor-pointer mx-4'
+          >
+            <b>Download Notification</b>
+          </a>
+        </span>
+      </div>
       {children}
     </Fragment>
   );

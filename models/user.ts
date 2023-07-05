@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
-import { BaseModel, Document, PaginateModel } from 'models';
 import paginate from 'mongoose-paginate-v2';
+import { BaseModel, Document, PaginateModel } from 'models';
 
 export const UserTypes = ['ADMIN', 'USER'] as const;
 export type IUserType = (typeof UserTypes)[number];

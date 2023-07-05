@@ -40,7 +40,7 @@ import { getProfile, initialGet } from 'routes/misc';
 import mongoose from 'mongoose';
 import { checkAuth } from 'middlewares/auth';
 import { upload } from 'middlewares/upload';
-import { getAdmitCard } from 'routes/admit-card';
+import { getAdmitCard, getAdmitCardByEmail } from 'routes/admit-card';
 
 const app = express();
 mongoose.set('debug', true);
@@ -63,6 +63,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => res.send('<h1>Hello World</h1>'));
+app.get('/admit-card/:email', getAdmitCardByEmail);
 app.get('/health', (req, res) => {
   const healthCheck = {
     uptime: process.uptime(),
@@ -123,7 +124,6 @@ app.post('/register', checkAuth, registerForExam);
 
 app.get('/initial', checkAuth, initialGet);
 app.get('/profile', checkAuth, getProfile);
-app.post('/admit-card/:id', checkAuth, getAdmitCard);
 
 const port = process.env.PORT || 4000;
 const startServer = async () => {

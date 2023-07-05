@@ -3,18 +3,17 @@ import { BaseModel, Document, PaginateModel } from 'models';
 import paginate from 'mongoose-paginate-v2';
 
 export interface ITestCenter extends BaseModel {
-  codeName: string;
   address: string;
-  mobileNumber?: string;
-  email?: string;
+  code: string;
+  location: string;
   deleted: boolean;
 }
 
 const testCenterSchema = new mongoose.Schema<ITestCenter>({
   address: { type: String, required: true },
-  mobileNumber: { type: String },
-  email: { type: String },
   deleted: { type: Boolean, default: false },
+  location: { type: String, required: true },
+  code: { type: String, required: true },
 });
 
 testCenterSchema.plugin(paginate);

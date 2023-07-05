@@ -7,15 +7,15 @@ interface IProps {}
 
 const TestCentres: React.FC<IProps> = () => {
   const columns: TableProps<ITestCenter>['columns'] = [
-    { title: 'Address', dataIndex: 'address' },
+    { title: 'Code', dataIndex: 'code', width: 120 },
     {
       title: 'Active',
+      width: 120,
       dataIndex: 'deleted',
-      render: (deleted) => (deleted ? 'No' : 'Yes'),
+      render: (deleted) => <>{deleted ? 'No' : 'Yes'}</>,
     },
-    { title: 'Code Name', dataIndex: 'codeName', width: 120 },
-    { title: 'Mobile Number', dataIndex: 'mobileNumber' },
-    { title: 'Email', dataIndex: 'email' },
+    { title: 'Address', dataIndex: 'address', width: 200 },
+    { title: 'Location', dataIndex: 'location', width: 800 },
   ];
 
   return (

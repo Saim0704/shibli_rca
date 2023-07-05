@@ -1,4 +1,5 @@
 import run from '@rollup/plugin-run'
+import json from "@rollup/plugin-json"
 import terser from '@rollup/plugin-terser'
 import commonjs from '@rollup/plugin-commonjs'
 import typescript from '@rollup/plugin-typescript'
@@ -21,7 +22,8 @@ const config = {
 		commonjs({ extensions: ['.js', '.ts', '.cjs'] }),
 		typescript(),
 		dev && run(),
-		!dev && terser()
+		!dev && terser(),
+		json()
 	],
 	external: ['cors', 'http', 'helmet', 'express', 'mongoose', 'dotenv/config', 'jsonwebtoken', 'bcrypt', 'nodemailer', 'multer', 'multer-storage-cloudinary', 'ejs', 'cloudinary', 'mongoose-paginate-v2']
 }
