@@ -6853,4 +6853,19 @@
   "photo": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688551886/1688551885621SHAMA-PHOTO%20-%20AFTAB%20ALAM.jpg.jpg",
   "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688551891/1688551890850SHAMA-SI%20-%20AFTAB%20ALAM.jpg.jpg",
   "language": "Hindi"
+},{
+  "_id": {
+    "$oid": "64a6dfa33e8577ca9a7419ea"
+  },
+  "name": "Mariyam bano",
+  "email": "sarahfaizan67@gmail.com",
+  "fatherName": "Abdurrahman",
+  "rollNumber": "230526",
+  "category": "MUSLIM_GENERAL",
+  "centre": "Shibli National PG College, Azamgarh - 276001",
+  "testCentre": "Azamgarh, UP",
+  "gender": "F",
+  "photo": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688657776/1688657775468photo.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688657781/1688657780060sign.jpg.jpg",
+  "language": "Hindi"
 }]

@@ -6,3 +6,4 @@ build
 .netlify
 data/attendancePdf
 
+scripts
