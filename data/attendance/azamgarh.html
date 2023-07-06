@@ -43,9 +43,14 @@
         padding: 5px;
       }
 
+			@media print {
+				.candidate-container {
+					page-break-after: avoid;
+				}
+			}
+
       .middle-signature-box-container {
         display: grid;
-        border-bottom: 1px solid black;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 8px;
       }
@@ -57,7 +62,7 @@
 
       .top-actual-image {
 				height: 100%;
-        max-height: 75px;
+        max-height: 150px;
         max-width: 100%;
       }
 
@@ -155,6 +160,51 @@
       </p>
     </div>
 
+
+    <br />
+    <br />
+
+    <b style="text-align: center">
+      Total Present ................................. (In words)
+      ......................................................................................................
+    </b>
+    
+		<br />
+    <br />
+
+    <b style="text-align: center">
+      Total Absent .................................. (In words)
+      ......................................................................................................
+    </b>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="inner-padding middle-signature-box-container">
+      <div class="middle-signature-box">
+        <div class="empty-div"></div>
+        <div class="description-div">
+          <b>Invigilator&apos;s Signature</b>
+        </div>
+      </div>
+
+      <div class="middle-signature-box">
+        <div class="empty-div"></div>
+        <div class="description-div">
+          <b>Invigilator&apos;s Signature</b>
+        </div>
+      </div>
+
+      <div class="middle-signature-box">
+        <div class="empty-div"></div>
+        <div class="description-div">
+          <b> Head of the Institution&apos;s Signature with Seal </b>
+        </div>
+      </div>
+    </div>
+
     
     <div class="candidate-container">
       <div class="top-image-container">
@@ -198,7 +248,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685205364/1685205364170IMG-20230508-WA0004.jpg.jpg"
@@ -256,7 +306,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685219141/1685219141050Signature.jpg.jpg"
@@ -314,7 +364,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685290844/1685290843957signature.jpg.jpg"
@@ -372,7 +422,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685458017/1685458016378WhatsApp%20Image%202023-05-30%20at%208.16.33%20PM.jpeg.jpg"
@@ -430,7 +480,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685467347/1685467345572IMG_20230530_224602.jpg.jpg"
@@ -488,7 +538,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685510435/1685510435150img20230531_10501471.jpg.jpg"
@@ -546,7 +596,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685535551/1685535551046aliyasign.jpg.jpg"
@@ -604,7 +654,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685553330/1685553329520001.jpeg.jpg"
@@ -662,7 +712,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685554225/1685554224044sign.JPG.jpg"
@@ -720,7 +770,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685601517/1685601516528img20230601_12070219.jpg.jpg"
@@ -778,7 +828,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685650505/1685650504700IMG-20230503-WA0023.jpg.jpg"
@@ -836,7 +886,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685683202/1685683201479WS.jpg.jpg"
@@ -894,7 +944,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685702454/168570245429120230208_174201_2-min%20%281%29_024041.jpg.jpg"
@@ -952,7 +1002,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685714586/1685714585935Eng%20Sign.jpg.jpg"
@@ -1010,7 +1060,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685788605/1685788604081Screenshot_20230603-160559__01.jpg.jpg"
@@ -1068,7 +1118,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685966927/1685966926462SSSSS.jpeg.jpg"
@@ -1126,7 +1176,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686119024/1686119023755Scan2023-06-07_113025.jpg.jpg"
@@ -1184,7 +1234,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686201906/1686201905057KULSUM%20S.jpeg.jpg"
@@ -1242,7 +1292,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686204630/1686204629342SIGN%20KHUSHNUMA.JPG.jpg"
@@ -1300,7 +1350,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686216471/1686216470678IMG-20221214-WA0013.jpg.jpg"
@@ -1358,7 +1408,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686301528/16863015277771.jpg.jpg"
@@ -1416,7 +1466,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686331051/16863310501542.jpg.jpg"
@@ -1474,7 +1524,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686333894/1686333893682ANAS%20ANSARI.jpg.jpg"
@@ -1532,7 +1582,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686372113/1686372112615441.jpg.jpg"
@@ -1590,7 +1640,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686377928/1686377927305Fd4y9e2dSFHPatVdd2PgMSbA.jpg.jpg"
@@ -1648,7 +1698,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686382472/1686382471447443.jpg.jpg"
@@ -1706,7 +1756,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686484591/1686484590453002.jpg.jpg"
@@ -1764,7 +1814,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686485692/1686485691552002.jpg.jpg"
@@ -1822,7 +1872,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686488790/1686488789717AZRA%20SIGNAUTE.jpg.jpg"
@@ -1880,7 +1930,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686547379/1686547378549IMG_20230516_235842.jpg.jpg"
@@ -1938,7 +1988,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686577036/1686577035351PHOTO_20230612_0002.jpg.jpg"
@@ -1996,7 +2046,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686587424/168658742355220210118_194905.jpg.jpg"
@@ -2054,7 +2104,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686635382/1686635381637IMG_0963.jpeg.jpg"
@@ -2112,7 +2162,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686635361/1686635360493sign.jpg"
@@ -2170,7 +2220,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686641091/1686641090043AFR.jpeg.jpg"
@@ -2228,7 +2278,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686641362/1686641361448Scan2023-06-12_1403271.jpg.jpg"
@@ -2286,7 +2336,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686655424/1686655423092Screenshot_20230613_164255.jpg.jpg"
@@ -2344,7 +2394,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686720773/1686720771804WhatsApp%20Image%202023-06-14%20at%2011.01.59.jpeg.jpg"
@@ -2402,7 +2452,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686733828/1686733827976inbound4311655115474567795.jpg.jpg"
@@ -2460,7 +2510,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686743164/1686743163313124.jpg.jpg"
@@ -2518,7 +2568,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686819350/1686819349451IMG-20230608-WA0004.jpg.jpg"
@@ -2576,7 +2626,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686829948/1686829947140FF.jpg.jpg"
@@ -2634,7 +2684,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686887459/1686887458598MAHA.jpg.jpg"
@@ -2692,7 +2742,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686892591/1686892589990IMG_20230528_180831.jpg.jpg"
@@ -2750,7 +2800,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686892469/1686892468434nazr.jpeg.jpg"
@@ -2808,7 +2858,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686937211/1686937210688Kaagaz_20221005_231435898947-1.jpg.jpg"
@@ -2866,7 +2916,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686967389/1686967388426Signature.jpg.jpg"
@@ -2924,7 +2974,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686983317/1686983316314SSS.jpg.jpg"
@@ -2982,7 +3032,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686985306/1686985305561SHAKIRA20230617_12305733.jpg.jpg"
@@ -3040,7 +3090,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687069902/1687069901285FAHH.JPG.jpg"
@@ -3098,7 +3148,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687096156/1687096154950Job_sign.jpeg.jpg"
@@ -3156,7 +3206,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687097310/1687097309889FF.JPG.jpg"
@@ -3214,7 +3264,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687154430/16871544295651234.jpeg.jpg"
@@ -3272,7 +3322,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687166694/1687166693623IMG_20230124_211446_compress8.jpg.jpg"
@@ -3330,7 +3380,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687172899/1687172898922Hassam%20Signature.jpg.jpg"
@@ -3388,7 +3438,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687179188/1687179187559IMG_20230619_0011.jpg.jpg"
@@ -3446,7 +3496,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687179097/1687179096235DD.jpg.jpg"
@@ -3504,7 +3554,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687184174/1687184173159ABU%20ARKAM.jpg.jpg"
@@ -3562,7 +3612,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687189267/1687189266752IMG_20220509_094158_compress31.jpg.jpg"
@@ -3620,7 +3670,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687205053/1687205051957RABBANI%20SIGN.jpg.jpg"
@@ -3678,7 +3728,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687205559/1687205558659Image%20%2847%29.jpg.jpg"
@@ -3736,7 +3786,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687240688/1687240687040SSS.jpg.jpg"
@@ -3794,7 +3844,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687246463/1687246462712IMG_20230531_200309.jpg.jpg"
@@ -3852,7 +3902,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687247574/1687247572885IMG20230620130526.jpg.jpg"
@@ -3910,7 +3960,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687259008/1687259007039IMG-20230620-WA0009.jpg.jpg"
@@ -3968,7 +4018,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687263712/1687263711595Scan2023-06-20_174537_001.jpg.jpg"
@@ -4026,7 +4076,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687263677/1687263676595photo_2023-06-19_19-33-06.jpg.jpg"
@@ -4084,7 +4134,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687282812/1687282811740IMG_20230620_230701.jpg.jpg"
@@ -4142,7 +4192,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687296069/1687296068623IMG_20230621_023637.jpg.jpg"
@@ -4200,7 +4250,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687297366/1687297365239IMG_20230621_031146.jpg.jpg"
@@ -4258,7 +4308,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687325779/1687325779035sign.jpg.jpg"
@@ -4316,7 +4366,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687412700/1687412699616Image0001.jpg.jpg"
@@ -4374,7 +4424,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687436338/1687436337013WhatsApp%20Image%202023-06-22%20at%203.43.00%20AM.jpeg.jpg"
@@ -4432,7 +4482,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687439625/168743962398520230310_163241.jpg.jpg"
@@ -4490,7 +4540,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687514308/1687514307176sign%20%281%29.jpg.jpg"
@@ -4548,7 +4598,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687517883/1687517882607138.jpg.jpg"
@@ -4606,7 +4656,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687583450/1687583449366856.jpg.jpg"
@@ -4664,7 +4714,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687586639/1687586638140IMG_20230624_082253.jpg.jpg"
@@ -4722,7 +4772,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687591064/16875910635735485454.jpeg.jpg"
@@ -4780,7 +4830,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687601549/1687601548302IMG_20230624_0004.jpg.jpg"
@@ -4838,7 +4888,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687609163/1687609161732IMG_20230314_130100.jpg.jpg"
@@ -4896,7 +4946,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687610136/1687610135482AFSHA%20ALI.jpg.jpg"
@@ -4954,7 +5004,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687611103/1687611102409IMG_20230624_0007.jpg.jpg"
@@ -5012,7 +5062,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687612062/1687612061721IMG-20230516-WA0005.jpg.jpg"
@@ -5070,7 +5120,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687701834/1687701833583IMG_20230116_120226%7E2%20%281%29%7E2.jpg.jpg"
@@ -5128,7 +5178,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687703875/1687703874272ABD%20BLACK%20SIGN.jpeg.jpg"
@@ -5186,7 +5236,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687710818/1687710816823IMG_20230515_164039.jpg.jpg"
@@ -5244,7 +5294,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687755921/1687755920423IMG_20230626_0002.jpg.jpg"
@@ -5302,7 +5352,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687756748/1687756747067img20230626_10453411.jpg.jpg"
@@ -5360,7 +5410,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687783179/16877831780411656230372056.jpg.jpg"
@@ -5418,7 +5468,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687789016/1687789015552Picsart_23-01-13_11-24-15-262.jpg.jpg"
@@ -5476,7 +5526,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687845960/1687845959457WhatsApp%20Image%202023-06-27%20at%2011.31.51.jpeg.jpg"
@@ -5534,7 +5584,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687847177/168784717612420230403_020220.jpg.jpg"
@@ -5592,7 +5642,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687887165/168788716367820230611_112954.jpg.jpg"
@@ -5650,7 +5700,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687933370/1687933369354IMG_20230608_190005_11zon.jpg.jpg"
@@ -5708,7 +5758,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687947578/1687947577120imgonline-com-ua-resize-Wpz4quzmSoOy3Z.jpg.jpg"
@@ -5766,7 +5816,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687960581/1687960579662IMG_20230628_192007.jpg.jpg"
@@ -5824,7 +5874,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688094429/1688094428838IMG-20230223-WA0011.jpg.jpg"
@@ -5882,7 +5932,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688107103/1688107102525IMG_20230630_120657_361.jpg.jpg"
@@ -5940,7 +5990,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688116154/1688116153141singh.jpg.jpg"
@@ -5998,7 +6048,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688123308/1688123306999afreen%20sig.jpg.jpg"
@@ -6056,7 +6106,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688125864/1688125862817IMG_20200714_124340_11zon%20%281%29.jpg.jpg"
@@ -6114,7 +6164,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688132428/1688132426934WhatsApp%20Image%202023-06-30%20at%207.03.34%20PM.jpeg.jpg"
@@ -6172,7 +6222,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688135987/1688135986498IMG-20210614-WA0024.jpg.jpg"
@@ -6230,7 +6280,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688143387/1688143386194IMG_20230630_220935.jpg.jpg"
@@ -6288,7 +6338,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688173486/1688173484643IMG_20230701_062038.jpg.jpg"
@@ -6346,7 +6396,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688194099/16881940987470825561001676829702IMG20230219WA0010%20%281%29%20%281%29.jpg.jpg"
@@ -6404,7 +6454,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688207710/16882077097571688142771653.jpg.jpg"
@@ -6462,7 +6512,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688267915/1688267914367IMG-20230521-WA0000.jpg.jpg"
@@ -6520,7 +6570,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688278979/1688278978635IMG-20230624-WA0014.jpg.jpg"
@@ -6578,7 +6628,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688287154/1688287153781ayan%20sign.jpg.jpg"
@@ -6636,7 +6686,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688292696/1688292695840img20230702_15410209.jpg.jpg"
@@ -6694,7 +6744,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688304112/1688304111713WhatsApp%20Image%202023-02-09%20at%2011.41.52%20PM.jpg.jpg"
@@ -6752,7 +6802,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688310602/1688310601609abu%20maaz%20im.jpg.jpg"
@@ -6810,7 +6860,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688345742/1688345741509WhatsApp%20Image%202023-07-03%20at%206.22.46%20AM.jpeg.jpg"
@@ -6868,7 +6918,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688359274/1688359272853IMG_20230630_105049_793.jpg.jpg"
@@ -6926,7 +6976,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688364807/16883648065492211.jpg.jpg"
@@ -6984,7 +7034,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688374692/16883746917960977988001678963338Signature1.jpg.jpg"
@@ -7042,7 +7092,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688379282/1688379279980IMG_20230703_153323.jpg.jpg"
@@ -7100,7 +7150,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688380344/1688380343044sign.jpeg.jpg"
@@ -7158,7 +7208,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688385861/1688385859893IMG_20230703_170909.jpg.jpg"
@@ -7216,7 +7266,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688395573/1688395572088Signn.jpg.jpg"
@@ -7274,7 +7324,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688395984/1688395983392IMG_20230703_201621_572.jpg.jpg"
@@ -7332,7 +7382,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688397911/1688397909849IMG-20230703-WA0048.jpg.jpg"
@@ -7390,7 +7440,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688399138/1688399137190img624.jpg.jpg"
@@ -7448,7 +7498,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688401530/1688401528204IMG_20230703_205016%5B2%5D.jpg.jpg"
@@ -7506,7 +7556,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688404385/1688404384613IMG_20230703_212052.jpg.jpg"
@@ -7564,7 +7614,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688408111/1688408110642IMG-20230703-WA0004.jpg.jpg"
@@ -7622,7 +7672,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688551157/1688551155408IMG_20230601_115134%20-%20Ataullah%20Khan.jpg.jpg"
@@ -7680,7 +7730,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688551891/1688551890850SHAMA-SI%20-%20AFTAB%20ALAM.jpg.jpg"
@@ -7696,45 +7746,5 @@
       </div>
     </div>
     
-
-    <br />
-    <br />
-
-    <b style="text-align: center">
-      Total Present ................................. (In words)
-      ............................................................................................................
-    </b>
-    <br />
-    <br />
-    <b style="text-align: center">
-      Total Absent .................................. (In words)
-      ............................................................................................................
-    </b>
-
-    <br />
-    <br />
-
-    <div class="inner-padding middle-signature-box-container">
-      <div class="middle-signature-box">
-        <div class="empty-div"></div>
-        <div class="description-div">
-          <b>Invigilator&apos;s Signature</b>
-        </div>
-      </div>
-
-      <div class="middle-signature-box">
-        <div class="empty-div"></div>
-        <div class="description-div">
-          <b>Invigilator&apos;s Signature</b>
-        </div>
-      </div>
-
-      <div class="middle-signature-box">
-        <div class="empty-div"></div>
-        <div class="description-div">
-          <b> Head of the Institution&apos;s Signature with Seal </b>
-        </div>
-      </div>
-    </div>
   </body>
 </html>

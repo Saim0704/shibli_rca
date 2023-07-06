@@ -43,9 +43,14 @@
         padding: 5px;
       }
 
+			@media print {
+				.candidate-container {
+					page-break-after: avoid;
+				}
+			}
+
       .middle-signature-box-container {
         display: grid;
-        border-bottom: 1px solid black;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 8px;
       }
@@ -57,7 +62,7 @@
 
       .top-actual-image {
 				height: 100%;
-        max-height: 75px;
+        max-height: 150px;
         max-width: 100%;
       }
 
@@ -155,6 +160,51 @@
       </p>
     </div>
 
+
+    <br />
+    <br />
+
+    <b style="text-align: center">
+      Total Present ................................. (In words)
+      ......................................................................................................
+    </b>
+    
+		<br />
+    <br />
+
+    <b style="text-align: center">
+      Total Absent .................................. (In words)
+      ......................................................................................................
+    </b>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="inner-padding middle-signature-box-container">
+      <div class="middle-signature-box">
+        <div class="empty-div"></div>
+        <div class="description-div">
+          <b>Invigilator&apos;s Signature</b>
+        </div>
+      </div>
+
+      <div class="middle-signature-box">
+        <div class="empty-div"></div>
+        <div class="description-div">
+          <b>Invigilator&apos;s Signature</b>
+        </div>
+      </div>
+
+      <div class="middle-signature-box">
+        <div class="empty-div"></div>
+        <div class="description-div">
+          <b> Head of the Institution&apos;s Signature with Seal </b>
+        </div>
+      </div>
+    </div>
+
     
     <div class="candidate-container">
       <div class="top-image-container">
@@ -198,7 +248,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685244637/1685244636971IMG_20220126_110359.jpg.jpg"
@@ -256,7 +306,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685596665/1685596664493afjal%20sig2.jpg.jpg"
@@ -314,7 +364,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686747549/1686747548400Abdullah%20Raza%20Sign%202kb.jpg.jpg"
@@ -372,7 +422,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687220600/168722059904766.jpg.jpg"
@@ -430,7 +480,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687264526/1687264525002IMG_20230516_170609_445.jpg.jpg"
@@ -488,7 +538,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687332391/1687332391080WhatsApp%20Image%202023-06-21%20at%2010.52.52%20AM.jpeg.jpg"
@@ -546,7 +596,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687378036/1687378035354signatures.jpg.jpg"
@@ -604,7 +654,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687689119/1687689118024photo_2022-12-20_01-44-54.jpg.jpg"
@@ -662,7 +712,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687872638/1687872637795IMG_20230201_191318%20%281%29%20%281%29%20%281%29.jpg.jpg"
@@ -720,7 +770,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688231543/1688231542313resize%20sign.jpg.jpg"
@@ -778,7 +828,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688232170/1688232169121IMG-20220222-WA0011.jpg.jpg"
@@ -836,7 +886,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688302852/1688302851778SIGNATURE.jpg.jpg"
@@ -894,7 +944,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688308308/1688308307138Waseem%20-%20sign.jpg.jpg"
@@ -952,7 +1002,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688365019/168836501877620230324171140_001.jpg.jpg"
@@ -1010,7 +1060,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688372401/1688372400031Signature_page-0001.jpg.jpg"
@@ -1068,7 +1118,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; width: 200px">
-        <div style="border: 1px solid black">
+        <div style="border: 1px solid black; max-height: 75px;">
           <img
             class="top-actual-image"
             src="https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688405716/1688405715422IMG_20230516_170750_899.jpg.jpg"
@@ -1084,45 +1134,5 @@
       </div>
     </div>
     
-
-    <br />
-    <br />
-
-    <b style="text-align: center">
-      Total Present ................................. (In words)
-      ............................................................................................................
-    </b>
-    <br />
-    <br />
-    <b style="text-align: center">
-      Total Absent .................................. (In words)
-      ............................................................................................................
-    </b>
-
-    <br />
-    <br />
-
-    <div class="inner-padding middle-signature-box-container">
-      <div class="middle-signature-box">
-        <div class="empty-div"></div>
-        <div class="description-div">
-          <b>Invigilator&apos;s Signature</b>
-        </div>
-      </div>
-
-      <div class="middle-signature-box">
-        <div class="empty-div"></div>
-        <div class="description-div">
-          <b>Invigilator&apos;s Signature</b>
-        </div>
-      </div>
-
-      <div class="middle-signature-box">
-        <div class="empty-div"></div>
-        <div class="description-div">
-          <b> Head of the Institution&apos;s Signature with Seal </b>
-        </div>
-      </div>
-    </div>
   </body>
 </html>

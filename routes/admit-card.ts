@@ -43,7 +43,7 @@ export const getAdmitCardByEmail = async (req: Request, res: Response) => {
     const { email } = req.params;
     if (!email) throw new Error('Email not found');
 
-    const data = await getHtmlData(email);
+    const data = await getHtmlData(email.split(' ').join('').toLowerCase());
     return res.status(200).send(data);
   } catch (err: any) {
     const errMsg = `<div style="display: flex; align-items: center; justify-content: center; height: 100vh">
