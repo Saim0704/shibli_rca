@@ -6410,5 +6410,47 @@
     "photo": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688657776/1688657775468photo.jpg.jpg",
     "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688657781/1688657780060sign.jpg.jpg",
     "language": "HINDI"
+  },
+  {
+    "_id": "64a98d29808e36c63683746c",
+    "name": "GAUSIYA AHMAD KHAN ",
+    "email": "gausiyaahmadkhan@gmail.com",
+    "fatherName": "AHMAD HUSAIN",
+    "rollNumber": "2303085",
+    "category": "MUSLIM GENERAL",
+    "centre": "Gate-2, Don Bosco Institute of Technology, Adjacent to Sukhdev Vihar Metro Station, Okhla Road, New Delhi - 110025",
+    "testCentre": "Delhi",
+    "gender": "FEMALE",
+    "photo": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688833193/1688833188312photo.jpg.jpg",
+    "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688833199/1688833195843sign.jpg.jpg",
+    "language": "ENGLISH"
+  },
+  {
+    "_id": "64a98991808e36c636837453",
+    "name": "WARIS ALI",
+    "email": "syedwarisali769@gmail.com",
+    "fatherName": "ZAHID MIYAN",
+    "rollNumber": "2303086",
+    "category": "MUSLIM EWS",
+    "centre": "Gate-2, Don Bosco Institute of Technology, Adjacent to Sukhdev Vihar Metro Station, Okhla Road, New Delhi - 110025",
+    "testCentre": "Delhi",
+    "gender": "MALE",
+    "photo": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688832282/1688832272882photo.jpeg.jpg",
+    "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688832288/1688832280269signature.jpeg.jpg",
+    "language": "ENGLISH"
+  },
+  {
+    "_id": "64a99757a6b26b5419afb9ec",
+    "name": "SAMREEN KHATOON",
+    "email": "samreenkhatoon@gmail.com",
+    "fatherName": "MOHAMMAD ILIYAS",
+    "rollNumber": "2301132",
+    "category": "MUSLIM OBC",
+    "centre": "Shibli National PG College, Azamgarh - 276001",
+    "testCentre": "Azamgarh, UP",
+    "gender": "FEMALE",
+    "photo": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688835841/1688835832233photo.jpg.jpg",
+    "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688835845/1688835843238sign.jpg.jpg",
+    "language": "HINDI"
   }
 ]
