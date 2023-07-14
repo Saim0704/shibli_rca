@@ -5,16 +5,12 @@ import { IEvent, IGallery, INotice } from '../types/models';
 import UserHeader from '../components/userHeader';
 import MainCarousel from '../components/mainCarousel';
 import Principles from '../components/principles';
-import instance, { baseURL } from '../hooks/api';
-import useSession from '../hooks/session';
+import instance from '../hooks/api';
 
 const Home = () => {
   const [notices, setNotices] = useState<INotice[]>([]);
   const [gallery, setGallery] = useState<IGallery[]>([]);
   const [events, setEvents] = useState<IEvent[]>([]);
-  const {
-    me: { user, authenticated },
-  } = useSession();
 
   const getNotices = async () => {
     const { data } = await instance.get('/notices');
@@ -46,19 +42,19 @@ const Home = () => {
           ))}
         </Carousel>
 
-        {authenticated && user && user.type !== 'ADMIN' ? (
-          <div className='relative -top-[150px] flex items-center justify-center flex-col'>
-            <Button
-              className='w-[250px] h-[60px] font-bold text-lg'
-              type='primary'
-              onClick={() =>
-                window.open(baseURL + '/admit-card/' + user?.email)
-              }
-            >
-              Download Admit Card
-            </Button>
-          </div>
-        ) : null}
+        <div className='relative -top-[150px] flex items-center justify-center flex-col'>
+          <Button
+            className='h-[50px] font-bold text-md'
+            type='primary'
+            onClick={() =>
+              window.open(
+                'https://drive.google.com/file/d/1EnZIqTirZi8zrits-tYAX-prCk3g4-eJ/view'
+              )
+            }
+          >
+            Shibli RCA Entrance Exam 2023 Answer Key
+          </Button>
+        </div>
 
         {/* <div className='relative -top-[150px] flex items-center justify-center flex-col'>
           {auth.authenticated && auth.user && auth.user.type !== 'ADMIN' ? (
