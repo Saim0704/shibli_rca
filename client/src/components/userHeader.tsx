@@ -63,6 +63,14 @@ const UserHeader: React.FC<IProps> = ({ children }) => {
             Register Here
           </b> */}
           <a
+            href='https://drive.google.com/file/d/1gqgTEwDjXUCm5YCx3L4iRBJONP8VK89Z/view'
+            target='_blank'
+            className='text-red-500 hover:text-red-800 cursor-pointer mx-4'
+          >
+            <b>Download Notification</b>
+          </a>
+          &nbsp; -
+          <a
             href='https://drive.google.com/file/d/1EnZIqTirZi8zrits-tYAX-prCk3g4-eJ/view'
             target='_blank'
             className='text-red-500 hover:text-red-800 cursor-pointer mx-4'
