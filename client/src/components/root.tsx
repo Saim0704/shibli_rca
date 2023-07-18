@@ -1,22 +1,22 @@
 import React, { PropsWithChildren, useContext, useLayoutEffect } from 'react';
 import {
-  Button,
   ConfigProvider,
-  Dropdown,
   Image,
   Layout,
-  MenuProps,
+  // Button,
+  // Dropdown,
+  // MenuProps,
   theme,
   Typography,
 } from 'antd';
 import enUs from 'antd/locale/en_US';
 import constants from '../utils/constants';
-import { UserOutlined } from '@ant-design/icons';
+// import { UserOutlined } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
-import useSession from '../hooks/session';
+// import useSession from '../hooks/session';
 import Loading from './loading';
 import { uiContext } from '../hooks/ui';
-import { baseURL } from '../hooks/api';
+// import { baseURL } from '../hooks/api';
 
 interface IContainerProps extends PropsWithChildren {}
 const AppContainer: React.FC<IContainerProps> = ({ children }) => {
@@ -25,10 +25,10 @@ const AppContainer: React.FC<IContainerProps> = ({ children }) => {
   } = theme.useToken();
   const [ui, setUi] = useContext(uiContext);
   const navigate = useNavigate();
-  const {
-    me: { authenticated, user },
-    logout,
-  } = useSession();
+  // const {
+  //   me: { authenticated, user },
+  //    logout,
+  // } = useSession();
 
   useLayoutEffect(() => {
     const setWindowWidth = () => {
@@ -41,99 +41,99 @@ const AppContainer: React.FC<IContainerProps> = ({ children }) => {
     return () => window.removeEventListener('resize', setWindowWidth);
   }, []);
 
-  const commonHeaderItems: MenuProps['items'] = [];
+  // const commonHeaderItems: MenuProps['items'] = [];
 
-  const adminHeaderItems: MenuProps['items'] =
-    authenticated && user?.type === 'ADMIN'
-      ? [
-          {
-            key: 'registration',
-            label: 'Admin - Registrations',
-            onClick: () => navigate('/admin/registration'),
-          },
-          {
-            key: 'users',
-            label: 'Admin - Users',
-            onClick: () => navigate('/admin/users'),
-          },
-          {
-            key: 'gallery',
-            label: 'Admin - Gallery',
-            onClick: () => navigate('/admin/gallery'),
-          },
-          {
-            key: 'events',
-            label: 'Admin - Events',
-            onClick: () => navigate('/admin/events'),
-          },
-          {
-            key: 'notices',
-            label: 'Admin - Notices',
-            onClick: () => navigate('/admin/notices'),
-          },
-          {
-            key: 'test-centres',
-            label: 'Admin - Test Centers',
-            onClick: () => navigate('/admin/test-centers'),
-          },
-          {
-            key: 'current-affairs',
-            label: 'Admin - Current Affairs',
-            onClick: () => navigate('/admin/current-affairs'),
-          },
-          {
-            key: 'site-settings',
-            label: 'Admin - Site Settings',
-            onClick: () => navigate('/admin/site-settings'),
-          },
-        ]
-      : [];
+  // const adminHeaderItems: MenuProps['items'] =
+  //   authenticated && user?.type === 'ADMIN'
+  //     ? [
+  //         {
+  //           key: 'registration',
+  //           label: 'Admin - Registrations',
+  //           onClick: () => navigate('/admin/registration'),
+  //         },
+  //         {
+  //           key: 'users',
+  //           label: 'Admin - Users',
+  //           onClick: () => navigate('/admin/users'),
+  //         },
+  //         {
+  //           key: 'gallery',
+  //           label: 'Admin - Gallery',
+  //           onClick: () => navigate('/admin/gallery'),
+  //         },
+  //         {
+  //           key: 'events',
+  //           label: 'Admin - Events',
+  //           onClick: () => navigate('/admin/events'),
+  //         },
+  //         {
+  //           key: 'notices',
+  //           label: 'Admin - Notices',
+  //           onClick: () => navigate('/admin/notices'),
+  //         },
+  //         {
+  //           key: 'test-centres',
+  //           label: 'Admin - Test Centers',
+  //           onClick: () => navigate('/admin/test-centers'),
+  //         },
+  //         {
+  //           key: 'current-affairs',
+  //           label: 'Admin - Current Affairs',
+  //           onClick: () => navigate('/admin/current-affairs'),
+  //         },
+  //         {
+  //           key: 'site-settings',
+  //           label: 'Admin - Site Settings',
+  //           onClick: () => navigate('/admin/site-settings'),
+  //         },
+  //       ]
+  //     : [];
 
-  const userHeaderItems: MenuProps['items'] =
-    authenticated && user?.type === 'USER'
-      ? [
-          // {
-          //   key: 'register',
-          //   label: 'Register for Exam',
-          //   onClick: () => navigate('/exam/register'),
-          // },
-          {
-            key: 'admitCard',
-            label: 'Get Admit Card',
-            onClick: () => window.open(baseURL + '/admit-card/' + user.email),
-          },
-          {
-            key: 'profile',
-            label: 'Profile',
-            onClick: () => navigate('/user/profile'),
-          },
-        ]
-      : [];
+  // const userHeaderItems: MenuProps['items'] =
+  //   authenticated && user?.type === 'USER'
+  //     ? [
+  //         // {
+  //         //   key: 'register',
+  //         //   label: 'Register for Exam',
+  //         //   onClick: () => navigate('/exam/register'),
+  //         // },
+  //         {
+  //           key: 'admitCard',
+  //           label: 'Get Admit Card',
+  //           onClick: () => window.open(baseURL + '/admit-card/' + user.email),
+  //         },
+  //         {
+  //           key: 'profile',
+  //           label: 'Profile',
+  //           onClick: () => navigate('/user/profile'),
+  //         },
+  //       ]
+  //     : [];
 
-  const rightHeaderItems: MenuProps['items'] = authenticated
-    ? [
-        ...commonHeaderItems,
-        {
-          key: 'changePassword',
-          label: 'Change Password',
-          onClick: () => navigate('/user/change-password'),
-        },
-        ...adminHeaderItems,
-        ...userHeaderItems,
-        {
-          key: 'logout',
-          label: 'Logout',
-          onClick: logout,
-        },
-      ]
-    : [
-        ...commonHeaderItems,
-        {
-          key: 'login',
-          label: 'Login',
-          onClick: () => navigate('/user/auth'),
-        },
-      ];
+  // const rightHeaderItems: MenuProps['items'] = authenticated
+  //   ? [
+  //       ...commonHeaderItems,
+  //       {
+  //         key: 'changePassword',
+  //         label: 'Change Password',
+  //         onClick: () => navigate('/user/change-password'),
+  //       },
+  //       ...adminHeaderItems,
+  //       ...userHeaderItems,
+  //       {
+  //         key: 'logout',
+  //         label: 'Logout',
+  //         onClick: logout,
+  //       },
+  //     ]
+  //   : [
+  //       ...commonHeaderItems,
+  //       {
+  //         key: 'login',
+  //         label: 'Login',
+  //         onClick: () => navigate('/user/auth'),
+  //       },
+  //     ];
 
   return (
     <ConfigProvider
@@ -173,14 +173,14 @@ const AppContainer: React.FC<IContainerProps> = ({ children }) => {
               </Typography.Title>
             </div>
 
-            <Dropdown
+            {/* <Dropdown
               arrow
               menu={{ items: rightHeaderItems, className: 'w-[200px]' }}
             >
               <Button icon={<UserOutlined />}>
                 {ui.isMobile ? '' : 'Options'}
               </Button>
-            </Dropdown>
+            </Dropdown> */}
           </div>
         </Layout.Header>
 

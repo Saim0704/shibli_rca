@@ -1,37 +1,44 @@
-import dayjs from 'dayjs';
-import { Fragment, useEffect, useState } from 'react';
-import { Button, Card, Carousel, Image, Typography } from 'antd';
-import { IEvent, IGallery, INotice } from '../types/models';
+// import dayjs from 'dayjs';
+import {
+  Fragment,
+  // useEffect, useState
+} from 'react';
+import {
+  Button,
+  Carousel,
+  // Image, Typography ,Card,
+} from 'antd';
+// import { IEvent, IGallery, INotice } from '../types/models';
 import UserHeader from '../components/userHeader';
 import MainCarousel from '../components/mainCarousel';
 import Principles from '../components/principles';
-import instance from '../hooks/api';
+// import instance from '../hooks/api';
 
 const Home = () => {
-  const [notices, setNotices] = useState<INotice[]>([]);
-  const [gallery, setGallery] = useState<IGallery[]>([]);
-  const [events, setEvents] = useState<IEvent[]>([]);
+  // const [notices, setNotices] = useState<INotice[]>([]);
+  // const [gallery, setGallery] = useState<IGallery[]>([]);
+  // const [events, setEvents] = useState<IEvent[]>([]);
 
-  const getNotices = async () => {
-    const { data } = await instance.get('/notices');
-    setNotices(data.data);
-  };
+  // const getNotices = async () => {
+  //   const { data } = await instance.get('/notices');
+  //   setNotices(data.data);
+  // };
 
-  const getGallery = async () => {
-    const { data } = await instance.get('/gallery');
-    setGallery(data.data);
-  };
+  // const getGallery = async () => {
+  //   const { data } = await instance.get('/gallery');
+  //   setGallery(data.data);
+  // };
 
-  const getEvents = async () => {
-    const { data } = await instance.get('/events');
-    setEvents(data.data);
-  };
+  // const getEvents = async () => {
+  //   const { data } = await instance.get('/events');
+  //   setEvents(data.data);
+  // };
 
-  useEffect(() => {
-    Promise.all([getNotices(), getGallery(), getEvents()])
-      .then()
-      .catch(console.log);
-  }, []);
+  // useEffect(() => {
+  //   Promise.all([getNotices(), getGallery(), getEvents()])
+  //     .then()
+  //     .catch(console.log);
+  // }, []);
 
   return (
     <Fragment>
@@ -42,7 +49,7 @@ const Home = () => {
           ))}
         </Carousel>
 
-        <div className='relative -top-[150px] flex items-center justify-center flex-col'>
+        <div className='relative -top-[150px] flex items-center justify-center flex-col cursor-pointer'>
           <Button
             className='h-[50px] font-bold text-md'
             type='primary'
@@ -74,7 +81,7 @@ const Home = () => {
 
         <Principles />
 
-        {notices && notices.length > 0 && (
+        {/* {notices && notices.length > 0 && (
           <Fragment>
             <Typography.Title level={3} className='text-center'>
               Notices
@@ -101,9 +108,9 @@ const Home = () => {
             </div>
             <br />
           </Fragment>
-        )}
+        )} */}
 
-        {gallery && gallery.length > 0 && (
+        {/* {gallery && gallery.length > 0 && (
           <Fragment>
             <Typography.Title level={3} className='text-center mt-10'>
               Gallery
@@ -141,9 +148,9 @@ const Home = () => {
             </div>
             <br />
           </Fragment>
-        )}
+        )} */}
 
-        {events && events.length > 0 && (
+        {/* {events && events.length > 0 && (
           <Fragment>
             <Typography.Title level={3} className='text-center mt-10'>
               Events
@@ -188,7 +195,7 @@ const Home = () => {
             </div>
             <br />
           </Fragment>
-        )}
+        )} */}
       </UserHeader>
     </Fragment>
   );

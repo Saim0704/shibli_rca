@@ -18,8 +18,8 @@ const UserHeader: React.FC<IProps> = ({ children }) => {
     { to: '/', label: 'Home' },
     { to: '/contact-us', label: 'Contacts' },
     { to: '/about-us', label: 'About' },
-    { to: '/achievements', label: 'Achievements' },
-    { to: '/testimonials', label: 'Testimonials' },
+    // { to: '/achievements', label: 'Achievements' },
+    // { to: '/testimonials', label: 'Testimonials' },
   ];
 
   return (
