@@ -77,6 +77,16 @@ const UserHeader: React.FC<IProps> = ({ children }) => {
           >
             <b>Shibli RCA Entrance Exam 2023 Answer Key</b>
           </a>
+          &nbsp; -
+          <a
+            href='https://drive.google.com/file/d/12mm9Ca9H94oETecV0fzIK-7k2fh6V3bx/view'
+            target='_blank'
+            className='text-red-500 hover:text-red-800 cursor-pointer mx-4'
+          >
+            <b className='cursor-pointer'>
+              Shibli RCA AIET 2023-24 Written Result
+            </b>
+          </a>
         </span>
       </div>
       {children}
