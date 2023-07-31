@@ -18,7 +18,7 @@ const UserHeader: React.FC<IProps> = ({ children }) => {
     { to: '/', label: 'Home' },
     { to: '/contact-us', label: 'Contacts' },
     { to: '/about-us', label: 'About' },
-    // { to: '/achievements', label: 'Achievements' },
+    { to: '/donations', label: 'Donations' },
     // { to: '/testimonials', label: 'Testimonials' },
   ];
 

@@ -188,7 +188,7 @@ const AppContainer: React.FC<IContainerProps> = ({ children }) => {
           {ui.loading ? <Loading loading={ui.loading} /> : children}
         </Layout.Content>
         <Layout.Footer style={{ textAlign: 'center' }}>
-          RCA - {new Date().getFullYear()} &copy; All rights reserved
+          Shibli RCA - {new Date().getFullYear()} &copy; All rights reserved
         </Layout.Footer>
       </Layout>
     </ConfigProvider>

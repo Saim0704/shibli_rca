@@ -28,6 +28,7 @@ import Loading from './components/loading';
 const Home = React.lazy(() => import('./pages'));
 const ContactUs = React.lazy(() => import('./pages/contact-us'));
 const AboutUs = React.lazy(() => import('./pages/about-us'));
+const Donations = React.lazy(() => import('./pages/donations'));
 // const Achievements = React.lazy(() => import('./pages/achievements'));
 // const Testimonials = React.lazy(() => import('./pages/testimonials'));
 // const Auth = React.lazy(() => import('./pages/user/auth'));
@@ -76,6 +77,7 @@ const otherRoutes: IRoute[] = [
   { path: '/', Component: Home },
   { path: '/contact-us', Component: ContactUs },
   { path: '/about-us', Component: AboutUs },
+  { path: '/donations', Component: Donations },
   // { path: '/achievements', Component: Achievements },
   // { path: '/testimonials', Component: Testimonials },
 ];
