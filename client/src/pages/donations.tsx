@@ -58,7 +58,7 @@ const Donations: React.FC<IProps> = () => {
           <br />
 
           <div className='flex flex-col gap-10 md:flex-row-reverse md:justify-between'>
-            <div className='flex-grow flex items-center justify-center flex-col'>
+            <div className='flex items-center justify-center flex-col'>
               <Typography.Title className='text-center mb-0 mt-0' level={3}>
                 DR. MOHAMMED DANISH
               </Typography.Title>
