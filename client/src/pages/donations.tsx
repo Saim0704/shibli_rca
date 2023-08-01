@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import UserHeader from '../components/userHeader';
-import { Card, Typography } from 'antd';
+import { Card, Image, Typography } from 'antd';
 import { uiContext } from '../hooks/ui';
 
 interface IProps {}
@@ -74,6 +74,14 @@ const Donations: React.FC<IProps> = () => {
               <Typography.Title className='text-center mb-0 mt-0' level={3}>
                 BANK DETAILS
               </Typography.Title>
+
+              <div className='flex items-center justify-center'>
+                <Image
+                  preview={false}
+                  src='/shibliRcaDonationQrCode.jpeg'
+                  className='max-w-[320px] mb-4'
+                />
+              </div>
 
               <Card bodyStyle={{ padding: isMobile ? 12 : 16 }}>
                 <DescriptionItem title='Name' content='AZAMGARH FOUNDATION' />
