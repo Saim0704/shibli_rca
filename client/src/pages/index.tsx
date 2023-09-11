@@ -55,11 +55,12 @@ const Home = () => {
             type='primary'
             onClick={() =>
               window.open(
-                'https://drive.google.com/file/d/1Mo3hcSGfTi-gz23Qj9k-H7_1P3AdqWU1/view'
+                // 'https://drive.google.com/file/d/1Mo3hcSGfTi-gz23Qj9k-H7_1P3AdqWU1/view'
+                'https://drive.google.com/file/d/17aqhvmegtAWq2BBnGP0UbQlPbKHsX5sz/view'
               )
             }
           >
-            Shibli RCA Interview Schedule
+            Shibli RCA Final Result 2023-24
           </Button>
         </div>
 
