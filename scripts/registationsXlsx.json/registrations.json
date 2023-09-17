@@ -1,0 +1,3987 @@
+[{
+  "_id": {
+    "$oid": "6470e52b805806102061bbf0"
+  },
+  "name": "raj",
+  "email": "khanmr786@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "x",
+  "motherName": "y",
+  "permanentAddress": {
+    "landmark": "jamia",
+    "postalCode": "110025",
+    "cityOrTown": "delhi",
+    "district": "southeast",
+    "state": "Delhi"
+  },
+  "correspondenceAddress": {
+    "landmark": "jamia",
+    "postalCode": "110025",
+    "cityOrTown": "delhi",
+    "district": "southeast",
+    "state": "Delhi"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2009,
+      "percentage": 90,
+      "boardOrUni": "cbse"
+    },
+    "intermediate": {
+      "passYear": 2011,
+      "percentage": 89,
+      "boardOrUni": "cbse"
+    },
+    "graduation": {
+      "passYear": 2015,
+      "percentage": 74,
+      "boardOrUni": "ggsipu"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "123456789",
+  "languageOfExam": "English",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685120237/1685120236107shibli2.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685120258/1685120257620shibli%201.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64764b9bb0269fd6de8364f7"
+  },
+  "name": "Utkarsh yadav ",
+  "email": "sy0509313@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Hariram yadav",
+  "motherName": "Radhika yadav ",
+  "permanentAddress": {
+    "landmark": "Pagara ",
+    "postalCode": "276208",
+    "cityOrTown": "Azamgarh",
+    "district": "Azamgarh",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Pagara ",
+    "postalCode": "276208",
+    "cityOrTown": "Azamgarh",
+    "district": "Azamgarh",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2020,
+      "percentage": 50,
+      "boardOrUni": "CBSE"
+    },
+    "intermediate": {
+      "passYear": 2022,
+      "percentage": 62,
+      "boardOrUni": "CBSE"
+    },
+    "graduation": {
+      "passYear": 1960,
+      "percentage": 89,
+      "boardOrUni": "Up"
+    },
+    "other": {
+      "passYear": 2021,
+      "percentage": 75,
+      "boardOrUni": "CBSE",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "9090",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685474021/1685474019091IMG_20230306_155312.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685474027/1685474025778IMG_20230531_003746.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "647c1ae81898c9b973031f05"
+  },
+  "name": "Sunil ",
+  "email": "euthopia4@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Ram maurya ",
+  "motherName": "Suman",
+  "permanentAddress": {
+    "landmark": "Badami ",
+    "postalCode": "121003",
+    "cityOrTown": "Faridabad",
+    "district": "Faridabad ",
+    "state": "Haryana"
+  },
+  "correspondenceAddress": {
+    "landmark": "Badami ",
+    "postalCode": "121003",
+    "cityOrTown": "Faridabad",
+    "district": "Faridabad ",
+    "state": "Haryana"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2010,
+      "percentage": 80,
+      "boardOrUni": "Cbse"
+    },
+    "intermediate": {
+      "passYear": 2014,
+      "percentage": 80,
+      "boardOrUni": "Cbse"
+    },
+    "graduation": {
+      "passYear": 2018,
+      "percentage": 60,
+      "boardOrUni": "Delhi University "
+    },
+    "other": {
+      "passYear": 2020,
+      "percentage": 60,
+      "boardOrUni": "Delhi University ",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "1234556",
+  "languageOfExam": "English",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685854879/1685854877373IMG_20230315_232832401_2-min.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685854895/1685854894542002.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "647c216a1898c9b973031f51"
+  },
+  "name": "mascom",
+  "email": "info@shiblirca.in",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "mascom",
+  "motherName": "saz",
+  "permanentAddress": {
+    "landmark": "jamia",
+    "postalCode": "110025",
+    "cityOrTown": "delhi",
+    "district": "southeast",
+    "state": "Delhi"
+  },
+  "correspondenceAddress": {
+    "landmark": "jamia",
+    "postalCode": "110025",
+    "cityOrTown": "delhi",
+    "district": "southeast",
+    "state": "Delhi"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2009,
+      "percentage": 90,
+      "boardOrUni": "cbse"
+    },
+    "intermediate": {
+      "passYear": 2011,
+      "percentage": 91,
+      "boardOrUni": "cbse"
+    },
+    "graduation": {
+      "passYear": 2015,
+      "percentage": 99,
+      "boardOrUni": "ggsipu"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "1234",
+  "languageOfExam": "English",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685856571/1685856570240shibli2.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685856595/1685856594181shibli%201.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "upsc",
+      "year": 2022,
+      "cleared": true,
+      "_id": {
+        "$oid": "647c216a1898c9b973031f52"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "647c4bf410cdfff4769a1798"
+  },
+  "name": "Sunil",
+  "email": "sunilmaurya227788@gmail.com",
+  "type": "USER",
+  "gender": "O",
+  "fatherName": "srk",
+  "motherName": "frk",
+  "permanentAddress": {
+    "landmark": "rca",
+    "postalCode": "110025",
+    "cityOrTown": "dheli",
+    "district": "south east",
+    "state": "Goa"
+  },
+  "correspondenceAddress": {
+    "landmark": "rca",
+    "postalCode": "110025",
+    "cityOrTown": "dheli",
+    "district": "south east",
+    "state": "Goa"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2009,
+      "percentage": 95,
+      "boardOrUni": "cbse"
+    },
+    "intermediate": {
+      "passYear": 2011,
+      "percentage": 94,
+      "boardOrUni": "icse"
+    },
+    "graduation": {
+      "passYear": 2011,
+      "percentage": 78,
+      "boardOrUni": "cbse"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "123456789",
+  "languageOfExam": "Urdu",
+  "category": "PWD",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685867430/1685867429459shibli2.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685867452/1685867451136shibli%201.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "upsc",
+      "year": 2022,
+      "cleared": true,
+      "_id": {
+        "$oid": "647c4bf410cdfff4769a1799"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "647d842d0e65be3ed4963fcb"
+  },
+  "name": "Azhar",
+  "email": "azharuddinjmi@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "xxx",
+  "motherName": "yyy",
+  "permanentAddress": {
+    "landmark": "jmi",
+    "postalCode": "110025",
+    "cityOrTown": "delhi",
+    "district": "south",
+    "state": "Goa"
+  },
+  "correspondenceAddress": {
+    "landmark": "jmi",
+    "postalCode": "110025",
+    "cityOrTown": "delhi",
+    "district": "south",
+    "state": "Goa"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2010,
+      "percentage": 78,
+      "boardOrUni": "cbse"
+    },
+    "intermediate": {
+      "passYear": 2012,
+      "percentage": 79,
+      "boardOrUni": "cbse"
+    },
+    "graduation": {
+      "passYear": 2018,
+      "percentage": 74,
+      "boardOrUni": "ggipu"
+    },
+    "other": {
+      "passYear": 2014,
+      "percentage": 70,
+      "boardOrUni": "jmi",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "1234st",
+  "languageOfExam": "Urdu",
+  "category": "PWD",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685947418/1685947416457WhatsApp%20Image%202023-06-03%20at%2011.41.28%20PM.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685947420/1685947419324WhatsApp%20Image%202023-06-03%20at%2011.42.00%20PM.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "upsc",
+      "year": 2021,
+      "cleared": true,
+      "_id": {
+        "$oid": "647d842d0e65be3ed4963fcc"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "647d959b0e65be3ed49640b5"
+  },
+  "name": "ANGAD MAURYA",
+  "email": "angad050996@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "MO KHALID",
+  "motherName": "SHAHEEN FATMA",
+  "permanentAddress": {
+    "landmark": "VILL. SATUWAHIYA",
+    "postalCode": "276304",
+    "cityOrTown": "PHOOLPUR",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "VILL. SATUWAHIYA",
+    "postalCode": "276304",
+    "cityOrTown": "PHOOLPUR",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2015,
+      "percentage": 80.33,
+      "boardOrUni": "UP BOARD"
+    },
+    "intermediate": {
+      "passYear": 2017,
+      "percentage": 75,
+      "boardOrUni": "UP BOARD"
+    },
+    "graduation": {
+      "passYear": 2021,
+      "percentage": 52.83,
+      "boardOrUni": "VEER BAHADUR SINGH PURVACHAL UNIVERSITY JAUNPUR UP"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "352215593813",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685951345/1685951344567KULSUM%20P.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685951363/1685951361963KULSUM%20S.jpeg.jpg",
+  "lastSemesterCertificate": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685951375/1685951374645KULSUM%20M.jpg.jpg",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "647da5cd0e65be3ed49641ab"
+  },
+  "name": "shib",
+  "email": "shiblirca@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "asab",
+  "motherName": "saz",
+  "permanentAddress": {
+    "landmark": "jmi",
+    "postalCode": "110025",
+    "cityOrTown": "okhla",
+    "district": "south east delhi",
+    "state": "Delhi"
+  },
+  "correspondenceAddress": {
+    "landmark": "jmi",
+    "postalCode": "110025",
+    "cityOrTown": "okhla",
+    "district": "south east delhi",
+    "state": "Delhi"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2010,
+      "percentage": 78,
+      "boardOrUni": "cbse"
+    },
+    "intermediate": {
+      "passYear": 2012,
+      "percentage": 80,
+      "boardOrUni": "cbse"
+    },
+    "graduation": {
+      "passYear": 2015,
+      "percentage": 84,
+      "boardOrUni": "ggsipu"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "123321",
+  "languageOfExam": "English",
+  "category": "MUSLIM_EWS",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685956013/1685956012215WhatsApp%20Image%202023-06-03%20at%2011.42.00%20PM.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1685955909/1685955907563shibli2.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "upsc",
+      "year": 2020,
+      "cleared": true,
+      "_id": {
+        "$oid": "647da5cd0e65be3ed49641ac"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "648021a80e65be3ed4964f2a"
+  },
+  "name": "GULSHAN PARVEEN",
+  "email": "parveengulshan786001@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "ATHAR ALI",
+  "motherName": "ROSHAN JAHAN",
+  "permanentAddress": {
+    "landmark": "SHAHGARH",
+    "postalCode": "276001",
+    "cityOrTown": "SHAHGARH",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "SHAHGARH",
+    "postalCode": "276001",
+    "cityOrTown": "SHAHGARH",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2019,
+      "percentage": 69.17,
+      "boardOrUni": "UP BOARD"
+    },
+    "intermediate": {
+      "passYear": 2021,
+      "percentage": 75.6,
+      "boardOrUni": "UP BOARD"
+    },
+    "graduation": {
+      "passYear": 2024,
+      "percentage": 50,
+      "boardOrUni": "M S  D U AZAMGARH"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "315844887238",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686118807/1686118805987GULS.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686118815/1686118814563Scan2023-06-07_113025.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "648174410e65be3ed4965aa9"
+  },
+  "name": "Azhar",
+  "email": "azharuddinjmi@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "xk.vqxjkcggc",
+  "motherName": "bvxkbxb",
+  "permanentAddress": {
+    "landmark": "Jamia",
+    "postalCode": "110025",
+    "cityOrTown": "jamia",
+    "district": "new delhi",
+    "state": "Chhattisgarh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Jamia",
+    "postalCode": "110025",
+    "cityOrTown": "jamia",
+    "district": "new delhi",
+    "state": "Chhattisgarh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2009,
+      "percentage": 68,
+      "boardOrUni": "cbse"
+    },
+    "intermediate": {
+      "passYear": 2011,
+      "percentage": 78,
+      "boardOrUni": "cbse"
+    },
+    "graduation": {
+      "passYear": 2015,
+      "percentage": 70,
+      "boardOrUni": "ggsipu"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "12345",
+  "languageOfExam": "English",
+  "category": "MUSLIM_ST",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686205457/1686205456544WhatsApp%20Image%202023-06-03%20at%2011.42.00%20PM.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686205479/1686205478335WhatsApp%20Image%202023-06-03%20at%2011.41.28%20PM.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "648194460e65be3ed4965c11"
+  },
+  "name": "rca",
+  "email": "admissionsatshibli@gmail.com",
+  "type": "USER",
+  "gender": "O",
+  "fatherName": "sas",
+  "motherName": "sd",
+  "permanentAddress": {
+    "landmark": "jmi",
+    "postalCode": "110025",
+    "cityOrTown": "jamia",
+    "district": "south east delhi",
+    "state": "Assam"
+  },
+  "correspondenceAddress": {
+    "landmark": "jmi",
+    "postalCode": "110025",
+    "cityOrTown": "jamia",
+    "district": "south east delhi",
+    "state": "Assam"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2009,
+      "percentage": 78,
+      "boardOrUni": "cbse"
+    },
+    "intermediate": {
+      "passYear": 2012,
+      "percentage": 56,
+      "boardOrUni": "cbse"
+    },
+    "graduation": {
+      "passYear": 2015,
+      "percentage": 75,
+      "boardOrUni": "ggsipu"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "123",
+  "languageOfExam": "Urdu",
+  "category": "MUSLIM_EWS",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686213665/1686213664149WhatsApp%20Image%202023-06-03%20at%2011.42.00%20PM.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686213679/1686213677764WhatsApp%20Image%202023-06-03%20at%2011.41.28%20PM.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64841333b252f8f4cd80a4e6"
+  },
+  "name": "AYESHA KHAN ",
+  "email": "Khana4940@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "ATAULLAH KHAN ",
+  "motherName": "PARVEEN KHAN ",
+  "permanentAddress": {
+    "landmark": "MUHAMMADABAD ",
+    "postalCode": "276403",
+    "cityOrTown": "MUHAMMADABAD GOHNA ",
+    "district": "MAU",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "MUHAMMADABAD ",
+    "postalCode": "276403",
+    "cityOrTown": "MUHAMMADABAD GOHNA ",
+    "district": "MAU",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2012,
+      "percentage": 78,
+      "boardOrUni": "BOARD OF HIGH SCHOOL AND INTERMEDIATE EDUCATION U.P "
+    },
+    "intermediate": {
+      "passYear": 2014,
+      "percentage": 75,
+      "boardOrUni": "BOARD OF HIGH SCHOOL AND INTERMEDIATE EDUCATION U.P "
+    },
+    "graduation": {
+      "passYear": 2017,
+      "percentage": 59,
+      "boardOrUni": "VEER BAHADUR SINGH PURVANCHAL UNIVERSITY JOUNPUR U.P "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "T2306100851068012257506 ",
+  "languageOfExam": "English",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686377143/1686377142096CamScanner%2009-16-2020%2010.15.41_1_copy_350x350_copy_200x200_copy_200x230_1.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686377161/1686377160533Fd4y9e2dSFHPatVdd2PgMSbA.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "6485be94b252f8f4cd80ad9b"
+  },
+  "name": "AZRA PARVEEN",
+  "email": "Azrap5400@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "DAOUD ANSARI",
+  "motherName": "MAIMUN NESHA ",
+  "permanentAddress": {
+    "landmark": "HOUSE NO 73 DAKEENGANJ ",
+    "postalCode": "275201",
+    "cityOrTown": "BAHADURGANJ",
+    "district": "GHAZIPUR",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "HOUSE NO 73 DAKEENGANJ ",
+    "postalCode": "275201",
+    "cityOrTown": "BAHADURGANJ",
+    "district": "GHAZIPUR",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2017,
+      "percentage": 83.5,
+      "boardOrUni": "BOARD OF SCHOOL AND INTERMEDIATE EDUCATION U.P "
+    },
+    "intermediate": {
+      "passYear": 2019,
+      "percentage": 80.8,
+      "boardOrUni": "BOARD OF SCHOOL AND INTERMEDIATE EDUCATION U.P "
+    },
+    "graduation": {
+      "passYear": 2022,
+      "percentage": 64.7,
+      "boardOrUni": "VEER BAHADUR SINGH PURVANCHAL UNIVERSITY JAUNPUR UP "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "T2306021025273443532312",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686486305/1686486304529AZRA%20PHOTO.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686486319/1686486318720AZRA%20SIGNAUTE.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "6485c456b252f8f4cd80adef"
+  },
+  "name": "AZRA PARVEEN",
+  "email": "azrapar5401@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "DAOUD ANSARI ",
+  "motherName": "MAIMUN NESHA",
+  "permanentAddress": {
+    "landmark": "MOHALLA DAKEENGANJ ",
+    "postalCode": "275201",
+    "cityOrTown": "BAHADURGANJ ",
+    "district": "GHAZIPUR",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "MOHALLA DAKEENGANJ ",
+    "postalCode": "275201",
+    "cityOrTown": "BAHADURGANJ ",
+    "district": "GHAZIPUR",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2017,
+      "percentage": 83.5,
+      "boardOrUni": "BOARD OF SCHOOL AND INTERMEDIATE EDUCATION U.P "
+    },
+    "intermediate": {
+      "passYear": 2019,
+      "percentage": 80.8,
+      "boardOrUni": "BOARD OF SCHOOL AND INTERMEDIATE EDUCATION U.P "
+    },
+    "graduation": {
+      "passYear": 2000,
+      "percentage": 64.7,
+      "boardOrUni": "VEER BAHADUR SINGH PURVANCHAL UNIVERSITY JAUNPUR UP "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "T2306021025273443532312",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686487927/1686487926147AZRA%20PHOTO.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686487940/1686487939480AZRA%20SIGNAUTE.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64874f8cb252f8f4cd80b708"
+  },
+  "name": "Sadaf Begum ",
+  "email": "s.sadafkp@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "Mukhtar Ahmad ",
+  "motherName": "Salma Begum ",
+  "permanentAddress": {
+    "landmark": "Bab-e-sayyed ",
+    "postalCode": "202001",
+    "cityOrTown": "Aligarh ",
+    "district": "Aligarh ",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Kashiram colony ",
+    "postalCode": "208021",
+    "cityOrTown": "Kanpur ",
+    "district": "Kanpur ",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2011,
+      "percentage": 75,
+      "boardOrUni": "UP board "
+    },
+    "intermediate": {
+      "passYear": 2013,
+      "percentage": 83,
+      "boardOrUni": "UP board "
+    },
+    "graduation": {
+      "passYear": 2016,
+      "percentage": 68,
+      "boardOrUni": "Kanpur University "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Aligarh",
+  "transactionId": "T2306121227254445665222",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686589308/16865893071305_6068711625865562558%20%281%29.pdf.pdf",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686588844/1686588843078Signature.pdf.pdf",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "648811aeb252f8f4cd80bf7b"
+  },
+  "name": "RESHAMA",
+  "email": "reshamazh7860@mail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "MAQSOOD AHMAD",
+  "motherName": "NOORSABA BANO",
+  "permanentAddress": {
+    "landmark": "SIDHARI DUGDUGWAN",
+    "postalCode": "276001",
+    "cityOrTown": "AZAMGARH",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "SIDHARI DUGDUGWAN",
+    "postalCode": "276001",
+    "cityOrTown": "AZAMGARH",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2019,
+      "percentage": 82,
+      "boardOrUni": "UP BOARD"
+    },
+    "intermediate": {
+      "passYear": 2021,
+      "percentage": 76,
+      "boardOrUni": "UP BOARD"
+    },
+    "graduation": {
+      "passYear": 2023,
+      "percentage": 69,
+      "boardOrUni": "MSDSU"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "316457506327",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686638569/1686638568908AFROZ.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686638587/1686638586926AFR.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "UPSC",
+      "year": 2023,
+      "cleared": false,
+      "_id": {
+        "$oid": "648811aeb252f8f4cd80bf7c"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6488d7eeb252f8f4cd80c93c"
+  },
+  "name": "Mohammad Saif",
+  "email": "kapoorv824@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Nafees Ahmed",
+  "motherName": "Reshma Khatoon",
+  "permanentAddress": {
+    "landmark": "Ward no 22 Nanak nagar Sonari Mohalla",
+    "postalCode": "273164",
+    "cityOrTown": "Nautanwa",
+    "district": "Maharajganj",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Ward no 22 Nanak nagar Sonari Mohalla",
+    "postalCode": "273164",
+    "cityOrTown": "Nautanwa",
+    "district": "Maharajganj",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2016,
+      "percentage": 75,
+      "boardOrUni": "ICSE"
+    },
+    "intermediate": {
+      "passYear": 2018,
+      "percentage": 70,
+      "boardOrUni": "UP BOARD"
+    },
+    "graduation": {
+      "passYear": 2021,
+      "percentage": 53,
+      "boardOrUni": "Siddharth University Siddharthnagar"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Lucknow",
+  "transactionId": "316500301510",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686689415/16866894149150377523001677780819IMG20210527123152%20%281%29.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686689436/16866894356070099539001677780916saifsign.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "6489a578b252f8f4cd80d32a"
+  },
+  "name": "MOHSENA ERAM",
+  "email": "eram12javed@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "JAVED ZAFAR",
+  "motherName": "NAZRANA KHATOON",
+  "permanentAddress": {
+    "landmark": "MOHALLA KATRA POST AND PS MUBARAKPUR",
+    "postalCode": "276404",
+    "cityOrTown": "MUBARAKPUR",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "MOHALLA KATRA POST AND PS MUBARAKPUR",
+    "postalCode": "276404",
+    "cityOrTown": "MUBARAKPUR",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2019,
+      "percentage": 65,
+      "boardOrUni": "U P BAORD PRAYAGRAJ"
+    },
+    "intermediate": {
+      "passYear": 2021,
+      "percentage": 68.8,
+      "boardOrUni": "U P BAORD PRAYAGRAJ"
+    },
+    "graduation": {
+      "passYear": 2024,
+      "percentage": 56,
+      "boardOrUni": "MAHARAJA SUHEL DEV STATE  UNIVERSITY AZAMGARH U P"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "T2306141600255757565650",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686742368/1686742367354123.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686742369/1686742368769124.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "B.A FINAL",
+      "year": 2024,
+      "cleared": true,
+      "_id": {
+        "$oid": "6489a578b252f8f4cd80d32b"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6489a57cb252f8f4cd80d32e"
+  },
+  "name": "MOHSENA ERAM",
+  "email": "eram12javed@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "JAVED ZAFAR",
+  "motherName": "NAZRANA KHATOON",
+  "permanentAddress": {
+    "landmark": "MOHALLA KATRA POST AND PS MUBARAKPUR",
+    "postalCode": "276404",
+    "cityOrTown": "MUBARAKPUR",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "MOHALLA KATRA POST AND PS MUBARAKPUR",
+    "postalCode": "276404",
+    "cityOrTown": "MUBARAKPUR",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2019,
+      "percentage": 65,
+      "boardOrUni": "U P BAORD PRAYAGRAJ"
+    },
+    "intermediate": {
+      "passYear": 2021,
+      "percentage": 68.8,
+      "boardOrUni": "U P BAORD PRAYAGRAJ"
+    },
+    "graduation": {
+      "passYear": 2024,
+      "percentage": 56,
+      "boardOrUni": "MAHARAJA SUHEL DEV STATE  UNIVERSITY AZAMGARH U P"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "T2306141600255757565650",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686742368/1686742367354123.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686742369/1686742368769124.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "B.A FINAL",
+      "year": 2024,
+      "cleared": true,
+      "_id": {
+        "$oid": "6489a57cb252f8f4cd80d32f"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6489fcc2b252f8f4cd80d729"
+  },
+  "name": "fate",
+  "email": "fatesee786@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "fateh",
+  "motherName": "seemA",
+  "permanentAddress": {
+    "landmark": "JMI",
+    "postalCode": "110025",
+    "cityOrTown": "DELHI",
+    "district": "SOUTHEAST",
+    "state": "Delhi"
+  },
+  "correspondenceAddress": {
+    "landmark": "JMI",
+    "postalCode": "110025",
+    "cityOrTown": "DELHI",
+    "district": "SOUTHEAST",
+    "state": "Delhi"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2009,
+      "percentage": 78,
+      "boardOrUni": "CBSE"
+    },
+    "intermediate": {
+      "passYear": 2011,
+      "percentage": 79,
+      "boardOrUni": "CBSE"
+    },
+    "graduation": {
+      "passYear": 2015,
+      "percentage": 74,
+      "boardOrUni": "GGSIPU"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Bijnor",
+  "transactionId": "1233333333",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686764679/1686764678478WhatsApp%20Image%202023-06-03%20at%2011.41.28%20PM.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686764686/1686764685518WhatsApp%20Image%202023-06-03%20at%2011.42.00%20PM.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "648b358cb252f8f4cd80e3e8"
+  },
+  "name": "MOHD NAZIM",
+  "email": "nazimsaifi9662@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "ZAKIR HUSAIN",
+  "motherName": "BILKISH JAHAN",
+  "permanentAddress": {
+    "postalCode": "244301",
+    "cityOrTown": "CHHACHHERA",
+    "district": "SAMBHAL",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "postalCode": "244301",
+    "cityOrTown": "CHHACHHERA",
+    "district": "SAMBHAL",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2014,
+      "percentage": 48.5,
+      "boardOrUni": "U.P. Board of Madrasa Education Lucknow"
+    },
+    "intermediate": {
+      "passYear": 2016,
+      "percentage": 42.5,
+      "boardOrUni": "U.P. Board of Madrasa Education Lucknow"
+    },
+    "graduation": {
+      "passYear": 2019,
+      "percentage": 53,
+      "boardOrUni": "MJP Rohilkhand University"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "T2306152122063185140935",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686844233/1686844232479MOHD_NAZIM%5B1%5D.png.png",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686844266/1686844265655NAZIM_SIG._copy_129x102%5B1%5D.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "648bf294b252f8f4cd80ebb3"
+  },
+  "name": "Sarah ",
+  "email": "sarahfaizan67@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "Faizan ahmad",
+  "motherName": "Shaheen bano",
+  "permanentAddress": {
+    "landmark": "Vill/post mande ",
+    "postalCode": "276129",
+    "cityOrTown": "Azamgarh ",
+    "district": "Azamgarh ",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Vill post mande",
+    "postalCode": "276129",
+    "cityOrTown": "Azamgarh ",
+    "district": "Azamgarh ",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2014,
+      "percentage": 82,
+      "boardOrUni": "UP board"
+    },
+    "intermediate": {
+      "passYear": 2016,
+      "percentage": 81,
+      "boardOrUni": "UP board"
+    },
+    "graduation": {
+      "passYear": 2020,
+      "percentage": 57.11,
+      "boardOrUni": "Veer bahadur singh purvanchal university "
+    },
+    "other": {
+      "passYear": 2022,
+      "percentage": 68,
+      "boardOrUni": "Veer bahadur singh purvanchal university ",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "T2306161005130850326742",
+  "languageOfExam": "English",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686893029/1686893028624IMG_20230223_101656.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686893066/1686893065802IMG-20230216-WA0018.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "648bfeb3b252f8f4cd80ed17"
+  },
+  "name": "MOHAMMAD ALI",
+  "email": "mohammadali615444@outlook.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "MOHAMMAD ARIFF",
+  "motherName": "SUMAIYA",
+  "permanentAddress": {
+    "landmark": "19 SIPPAI PALAYAM MATHIGIRI",
+    "postalCode": "635110",
+    "cityOrTown": "HOSUR",
+    "district": "KRISHNAGIRI",
+    "state": "Tamil Nadu"
+  },
+  "correspondenceAddress": {
+    "landmark": "19 SIPPAI PALAYAM MATHIGIRI",
+    "postalCode": "635110",
+    "cityOrTown": "HOSUR",
+    "district": "KRISHNAGIRI",
+    "state": "Tamil Nadu"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2017,
+      "percentage": 95.2,
+      "boardOrUni": "State Board of School Examinations,TamilNadu"
+    },
+    "intermediate": {
+      "passYear": 2019,
+      "percentage": 83.6,
+      "boardOrUni": "State Board of School Examinations,TamilNadu"
+    },
+    "graduation": {
+      "passYear": 2022,
+      "percentage": 86.56,
+      "boardOrUni": "Bangalore Central University"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Hyderabad",
+  "transactionId": "T2306161135436555466314",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686895418/1686895417362PHOTO%20MOHAMMAD%20ALI.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686895419/1686895418468SIGNATURE%20MOHAMMAD%20ALI.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "648d60b5b252f8f4cd80f84f"
+  },
+  "name": "SHAKIRA",
+  "email": "shakirashakira69566@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "SHAMA AFROZ",
+  "motherName": "MAQSOOD AHMAD",
+  "permanentAddress": {
+    "landmark": "DUGDUGWAN",
+    "postalCode": "276001",
+    "cityOrTown": "AZAMGARH",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "DUGDUGWAN",
+    "postalCode": "276001",
+    "cityOrTown": "AZAMGARH",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2019,
+      "percentage": 83,
+      "boardOrUni": "UP BOARD"
+    },
+    "intermediate": {
+      "passYear": 2021,
+      "percentage": 76,
+      "boardOrUni": "UP BOARD"
+    },
+    "graduation": {
+      "passYear": 2023,
+      "percentage": 69,
+      "boardOrUni": "MSDSU"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "316894167087",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686986376/1686986375869WhatsApp%20Image%202023-05-27%20at%2012.48.07%20%281%29.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1686986387/1686986386874WhatsApp%20Image%202023-05-27%20at%2012.48.07.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "UPSC",
+      "year": 2023,
+      "cleared": false,
+      "_id": {
+        "$oid": "648d60b5b252f8f4cd80f850"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "648fe688b252f8f4cd810e54"
+  },
+  "name": "Anista chaudhary",
+  "email": "anistachaudhary99@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "Md Asim chaudhary",
+  "motherName": "Aashiya",
+  "permanentAddress": {
+    "landmark": "sunday market,bright medical store",
+    "postalCode": "201309",
+    "cityOrTown": "khora ghaziabad",
+    "district": "ghaziabad",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "sunday market,bright medical store",
+    "postalCode": "201309",
+    "cityOrTown": "khora ghaziabad",
+    "district": "ghaziabad",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2016,
+      "percentage": 76,
+      "boardOrUni": "up board"
+    },
+    "intermediate": {
+      "passYear": 2018,
+      "percentage": 54,
+      "boardOrUni": "madarsa board"
+    },
+    "graduation": {
+      "passYear": 2022,
+      "percentage": 60,
+      "boardOrUni": "jamia millia islamia"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "317018259051",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687151616/1687151615265anista.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687151640/1687151639546WhatsApp%20Image%202023-06-19%20at%2010.43.04.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "uppsc",
+      "year": 2023,
+      "cleared": false,
+      "_id": {
+        "$oid": "648fe688b252f8f4cd810e55"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "648fe68bb252f8f4cd810e58"
+  },
+  "name": "Anista chaudhary",
+  "email": "anistachaudhary99@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "Md Asim chaudhary",
+  "motherName": "Aashiya",
+  "permanentAddress": {
+    "landmark": "sunday market,bright medical store",
+    "postalCode": "201309",
+    "cityOrTown": "khora ghaziabad",
+    "district": "ghaziabad",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "sunday market,bright medical store",
+    "postalCode": "201309",
+    "cityOrTown": "khora ghaziabad",
+    "district": "ghaziabad",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2016,
+      "percentage": 76,
+      "boardOrUni": "up board"
+    },
+    "intermediate": {
+      "passYear": 2018,
+      "percentage": 54,
+      "boardOrUni": "madarsa board"
+    },
+    "graduation": {
+      "passYear": 2022,
+      "percentage": 60,
+      "boardOrUni": "jamia millia islamia"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "317018259051",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687151616/1687151615265anista.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687151640/1687151639546WhatsApp%20Image%202023-06-19%20at%2010.43.04.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "uppsc",
+      "year": 2023,
+      "cleared": false,
+      "_id": {
+        "$oid": "648fe68bb252f8f4cd810e59"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6490337bb252f8f4cd8111a2"
+  },
+  "name": "Mohammad Hassam",
+  "email": "mohammadhassam@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Mohammad Azam",
+  "motherName": "Hameeda Khatoon",
+  "permanentAddress": {
+    "landmark": "Pahar Pura Takiya, near Nathu Imli maidan",
+    "postalCode": "275101",
+    "cityOrTown": "Maunath Bhanjan",
+    "district": "Mau",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Pahar Pura Takiya, near Nathu Imli maidan",
+    "postalCode": "275101",
+    "cityOrTown": "Maunath Bhanjan",
+    "district": "Mau",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2013,
+      "percentage": 82.67,
+      "boardOrUni": "Board of High School and Intermediate Education Uttar Pradesh"
+    },
+    "intermediate": {
+      "passYear": 2015,
+      "percentage": 77.2,
+      "boardOrUni": "Board of High School and Intermediate Education Uttar Pradesh"
+    },
+    "graduation": {
+      "passYear": 2019,
+      "percentage": 57.77,
+      "boardOrUni": "University Of Delhi"
+    },
+    "other": {
+      "passYear": 2021,
+      "percentage": 77.42,
+      "boardOrUni": "Jamia Millia Islamia, New Delhi",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "T2306191618217790990630",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687171628/1687171627017new%20photo.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687171641/1687171640954Hassam%20Signature.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "UGC NET",
+      "year": 2021,
+      "cleared": true,
+      "_id": {
+        "$oid": "6490337bb252f8f4cd8111a3"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "649075dab252f8f4cd8119ce"
+  },
+  "name": "NUZHATUL ARAB",
+  "email": "hindustanenterprises0007@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "HAMID KHAN",
+  "motherName": "PARVEEN",
+  "permanentAddress": {
+    "landmark": "H NO 31 32 DANISH  COLONY KAROND ",
+    "postalCode": "462038",
+    "cityOrTown": "BHOPAL",
+    "district": "BHOPAL",
+    "state": "Madhya Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "H NO 31 32 DANISH  COLONY KAROND ",
+    "postalCode": "462038",
+    "cityOrTown": "BHOPAL",
+    "district": "BHOPAL",
+    "state": "Madhya Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2010,
+      "percentage": 77.33,
+      "boardOrUni": "MP BOARD BHOPAL"
+    },
+    "intermediate": {
+      "passYear": 2012,
+      "percentage": 68.4,
+      "boardOrUni": "MP BOARD BHOPAL"
+    },
+    "graduation": {
+      "passYear": 2020,
+      "percentage": 65.96,
+      "boardOrUni": "MPMSU JABALPUR"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "T2306192059151873304821",
+  "languageOfExam": "English",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687188860/1687188859327IMAGEES%20copy.JPG.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687188885/1687188884046SIGNATURE.JPG.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64914211b252f8f4cd812561"
+  },
+  "name": "TAHZEEB BANO",
+  "email": "amaudood87@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "MOHD HASHIM",
+  "motherName": "AFSHARUNNESHA",
+  "permanentAddress": {
+    "landmark": "IBRAHIMPUR",
+    "postalCode": "276403",
+    "cityOrTown": "AZAMGARH",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "IBRAHIMPUR",
+    "postalCode": "276403",
+    "cityOrTown": "AZAMGARH",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2013,
+      "percentage": 82,
+      "boardOrUni": "UP BOARD "
+    },
+    "intermediate": {
+      "passYear": 2015,
+      "percentage": 86.8,
+      "boardOrUni": "UP BOARD"
+    },
+    "graduation": {
+      "passYear": 2018,
+      "percentage": 60.33,
+      "boardOrUni": "VBSPU JAUNPUR"
+    },
+    "other": {
+      "passYear": 2020,
+      "percentage": 52.3,
+      "boardOrUni": "VBSPU JAUNPUR",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "T2306201133409097968913",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687240527/1687240525810PPP.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687240688/1687240687040SSS.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64915948b252f8f4cd812a45"
+  },
+  "name": "MOHD SAQUIB",
+  "email": "jobw2982@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "MOHD ASLAM",
+  "motherName": "ASIYA BANO ",
+  "permanentAddress": {
+    "postalCode": "276124",
+    "cityOrTown": "ATARKACHCHHAN",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "postalCode": "276124",
+    "cityOrTown": "ATARKACHCHHAN",
+    "district": "AZAMGARH",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2017,
+      "percentage": 83.6,
+      "boardOrUni": "central board of secondary education"
+    },
+    "intermediate": {
+      "passYear": 2019,
+      "percentage": 55,
+      "boardOrUni": "board of high school and intermediate education uttar pradesh"
+    },
+    "graduation": {
+      "passYear": 2022,
+      "percentage": 50.72,
+      "boardOrUni": "veer bahadur singh purvanchal university jaunpur"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "T2306201309480069047962",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687246728/1687246726531IMG20230620130552.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687246745/1687246743538IMG20230620130526.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "6493daafb252f8f4cd8162cd"
+  },
+  "name": "fate",
+  "email": "fatesee786@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "c",
+  "motherName": "d",
+  "permanentAddress": {
+    "landmark": "bihar",
+    "postalCode": "110025",
+    "cityOrTown": "delhi",
+    "district": "southy",
+    "state": "Bihar"
+  },
+  "correspondenceAddress": {
+    "landmark": "bihar",
+    "postalCode": "110025",
+    "cityOrTown": "delhi",
+    "district": "southy",
+    "state": "Bihar"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2009,
+      "percentage": 85,
+      "boardOrUni": "cbse"
+    },
+    "intermediate": {
+      "passYear": 2011,
+      "percentage": 79,
+      "boardOrUni": "cbse"
+    },
+    "graduation": {
+      "passYear": 2015,
+      "percentage": 74,
+      "boardOrUni": "ggsipu"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Saharanpur",
+  "transactionId": "123a2233r424",
+  "languageOfExam": "English",
+  "category": "MUSLIM_ST",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687411316/1687411314600WhatsApp%20Image%202023-06-03%20at%2011.41.28%20PM.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687411325/1687411324295WhatsApp%20Image%202023-06-03%20at%2011.42.00%20PM.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64940f32cbe77968c64ee3f8"
+  },
+  "name": "anil",
+  "email": "anil786iitk@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "hdh",
+  "motherName": "jdj",
+  "permanentAddress": {
+    "landmark": "hhd",
+    "postalCode": "676644",
+    "cityOrTown": "nsj",
+    "district": "hsdhbd",
+    "state": "Bihar"
+  },
+  "correspondenceAddress": {
+    "landmark": "hhd",
+    "postalCode": "676644",
+    "cityOrTown": "nsj",
+    "district": "hsdhbd",
+    "state": "Bihar"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2020,
+      "percentage": 77,
+      "boardOrUni": "kdj"
+    },
+    "intermediate": {
+      "passYear": 2022,
+      "percentage": 87,
+      "boardOrUni": "jdj"
+    },
+    "graduation": {
+      "passYear": 2028,
+      "percentage": 56,
+      "boardOrUni": "kjdjd"
+    },
+    "other": {
+      "passYear": 2025,
+      "percentage": 98,
+      "boardOrUni": "jdjd",
+      "education": ""
+    }
+  },
+  "testCenter": "Saharanpur",
+  "transactionId": "dh78474783gbfb",
+  "languageOfExam": "Urdu",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687424747/1687424745507WhatsApp%20Image%202023-06-03%20at%2011.41.28%20PM.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687424760/1687424759494WhatsApp%20Image%202023-06-03%20at%2011.42.00%20PM.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64943ef74d66216d96068729"
+  },
+  "name": "khursheed alam",
+  "email": "khurseedalam906@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "x",
+  "motherName": "y",
+  "permanentAddress": {
+    "postalCode": "110025",
+    "cityOrTown": "delhi",
+    "district": "south delhi",
+    "state": "Bihar"
+  },
+  "correspondenceAddress": {
+    "postalCode": "110025",
+    "cityOrTown": "delhi",
+    "district": "south delhi",
+    "state": "Bihar"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2010,
+      "percentage": 76,
+      "boardOrUni": "cbse"
+    },
+    "intermediate": {
+      "passYear": 2012,
+      "percentage": 78,
+      "boardOrUni": "cbse"
+    },
+    "graduation": {
+      "passYear": 2015,
+      "percentage": 89,
+      "boardOrUni": "ggsipu"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "122244768697",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687437015/1687437014330WhatsApp%20Image%202023-06-22%20at%203.43.00%20AM%20%281%29.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687437028/1687437026744WhatsApp%20Image%202023-06-22%20at%203.43.00%20AM.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649442444d66216d960687d8"
+  },
+  "name": "mm",
+  "email": "masoom.khan@studyiq.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "hccc",
+  "motherName": "cc",
+  "permanentAddress": {
+    "landmark": "d",
+    "postalCode": "784628",
+    "cityOrTown": "d",
+    "district": "d",
+    "state": "Assam"
+  },
+  "correspondenceAddress": {
+    "landmark": "d",
+    "postalCode": "784628",
+    "cityOrTown": "d",
+    "district": "d",
+    "state": "Assam"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2000,
+      "percentage": 78.9,
+      "boardOrUni": "y"
+    },
+    "intermediate": {
+      "passYear": 2006,
+      "percentage": 67.87,
+      "boardOrUni": "gn"
+    },
+    "graduation": {
+      "passYear": 2013,
+      "percentage": 67.9,
+      "boardOrUni": "h"
+    },
+    "other": {
+      "passYear": 2019,
+      "percentage": 67.9,
+      "boardOrUni": "gf",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "ghhj5440o",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_ST",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687437860/1687437858473WhatsApp%20Image%202023-06-22%20at%203.43.00%20AM%20%281%29.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687437865/1687437863945WhatsApp%20Image%202023-06-22%20at%203.43.00%20AM.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64944f804d66216d96068a91"
+  },
+  "name": "anil",
+  "email": "aniliasnetwork@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "lfwnsvlbck",
+  "motherName": "cncnnc",
+  "permanentAddress": {
+    "postalCode": "110025",
+    "cityOrTown": "delhji",
+    "district": "south",
+    "state": "Assam"
+  },
+  "correspondenceAddress": {
+    "postalCode": "110025",
+    "cityOrTown": "delhji",
+    "district": "south",
+    "state": "Assam"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2020,
+      "percentage": 98,
+      "boardOrUni": "cbse"
+    },
+    "intermediate": {
+      "passYear": 2020,
+      "percentage": 78,
+      "boardOrUni": "c"
+    },
+    "graduation": {
+      "passYear": 2022,
+      "percentage": 99,
+      "boardOrUni": "cbse"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Bijnor",
+  "transactionId": "1234356789",
+  "languageOfExam": "Urdu",
+  "category": "MUSLIM_ST",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687441241/1687441239698WhatsApp%20Image%202023-06-22%20at%203.43.00%20AM%20%281%29.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687441255/1687441253967WhatsApp%20Image%202023-06-22%20at%203.43.00%20AM.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64946ccb4d66216d96068ec4"
+  },
+  "name": "sa",
+  "email": "admission@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "j",
+  "motherName": "j",
+  "permanentAddress": {
+    "postalCode": "342342",
+    "cityOrTown": "hdf",
+    "district": "jd",
+    "state": "Chhattisgarh"
+  },
+  "correspondenceAddress": {
+    "postalCode": "342342",
+    "cityOrTown": "hdf",
+    "district": "jd",
+    "state": "Chhattisgarh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2010,
+      "percentage": 78,
+      "boardOrUni": "dsdfg"
+    },
+    "intermediate": {
+      "passYear": 2016,
+      "percentage": 45,
+      "boardOrUni": "gdsfg"
+    },
+    "graduation": {
+      "passYear": 2016,
+      "percentage": 78,
+      "boardOrUni": "sdgsd"
+    },
+    "other": {
+      "passYear": 2019,
+      "percentage": 98,
+      "boardOrUni": "ubnubu",
+      "education": ""
+    }
+  },
+  "testCenter": "Bijnor",
+  "transactionId": "fnd434234",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687448706/1687448704814WhatsApp%20Image%202023-06-22%20at%203.43.00%20AM%20%281%29.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687448721/1687448720380WhatsApp%20Image%202023-06-22%20at%203.43.00%20AM.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649500d44d66216d960695bb"
+  },
+  "name": "Mohd Amjac",
+  "email": "mansooriamjad047@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Mohd Afzal Mansuri",
+  "motherName": "Anjum Bano",
+  "permanentAddress": {
+    "landmark": "Kharewan",
+    "postalCode": "276305",
+    "cityOrTown": "Saraimeer",
+    "district": "Azamgarh",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "kharewan",
+    "postalCode": "276305",
+    "cityOrTown": "Saraimeer",
+    "district": "Azamgarh",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2018,
+      "percentage": 55.7,
+      "boardOrUni": "Madrasa board Of education lucknow"
+    },
+    "intermediate": {
+      "passYear": 2020,
+      "percentage": 72.8,
+      "boardOrUni": "Umsp"
+    },
+    "graduation": {
+      "passYear": 2023,
+      "percentage": 10,
+      "boardOrUni": "vbspu"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "T2306200927320855439179",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687486561/1687486560274IMG-20230521-WA0001.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687486572/1687486571721IMG-20230521-WA0000.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "6495032d4d66216d960695cf"
+  },
+  "name": "Mohd Amjac",
+  "email": "mansooriamjad047@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Mohd Afzal Mansuri",
+  "motherName": "Anjum Bano",
+  "permanentAddress": {
+    "landmark": "Kharewan",
+    "postalCode": "276305",
+    "cityOrTown": "saraimeer",
+    "district": "Azamgarh",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Kharewan",
+    "postalCode": "276305",
+    "cityOrTown": "saraimeer",
+    "district": "Azamgarh",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2018,
+      "percentage": 55.7,
+      "boardOrUni": "madrasa board of eduction lucknow"
+    },
+    "intermediate": {
+      "passYear": 2020,
+      "percentage": 72.8,
+      "boardOrUni": "Upmsp"
+    },
+    "graduation": {
+      "passYear": 2023,
+      "percentage": 10,
+      "boardOrUni": "Vbspu"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "T2306200927320855439179",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687487091/1687487090654IMG-20230521-WA0001.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687487101/1687487100894IMG-20230521-WA0000.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64959b0d4d66216d9606a79b"
+  },
+  "name": "Hsh",
+  "email": "Wash@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "Hh",
+  "motherName": "Bh",
+  "permanentAddress": {
+    "postalCode": "637372",
+    "cityOrTown": "Jsjsj",
+    "district": "Jsjs",
+    "state": "Chhattisgarh"
+  },
+  "correspondenceAddress": {
+    "postalCode": "637372",
+    "cityOrTown": "Jsjsj",
+    "district": "Jsjs",
+    "state": "Chhattisgarh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2020,
+      "percentage": 45,
+      "boardOrUni": "Hh"
+    },
+    "intermediate": {
+      "passYear": 2028,
+      "percentage": 89,
+      "boardOrUni": "Hh"
+    },
+    "graduation": {
+      "passYear": 2029,
+      "percentage": 56,
+      "boardOrUni": "Jshsj"
+    },
+    "other": {
+      "passYear": 2028,
+      "percentage": 78,
+      "boardOrUni": "Jsjs",
+      "education": ""
+    }
+  },
+  "testCenter": "Pune",
+  "transactionId": "Kamanan11",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687526032/1687526030616131643B3-F79C-425C-8B4B-EB6760982077.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687526041/16875260403650B7A79A2-3384-42B3-816D-5CD2F85C2329.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64986b834d66216d9606c98a"
+  },
+  "name": "SAHIL KALEEM",
+  "email": "sahil.kaleem786@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Kaleem Ahmad",
+  "motherName": "Sabana Kaleem ",
+  "permanentAddress": {
+    "landmark": "Nai Bazar Saraimeer ",
+    "postalCode": "276305",
+    "cityOrTown": "Saraimeer ",
+    "district": "Azamgarh ",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Nai Bazar Saraimeer ",
+    "postalCode": "276305",
+    "cityOrTown": "Saraimeer ",
+    "district": "Azamgarh ",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2014,
+      "percentage": 7.2,
+      "boardOrUni": "CBSE"
+    },
+    "intermediate": {
+      "passYear": 2017,
+      "percentage": 77.8,
+      "boardOrUni": "UP BOARD"
+    },
+    "graduation": {
+      "passYear": 2022,
+      "percentage": 72.5,
+      "boardOrUni": "AKTU  LUCKNOW "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "353627591188",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687710531/1687710529820IMG_20230515_164235.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687710544/1687710543515IMG_20230515_164039.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649abe044d66216d9606f80e"
+  },
+  "name": "x",
+  "email": "Manish@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "c",
+  "motherName": "d",
+  "permanentAddress": {
+    "landmark": "jamia",
+    "postalCode": "110025",
+    "cityOrTown": "delhi",
+    "district": "south ",
+    "state": "Haryana"
+  },
+  "correspondenceAddress": {
+    "landmark": "jamia",
+    "postalCode": "110025",
+    "cityOrTown": "delhi",
+    "district": "south ",
+    "state": "Haryana"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2009,
+      "percentage": 90,
+      "boardOrUni": "cbse"
+    },
+    "intermediate": {
+      "passYear": 2011,
+      "percentage": 84,
+      "boardOrUni": "cbse"
+    },
+    "graduation": {
+      "passYear": 2016,
+      "percentage": 74,
+      "boardOrUni": "gg"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "12345678",
+  "languageOfExam": "Urdu",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687862726/1687862724291shibli%201.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687862744/1687862743658WhatsApp%20Image%202023-06-03%20at%2011.42.00%20PM.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649ae50c4d66216d9606fca4"
+  },
+  "name": "Salman Ali ",
+  "email": "salmanalikhansre@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Meharban Ali ",
+  "motherName": "Mobina Begum ",
+  "permanentAddress": {
+    "landmark": "Village bhojewala Post babail buzurg district saharanpur uttar pradesh ",
+    "postalCode": "247120",
+    "cityOrTown": "Saharanpur ",
+    "district": "Saharanpur ",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Village bhojewala Post babail buzurg district saharanpur uttar pradesh ",
+    "postalCode": "247120",
+    "cityOrTown": "Saharanpur ",
+    "district": "Saharanpur ",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2008,
+      "percentage": 56.66,
+      "boardOrUni": "Board of highschool and intermediate education Uttar Pradesh "
+    },
+    "intermediate": {
+      "passYear": 2010,
+      "percentage": 62.2,
+      "boardOrUni": "Board of highschool and intermediate education Uttar Pradesh "
+    },
+    "graduation": {
+      "passYear": 2013,
+      "percentage": 56.77,
+      "boardOrUni": "CCS University Meerut "
+    },
+    "other": {
+      "passYear": 2020,
+      "percentage": 68,
+      "boardOrUni": "Jamia millia islamia University New Delhi ",
+      "education": ""
+    }
+  },
+  "testCenter": "Saharanpur",
+  "transactionId": "354249592497",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687872621/1687872620646A34423_11zon.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687872638/1687872637795IMG_20230201_191318%20%281%29%20%281%29%20%281%29.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "UPSC CSE ",
+      "year": 2023,
+      "cleared": true,
+      "_id": {
+        "$oid": "649ae50c4d66216d9606fca5"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "649afc254d66216d96070045"
+  },
+  "name": "mahesh",
+  "email": "ramesh@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "dd",
+  "motherName": "d",
+  "permanentAddress": {
+    "landmark": "j",
+    "postalCode": "557577",
+    "cityOrTown": "k",
+    "district": "j",
+    "state": "Arunachal Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "j",
+    "postalCode": "557577",
+    "cityOrTown": "k",
+    "district": "j",
+    "state": "Arunachal Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2023,
+      "percentage": 78,
+      "boardOrUni": "jh"
+    },
+    "intermediate": {
+      "passYear": 2016,
+      "percentage": 78,
+      "boardOrUni": "jj"
+    },
+    "graduation": {
+      "passYear": 2019,
+      "percentage": 78,
+      "boardOrUni": "kn"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "guyt7uy",
+  "languageOfExam": "Urdu",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687878664/1687878663287photo_6109364896232749301_y.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687878668/1687878666637photo_6109364896232749301_y.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649bb7ae4d66216d96070847"
+  },
+  "name": "Mohd Qasim ",
+  "email": "ansariqasim7520@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Abdul Hameed Ansari",
+  "motherName": "Shakeela Parveen",
+  "permanentAddress": {
+    "landmark": "H.no-6/2893, Chipiyaan, Imli Wali Masjid, Bhawa Sarai, Near-Khumran Pul, Saharanpur ",
+    "postalCode": "247001",
+    "cityOrTown": "Saharanpur",
+    "district": "Saharanpur",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "H.no-6/2893, Chipiyaan, Imli Wali Masjid, Bhawa Sarai, Near-Khumran Pul, Saharanpur ",
+    "postalCode": "247001",
+    "cityOrTown": "Saharanpur",
+    "district": "Saharanpur",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2009,
+      "percentage": 56,
+      "boardOrUni": "UP Board "
+    },
+    "intermediate": {
+      "passYear": 2009,
+      "percentage": 61,
+      "boardOrUni": "UP Board "
+    },
+    "graduation": {
+      "passYear": 2022,
+      "percentage": 57,
+      "boardOrUni": "IGNOU"
+    },
+    "other": {
+      "passYear": 2019,
+      "percentage": 77,
+      "boardOrUni": "NIOS ",
+      "education": ""
+    }
+  },
+  "testCenter": "Saharanpur",
+  "transactionId": "123456",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687926389/1687926387840IMG-20220202-WA0004.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687926407/1687926406503Compress_20230509_185310_0572.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "UPSC,UPPCS ",
+      "year": 2023,
+      "cleared": false,
+      "_id": {
+        "$oid": "649bb7ae4d66216d96070848"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "649bdecf4d66216d96070a3a"
+  },
+  "name": "Zarina Banoo",
+  "email": "Zareenabn13@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "Mohd Ali",
+  "motherName": "Hakima Banoo",
+  "permanentAddress": {
+    "landmark": "Kukshow",
+    "postalCode": "194105",
+    "cityOrTown": "Tambis",
+    "district": "Kargil",
+    "state": "Jammu and Kashmir"
+  },
+  "correspondenceAddress": {
+    "landmark": "Kukshow",
+    "postalCode": "194105",
+    "cityOrTown": "Tambis",
+    "district": "Kargil",
+    "state": "Jammu and Kashmir"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2015,
+      "percentage": 60.2,
+      "boardOrUni": "J&K State Board of school Education"
+    },
+    "intermediate": {
+      "passYear": 2017,
+      "percentage": 63.6,
+      "boardOrUni": "J&K State Board of school Education"
+    },
+    "graduation": {
+      "passYear": 2021,
+      "percentage": 74.2,
+      "boardOrUni": "University of Kashmir "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Srinagar",
+  "transactionId": "317946548045",
+  "languageOfExam": "English",
+  "category": "MUSLIM_ST",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687935967/1687935966350zAIR%20PHOTO.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1687936022/1687936021626SIGNATURE%20ZIAR.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649cf201faa1939c9953c92a"
+  },
+  "name": "sajad hassan",
+  "email": "sajadhassan236@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Ghulam Hassan Malik",
+  "motherName": "Kulsoma",
+  "permanentAddress": {
+    "landmark": "Sultanpora pattan baramulla",
+    "postalCode": "193121",
+    "cityOrTown": "Baramulla",
+    "district": "Baramulla",
+    "state": "Jammu and Kashmir"
+  },
+  "correspondenceAddress": {
+    "landmark": "Sultanpora pattan baramulla",
+    "postalCode": "193121",
+    "cityOrTown": "Baramulla",
+    "district": "Baramulla",
+    "state": "Jammu and Kashmir"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2013,
+      "percentage": 63,
+      "boardOrUni": "Jammu and kashmir state board of school education"
+    },
+    "intermediate": {
+      "passYear": 2015,
+      "percentage": 73,
+      "boardOrUni": "Jammu and kashmir state board of school education"
+    },
+    "graduation": {
+      "passYear": 2020,
+      "percentage": 75,
+      "boardOrUni": "University of kashmir"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Srinagar",
+  "transactionId": "318094648016",
+  "languageOfExam": "English",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688006605/1688006604280photograph.pdf.pdf",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688006616/1688006615009Signature%20.pdf.pdf",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649d4dd1faa1939c9953cdd6"
+  },
+  "name": "Narendra Kumar Meena ",
+  "email": "stanforduniversitylaw@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "KADU RAM Meena",
+  "motherName": "INDIRA devi",
+  "permanentAddress": {
+    "landmark": "Gopalpura ",
+    "postalCode": "321611",
+    "cityOrTown": "Karauli",
+    "district": "Karauli",
+    "state": "Rajasthan"
+  },
+  "correspondenceAddress": {
+    "landmark": "Gopalpura ",
+    "postalCode": "321611",
+    "cityOrTown": "Karauli",
+    "district": "Karauli",
+    "state": "Rajasthan"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2016,
+      "percentage": 79,
+      "boardOrUni": "Rbsc"
+    },
+    "intermediate": {
+      "passYear": 2018,
+      "percentage": 73,
+      "boardOrUni": "Rbsc"
+    },
+    "graduation": {
+      "passYear": 2023,
+      "percentage": 10,
+      "boardOrUni": "IGNOU "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "354212127621",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_ST",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688030340/1688030339472Nare_3.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688030351/1688030349947Nare_16.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649eb963faa1939c9953ddd3"
+  },
+  "name": "Billu Chauhan",
+  "email": "Billu@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Nunnu Chauhan",
+  "motherName": "Tun Tun Chauhan",
+  "permanentAddress": {
+    "landmark": "Nala Supara",
+    "postalCode": "400127",
+    "cityOrTown": "Mumbai",
+    "district": "GhatGober",
+    "state": "Lakshadweep"
+  },
+  "correspondenceAddress": {
+    "landmark": "Nala Supara",
+    "postalCode": "400127",
+    "cityOrTown": "Mumbai",
+    "district": "GhatGober",
+    "state": "Lakshadweep"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2000,
+      "percentage": 100,
+      "boardOrUni": "Jharkhand Board"
+    },
+    "intermediate": {
+      "passYear": 2002,
+      "percentage": 99,
+      "boardOrUni": "Manipur Board"
+    },
+    "graduation": {
+      "passYear": 2005,
+      "percentage": 100,
+      "boardOrUni": "Kerala Board of primary education"
+    },
+    "other": {
+      "passYear": 2007,
+      "percentage": 100,
+      "boardOrUni": "Al falah Board of MBBS",
+      "education": ""
+    }
+  },
+  "testCenter": "Patna",
+  "transactionId": "Aal2_jala2_aai_Bla_to_taal2",
+  "languageOfExam": "Urdu",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688123542/1688123541310IMG-20230629-WA0003.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688123572/1688123570722IMG-20230619-WA0000.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "UPSC",
+      "year": 2020,
+      "cleared": true,
+      "_id": {
+        "$oid": "649eb963faa1939c9953ddd4"
+      }
+    },
+    {
+      "name": "UP PCS",
+      "year": 2022,
+      "cleared": true,
+      "_id": {
+        "$oid": "649eb963faa1939c9953ddd5"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "649ef10dfaa1939c9953e4e2"
+  },
+  "name": "Mohd saqib",
+  "email": "saqibansari2107@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Mohd Irfan ",
+  "motherName": "Kulsoom ",
+  "permanentAddress": {
+    "landmark": "Nai basti naugawan Sadat Amroha ",
+    "postalCode": "244251",
+    "cityOrTown": "Amroha",
+    "district": "Amroha",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Nai basti naugawan Sadat Amroha ",
+    "postalCode": "244251",
+    "cityOrTown": "Amroha",
+    "district": "Amroha",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2009,
+      "percentage": 45,
+      "boardOrUni": "Up board "
+    },
+    "intermediate": {
+      "passYear": 2011,
+      "percentage": 57,
+      "boardOrUni": "Up board "
+    },
+    "graduation": {
+      "passYear": 2014,
+      "percentage": 58,
+      "boardOrUni": "Mjpru "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Bijnor",
+  "transactionId": "8445898323@ybl",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688137901/1688137899539IMG20230630192045.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688137914/1688137912468IMG20230629212542.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "Upsc",
+      "year": 2018,
+      "cleared": false,
+      "_id": {
+        "$oid": "649ef10dfaa1939c9953e4e3"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "649f1122faa1939c9953e90f"
+  },
+  "name": "Arshad Shadab",
+  "email": "arshadshadab.amu@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Abdul Mubeen Ahmad Ansari ",
+  "motherName": "Jannatunnisha ",
+  "permanentAddress": {
+    "landmark": "BHEEKHAMPUR ",
+    "postalCode": "271203",
+    "cityOrTown": "Balrampur ",
+    "district": "Balrampur ",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Wazirabad (sangam vihar)",
+    "postalCode": "110084",
+    "cityOrTown": "Wazeerabad (Sangam Vihar)",
+    "district": "North Delhi",
+    "state": "Delhi"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2013,
+      "percentage": 75,
+      "boardOrUni": "Board of High school and Intermediate Education U.P"
+    },
+    "intermediate": {
+      "passYear": 2016,
+      "percentage": 70.04,
+      "boardOrUni": "Senior secondary school AMU "
+    },
+    "graduation": {
+      "passYear": 2019,
+      "percentage": 7.114,
+      "boardOrUni": "Aligarh Muslim University Aligarh "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "318122500387",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145095/1688145094187download.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145146/1688145145504U1NX18YJAQMVJ0D9CBdtR19B.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649f1127faa1939c9953e912"
+  },
+  "name": "Arshad Shadab",
+  "email": "arshadshadab.amu@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Abdul Mubeen Ahmad Ansari ",
+  "motherName": "Jannatunnisha ",
+  "permanentAddress": {
+    "landmark": "BHEEKHAMPUR ",
+    "postalCode": "271203",
+    "cityOrTown": "Balrampur ",
+    "district": "Balrampur ",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Wazirabad (sangam vihar)",
+    "postalCode": "110084",
+    "cityOrTown": "Wazeerabad (Sangam Vihar)",
+    "district": "North Delhi",
+    "state": "Delhi"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2013,
+      "percentage": 75,
+      "boardOrUni": "Board of High school and Intermediate Education U.P"
+    },
+    "intermediate": {
+      "passYear": 2016,
+      "percentage": 70.04,
+      "boardOrUni": "Senior secondary school AMU "
+    },
+    "graduation": {
+      "passYear": 2019,
+      "percentage": 7.114,
+      "boardOrUni": "Aligarh Muslim University Aligarh "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "318122500387",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145095/1688145094187download.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145146/1688145145504U1NX18YJAQMVJ0D9CBdtR19B.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649f1127faa1939c9953e915"
+  },
+  "name": "Arshad Shadab",
+  "email": "arshadshadab.amu@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Abdul Mubeen Ahmad Ansari ",
+  "motherName": "Jannatunnisha ",
+  "permanentAddress": {
+    "landmark": "BHEEKHAMPUR ",
+    "postalCode": "271203",
+    "cityOrTown": "Balrampur ",
+    "district": "Balrampur ",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Wazirabad (sangam vihar)",
+    "postalCode": "110084",
+    "cityOrTown": "Wazeerabad (Sangam Vihar)",
+    "district": "North Delhi",
+    "state": "Delhi"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2013,
+      "percentage": 75,
+      "boardOrUni": "Board of High school and Intermediate Education U.P"
+    },
+    "intermediate": {
+      "passYear": 2016,
+      "percentage": 70.04,
+      "boardOrUni": "Senior secondary school AMU "
+    },
+    "graduation": {
+      "passYear": 2019,
+      "percentage": 7.114,
+      "boardOrUni": "Aligarh Muslim University Aligarh "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "318122500387",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145095/1688145094187download.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145146/1688145145504U1NX18YJAQMVJ0D9CBdtR19B.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649f1127faa1939c9953e918"
+  },
+  "name": "Arshad Shadab",
+  "email": "arshadshadab.amu@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Abdul Mubeen Ahmad Ansari ",
+  "motherName": "Jannatunnisha ",
+  "permanentAddress": {
+    "landmark": "BHEEKHAMPUR ",
+    "postalCode": "271203",
+    "cityOrTown": "Balrampur ",
+    "district": "Balrampur ",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Wazirabad (sangam vihar)",
+    "postalCode": "110084",
+    "cityOrTown": "Wazeerabad (Sangam Vihar)",
+    "district": "North Delhi",
+    "state": "Delhi"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2013,
+      "percentage": 75,
+      "boardOrUni": "Board of High school and Intermediate Education U.P"
+    },
+    "intermediate": {
+      "passYear": 2016,
+      "percentage": 70.04,
+      "boardOrUni": "Senior secondary school AMU "
+    },
+    "graduation": {
+      "passYear": 2019,
+      "percentage": 7.114,
+      "boardOrUni": "Aligarh Muslim University Aligarh "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "318122500387",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145095/1688145094187download.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145146/1688145145504U1NX18YJAQMVJ0D9CBdtR19B.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649f1128faa1939c9953e91b"
+  },
+  "name": "Arshad Shadab",
+  "email": "arshadshadab.amu@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Abdul Mubeen Ahmad Ansari ",
+  "motherName": "Jannatunnisha ",
+  "permanentAddress": {
+    "landmark": "BHEEKHAMPUR ",
+    "postalCode": "271203",
+    "cityOrTown": "Balrampur ",
+    "district": "Balrampur ",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Wazirabad (sangam vihar)",
+    "postalCode": "110084",
+    "cityOrTown": "Wazeerabad (Sangam Vihar)",
+    "district": "North Delhi",
+    "state": "Delhi"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2013,
+      "percentage": 75,
+      "boardOrUni": "Board of High school and Intermediate Education U.P"
+    },
+    "intermediate": {
+      "passYear": 2016,
+      "percentage": 70.04,
+      "boardOrUni": "Senior secondary school AMU "
+    },
+    "graduation": {
+      "passYear": 2019,
+      "percentage": 7.114,
+      "boardOrUni": "Aligarh Muslim University Aligarh "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "318122500387",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145095/1688145094187download.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145146/1688145145504U1NX18YJAQMVJ0D9CBdtR19B.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649f1128faa1939c9953e91e"
+  },
+  "name": "Arshad Shadab",
+  "email": "arshadshadab.amu@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Abdul Mubeen Ahmad Ansari ",
+  "motherName": "Jannatunnisha ",
+  "permanentAddress": {
+    "landmark": "BHEEKHAMPUR ",
+    "postalCode": "271203",
+    "cityOrTown": "Balrampur ",
+    "district": "Balrampur ",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Wazirabad (sangam vihar)",
+    "postalCode": "110084",
+    "cityOrTown": "Wazeerabad (Sangam Vihar)",
+    "district": "North Delhi",
+    "state": "Delhi"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2013,
+      "percentage": 75,
+      "boardOrUni": "Board of High school and Intermediate Education U.P"
+    },
+    "intermediate": {
+      "passYear": 2016,
+      "percentage": 70.04,
+      "boardOrUni": "Senior secondary school AMU "
+    },
+    "graduation": {
+      "passYear": 2019,
+      "percentage": 7.114,
+      "boardOrUni": "Aligarh Muslim University Aligarh "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "318122500387",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145095/1688145094187download.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145146/1688145145504U1NX18YJAQMVJ0D9CBdtR19B.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649f1128faa1939c9953e921"
+  },
+  "name": "Arshad Shadab",
+  "email": "arshadshadab.amu@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Abdul Mubeen Ahmad Ansari ",
+  "motherName": "Jannatunnisha ",
+  "permanentAddress": {
+    "landmark": "BHEEKHAMPUR ",
+    "postalCode": "271203",
+    "cityOrTown": "Balrampur ",
+    "district": "Balrampur ",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Wazirabad (sangam vihar)",
+    "postalCode": "110084",
+    "cityOrTown": "Wazeerabad (Sangam Vihar)",
+    "district": "North Delhi",
+    "state": "Delhi"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2013,
+      "percentage": 75,
+      "boardOrUni": "Board of High school and Intermediate Education U.P"
+    },
+    "intermediate": {
+      "passYear": 2016,
+      "percentage": 70.04,
+      "boardOrUni": "Senior secondary school AMU "
+    },
+    "graduation": {
+      "passYear": 2019,
+      "percentage": 7.114,
+      "boardOrUni": "Aligarh Muslim University Aligarh "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "318122500387",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145095/1688145094187download.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145146/1688145145504U1NX18YJAQMVJ0D9CBdtR19B.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649f1128faa1939c9953e924"
+  },
+  "name": "Arshad Shadab",
+  "email": "arshadshadab.amu@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Abdul Mubeen Ahmad Ansari ",
+  "motherName": "Jannatunnisha ",
+  "permanentAddress": {
+    "landmark": "BHEEKHAMPUR ",
+    "postalCode": "271203",
+    "cityOrTown": "Balrampur ",
+    "district": "Balrampur ",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Wazirabad (sangam vihar)",
+    "postalCode": "110084",
+    "cityOrTown": "Wazeerabad (Sangam Vihar)",
+    "district": "North Delhi",
+    "state": "Delhi"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2013,
+      "percentage": 75,
+      "boardOrUni": "Board of High school and Intermediate Education U.P"
+    },
+    "intermediate": {
+      "passYear": 2016,
+      "percentage": 70.04,
+      "boardOrUni": "Senior secondary school AMU "
+    },
+    "graduation": {
+      "passYear": 2019,
+      "percentage": 7.114,
+      "boardOrUni": "Aligarh Muslim University Aligarh "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "318122500387",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145095/1688145094187download.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688145146/1688145145504U1NX18YJAQMVJ0D9CBdtR19B.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "649fe4a8faa1939c9953f446"
+  },
+  "name": "MUNAZZA QURESHI",
+  "email": "munazzaqureshi850@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "AJAZ QURESHI",
+  "motherName": "TABASSUM QURESHI",
+  "permanentAddress": {
+    "landmark": "6/A OPPOSITE SAHYOG MEDICAL GULSHAN TAILOR GALI PARDESHIPURA",
+    "postalCode": "450001",
+    "cityOrTown": "KHANDWA",
+    "district": "KHANDWA",
+    "state": "Madhya Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "6/A OPPOSITE SAHYOG MEDICAL GULSHAN TAILOR GALI PARDESHIPURA",
+    "postalCode": "450001",
+    "cityOrTown": "KHANDWA",
+    "district": "KHANDWA",
+    "state": "Madhya Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2018,
+      "percentage": 66.8,
+      "boardOrUni": "CBSE"
+    },
+    "intermediate": {
+      "passYear": 2020,
+      "percentage": 89.6,
+      "boardOrUni": "CBSE"
+    },
+    "graduation": {
+      "passYear": 2023,
+      "percentage": 78.5,
+      "boardOrUni": "DAVV"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Bhopal",
+  "transactionId": "T2307011400034954265988",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688200091/1688200090854h.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688200143/1688200142864si.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64a0687bfaa1939c9954002f"
+  },
+  "name": "FAREED AHMAD ",
+  "email": "fareedhigh2000@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "AKBAR ALI ",
+  "motherName": "NAZMA KHATOON",
+  "permanentAddress": {
+    "landmark": "Sirsia post bhataura ",
+    "postalCode": "272270",
+    "cityOrTown": "Mehdawal ",
+    "district": "Sant Kabir Nagar ",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Sirsia post bhataura ",
+    "postalCode": "272270",
+    "cityOrTown": "Mehdawal ",
+    "district": "Sant Kabir Nagar ",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2016,
+      "percentage": 80.5,
+      "boardOrUni": "Board of high school and intermediate education U.P"
+    },
+    "intermediate": {
+      "passYear": 2018,
+      "percentage": 69.8,
+      "boardOrUni": "Board of high school and intermediate education U"
+    },
+    "graduation": {
+      "passYear": 2021,
+      "percentage": 71.33,
+      "boardOrUni": "Deen Dayal Upadhyay Gorakhpur University Gorakhpur "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Lucknow",
+  "transactionId": "318290187484",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688233525/1688233523380aadhar.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688233564/1688233562957IMG_20230315_225815.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64a154acfaa1939c99540961"
+  },
+  "name": "HERA PARVEEN ",
+  "email": "asadabdulrab@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "ABDURRAB ",
+  "motherName": "GUL AFROZ",
+  "permanentAddress": {
+    "landmark": "MOH TURKAHIYA POST GANDHI NAGAR",
+    "postalCode": "272001",
+    "cityOrTown": "BASTI",
+    "district": "BASTI",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "MOH TURKAHIYA POST GANDHI NAGAR",
+    "postalCode": "272001",
+    "cityOrTown": "BASTI",
+    "district": "BASTI",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2017,
+      "percentage": 77.9,
+      "boardOrUni": "CBSE BOARD"
+    },
+    "intermediate": {
+      "passYear": 2019,
+      "percentage": 76.4,
+      "boardOrUni": "CBSE BOARD"
+    },
+    "graduation": {
+      "passYear": 2022,
+      "percentage": 59.38,
+      "boardOrUni": "SIDDHARTH UNIVERSITY"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Lucknow",
+  "transactionId": "T2307021609055757647923",
+  "languageOfExam": "English",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688294278/1688294277425PHO2.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688294292/1688294291892SINN.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64a154adfaa1939c99540964"
+  },
+  "name": "HERA PARVEEN ",
+  "email": "asadabdulrab@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "ABDURRAB ",
+  "motherName": "GUL AFROZ",
+  "permanentAddress": {
+    "landmark": "MOH TURKAHIYA POST GANDHI NAGAR",
+    "postalCode": "272001",
+    "cityOrTown": "BASTI",
+    "district": "BASTI",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "MOH TURKAHIYA POST GANDHI NAGAR",
+    "postalCode": "272001",
+    "cityOrTown": "BASTI",
+    "district": "BASTI",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2017,
+      "percentage": 77.9,
+      "boardOrUni": "CBSE BOARD"
+    },
+    "intermediate": {
+      "passYear": 2019,
+      "percentage": 76.4,
+      "boardOrUni": "CBSE BOARD"
+    },
+    "graduation": {
+      "passYear": 2022,
+      "percentage": 59.38,
+      "boardOrUni": "SIDDHARTH UNIVERSITY"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Lucknow",
+  "transactionId": "T2307021609055757647923",
+  "languageOfExam": "English",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688294278/1688294277425PHO2.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688294292/1688294291892SINN.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64a154adfaa1939c99540967"
+  },
+  "name": "HERA PARVEEN ",
+  "email": "asadabdulrab@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "ABDURRAB ",
+  "motherName": "GUL AFROZ",
+  "permanentAddress": {
+    "landmark": "MOH TURKAHIYA POST GANDHI NAGAR",
+    "postalCode": "272001",
+    "cityOrTown": "BASTI",
+    "district": "BASTI",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "MOH TURKAHIYA POST GANDHI NAGAR",
+    "postalCode": "272001",
+    "cityOrTown": "BASTI",
+    "district": "BASTI",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2017,
+      "percentage": 77.9,
+      "boardOrUni": "CBSE BOARD"
+    },
+    "intermediate": {
+      "passYear": 2019,
+      "percentage": 76.4,
+      "boardOrUni": "CBSE BOARD"
+    },
+    "graduation": {
+      "passYear": 2022,
+      "percentage": 59.38,
+      "boardOrUni": "SIDDHARTH UNIVERSITY"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Lucknow",
+  "transactionId": "T2307021609055757647923",
+  "languageOfExam": "English",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688294278/1688294277425PHO2.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688294292/1688294291892SINN.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64a15fbafaa1939c99540a73"
+  },
+  "name": "Babar Qayoom Malik ",
+  "email": "babarmalik652@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Abdul Qayoom Malik",
+  "motherName": "Nusrat Begum",
+  "permanentAddress": {
+    "landmark": "Guloora Langate",
+    "postalCode": "193302",
+    "cityOrTown": "Handwara",
+    "district": "Kupwara",
+    "state": "Jammu and Kashmir"
+  },
+  "correspondenceAddress": {
+    "landmark": "Guloora Langate",
+    "postalCode": "193302",
+    "cityOrTown": "Handwara",
+    "district": "Kupwara",
+    "state": "Jammu and Kashmir"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2012,
+      "percentage": 79,
+      "boardOrUni": "JKBOSE"
+    },
+    "intermediate": {
+      "passYear": 2014,
+      "percentage": 88,
+      "boardOrUni": "JKBOSE"
+    },
+    "graduation": {
+      "passYear": 2020,
+      "percentage": 67,
+      "boardOrUni": "UNIVERSITY OF JAMMU"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Srinagar",
+  "transactionId": "318385805858",
+  "languageOfExam": "English",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688297068/16882970671902286.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688297273/1688297272909sig.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64a18fdbfaa1939c99540e82"
+  },
+  "name": "testing",
+  "email": "cab@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "d",
+  "motherName": "d",
+  "permanentAddress": {
+    "postalCode": "334555",
+    "cityOrTown": "f",
+    "district": "g",
+    "state": "Assam"
+  },
+  "correspondenceAddress": {
+    "postalCode": "334555",
+    "cityOrTown": "f",
+    "district": "g",
+    "state": "Assam"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2020,
+      "percentage": 67,
+      "boardOrUni": "ff"
+    },
+    "intermediate": {
+      "passYear": 2022,
+      "percentage": 78,
+      "boardOrUni": "jgj"
+    },
+    "graduation": {
+      "passYear": 2025,
+      "percentage": 67,
+      "boardOrUni": "hj"
+    },
+    "other": {
+      "passYear": 2020,
+      "percentage": 76,
+      "boardOrUni": "jg",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "fyfhf76868",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_ST",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688309686/1688309685658Signdone.jpeg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688309691/1688309690384Signdone.jpeg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64a2a7e4b33d2c8900c8e586"
+  },
+  "name": "Ilyas Ahmad naik ",
+  "email": "ilyasnaik789@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Nazir Ahmad naik ",
+  "motherName": "SHAMEEMA ",
+  "permanentAddress": {
+    "landmark": "Rathsuna tral",
+    "postalCode": "192123",
+    "cityOrTown": "Tral",
+    "district": "pulwama ",
+    "state": "Jammu and Kashmir"
+  },
+  "correspondenceAddress": {
+    "landmark": "Rathsuna tral",
+    "postalCode": "192123",
+    "cityOrTown": "Tral",
+    "district": "pulwama ",
+    "state": "Jammu and Kashmir"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2009,
+      "percentage": 64,
+      "boardOrUni": "Jkbose"
+    },
+    "intermediate": {
+      "passYear": 2012,
+      "percentage": 65,
+      "boardOrUni": "Jkbose"
+    },
+    "graduation": {
+      "passYear": 2000,
+      "percentage": 63,
+      "boardOrUni": "Aktu Lucknow "
+    },
+    "other": {
+      "passYear": 2018,
+      "percentage": 63,
+      "boardOrUni": "Aktu Lucknow ",
+      "education": ""
+    }
+  },
+  "testCenter": "Srinagar",
+  "transactionId": "T2307031610195582689195",
+  "languageOfExam": "English",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688377738/1688377736527IMG_20230703_151756%7E2.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688377761/1688377761065rsz_img_20210206_104140_2%20%281%29.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64a2b995b33d2c8900c8e849"
+  },
+  "name": "Asra Naaz",
+  "email": "naazasra121@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "Asrar Ahmad ",
+  "motherName": "Rehana Bano",
+  "permanentAddress": {
+    "postalCode": "276404",
+    "cityOrTown": "Mubarakpur ",
+    "district": "Azamgarh ",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "postalCode": "276404",
+    "cityOrTown": "Mubarakpur ",
+    "district": "Azamgarh ",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2013,
+      "percentage": 64,
+      "boardOrUni": "ICSE"
+    },
+    "intermediate": {
+      "passYear": 2015,
+      "percentage": 78,
+      "boardOrUni": "ISC"
+    },
+    "graduation": {
+      "passYear": 2018,
+      "percentage": 65,
+      "boardOrUni": "AMU"
+    },
+    "other": {
+      "passYear": 2020,
+      "percentage": 60,
+      "boardOrUni": "AMU",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "355024113827",
+  "languageOfExam": "English",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688385856/1688385854450IMG_20230703_165414.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688385861/1688385859893IMG_20230703_170909.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64a2bab1b33d2c8900c8e85f"
+  },
+  "name": "Sabiha Anjum",
+  "email": "sk2207118@gmail.com",
+  "type": "USER",
+  "gender": "F",
+  "fatherName": "Zaheer khan ",
+  "motherName": "Tamanna khatoon ",
+  "permanentAddress": {
+    "landmark": "Kashmere gate ",
+    "postalCode": "110053",
+    "cityOrTown": "Delhi ",
+    "district": "North east Delhi ",
+    "state": "Delhi"
+  },
+  "correspondenceAddress": {
+    "landmark": "Kashmere gate ",
+    "postalCode": "110053",
+    "cityOrTown": "Delhi ",
+    "district": "North east Delhi ",
+    "state": "Delhi"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2010,
+      "percentage": 69.2,
+      "boardOrUni": "BSEB"
+    },
+    "intermediate": {
+      "passYear": 2016,
+      "percentage": 89.8,
+      "boardOrUni": "CBSE "
+    },
+    "graduation": {
+      "passYear": 2018,
+      "percentage": 52.5,
+      "boardOrUni": "Delhi University "
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Delhi",
+  "transactionId": "318414699790",
+  "languageOfExam": "English",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688385926/1688385925338aadhar.pdf.pdf",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688385946/1688385945253IMG_20230213_142221.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64a2f69ab33d2c8900c8f244"
+  },
+  "name": "Shadab Anwar ",
+  "email": "Shadabanwar705@gmail.com ",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Faiyaz Ahmad",
+  "motherName": "Rizwana khatoon",
+  "permanentAddress": {
+    "landmark": "Jamal pura",
+    "postalCode": "275101",
+    "cityOrTown": "Mau",
+    "district": "Mau",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Jamal pura",
+    "postalCode": "275101",
+    "cityOrTown": "Mau",
+    "district": "Mau",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2016,
+      "percentage": 59.67,
+      "boardOrUni": "UP Board "
+    },
+    "intermediate": {
+      "passYear": 2018,
+      "percentage": 53,
+      "boardOrUni": "UP Board "
+    },
+    "graduation": {
+      "passYear": 2021,
+      "percentage": 52,
+      "boardOrUni": "Veer bahadur singh purvanchal university"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "318464412558",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688401474/1688401472668Image%20to%20pdf_03072023_210930.pdf.pdf",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688401483/16884014815731688399636888.pdf.pdf",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64a2fe18b33d2c8900c8f3db"
+  },
+  "name": "MOHAMMAD DAOOD",
+  "email": "daood4815@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "FAIYAZ AHMAD",
+  "motherName": "RIZWANA KHATOON",
+  "permanentAddress": {
+    "landmark": "Jamal pura",
+    "postalCode": "275101",
+    "cityOrTown": "Mau",
+    "district": "Mau",
+    "state": "Uttar Pradesh"
+  },
+  "correspondenceAddress": {
+    "landmark": "Jamal pura",
+    "postalCode": "275101",
+    "cityOrTown": "Mau",
+    "district": "Mau",
+    "state": "Uttar Pradesh"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2016,
+      "percentage": 59.67,
+      "boardOrUni": "UP Board "
+    },
+    "intermediate": {
+      "passYear": 2018,
+      "percentage": 53,
+      "boardOrUni": "UP Board "
+    },
+    "graduation": {
+      "passYear": 2021,
+      "percentage": 52,
+      "boardOrUni": "Veer bahadur Singh purvanchal university"
+    },
+    "other": {
+      "passYear": 2000,
+      "percentage": 0,
+      "boardOrUni": "",
+      "education": ""
+    }
+  },
+  "testCenter": "Azamgarh, UP",
+  "transactionId": "318464412558",
+  "languageOfExam": "Hindi",
+  "category": "MUSLIM_OBC",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688403385/16884033835761688398819805.png.png",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688403394/1688403393360IMG_20230703_212052.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": []
+},{
+  "_id": {
+    "$oid": "64a326c4b33d2c8900c8f931"
+  },
+  "name": "Muneer ahmed",
+  "email": "Muneergashi1991@gmail.com",
+  "type": "USER",
+  "gender": "M",
+  "fatherName": "Bashir Ahmed",
+  "motherName": "Raja Bano",
+  "permanentAddress": {
+    "landmark": "Noorbagh, Eidgah",
+    "postalCode": "190017",
+    "cityOrTown": "Srinagar",
+    "district": "Srinagar",
+    "state": "Jammu and Kashmir"
+  },
+  "correspondenceAddress": {
+    "landmark": "Noorbagh, Eidgah",
+    "postalCode": "190017",
+    "cityOrTown": "Srinagar",
+    "district": "Srinagar",
+    "state": "Jammu and Kashmir"
+  },
+  "education": {
+    "matriculation": {
+      "passYear": 2010,
+      "percentage": 40,
+      "boardOrUni": "Jkbose"
+    },
+    "intermediate": {
+      "passYear": 2013,
+      "percentage": 64,
+      "boardOrUni": "Jkbose"
+    },
+    "graduation": {
+      "passYear": 2017,
+      "percentage": 51,
+      "boardOrUni": "University of kashmir"
+    },
+    "other": {
+      "passYear": 2022,
+      "percentage": 67,
+      "boardOrUni": "University of kashmir",
+      "education": ""
+    }
+  },
+  "testCenter": "Srinagar",
+  "transactionId": "311111548085",
+  "languageOfExam": "English",
+  "category": "MUSLIM_GENERAL",
+  "photograph": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688413572/1688413571217IMG_20181025_173647%20%281%29-1.jpg.jpg",
+  "signature": "https://res.cloudinary.com/dyn1pzkfi/image/upload/v1688413586/1688413584997IMG_20181129_142831%20%281%29.jpg.jpg",
+  "lastSemesterCertificate": "",
+  "earlierCompetitiveExams": [
+    {
+      "name": "JKSSRB",
+      "year": 2020,
+      "cleared": false,
+      "_id": {
+        "$oid": "64a326c4b33d2c8900c8f932"
+      }
+    }
+  ]
+}]

@@ -1,0 +1,122 @@
+[
+  {
+    "_id": {"$oid": "646c85767bc69db1e5ec10aa"},
+    "__v": 0,
+    "address": "Azamgarh, UP",
+    "code": "01",
+    "deleted": false,
+    "location": "Shibli National PG College, Azamgarh - 276001"
+  },
+  {
+    "_id": {"$oid": "646c858d7bc69db1e5ec10ac"},
+    "__v": 0,
+    "address": "Delhi",
+    "code": "03",
+    "deleted": false,
+    "location": "Gate-2, Don Bosco Institute of Technology, Adjacent to Sukhdev Vihar Metro Station, Okhla Road, New Delhi - 110025"
+  },
+  {
+    "_id": {"$oid": "646c85977bc69db1e5ec10ae"},
+    "__v": 0,
+    "address": "Bijnor",
+    "code": "04",
+    "deleted": false,
+    "location": "Raheemia public school, Eidgah road,Near Eidgah, Bijnor - 246701"
+  },
+  {
+    "_id": {"$oid": "646c85c47bc69db1e5ec10b2"},
+    "__v": 0,
+    "address": "Lucknow",
+    "code": "06",
+    "deleted": false,
+    "location": "Gravity Classes, inside the Dabble College, Sector 15, Indiranagar, Lucknow - 226016"
+  },
+  {
+    "_id": {"$oid": "646c85df7bc69db1e5ec10b6"},
+    "__v": 0,
+    "address": "Aligarh",
+    "code": "05",
+    "deleted": false,
+    "location": "Frank & Debbie Islam Management Complex, Near AMU RCA, Aligarh Muslim University, Aligarh - 202001"
+  },
+  {
+    "_id": {"$oid": "646c85e77bc69db1e5ec10b8"},
+    "__v": 0,
+    "address": "Patna",
+    "code": "07",
+    "deleted": false,
+    "location": "Patna Haj Bhawan, 34-Ali Imam Path (Harding road) Patna - 800001, Ph 9097171909"
+  },
+  {
+    "_id": {"$oid": "646c86007bc69db1e5ec10be"},
+    "__v": 0,
+    "address": "Mumbai",
+    "code": "08",
+    "deleted": false,
+    "location": "Scholars High School and Junior College, Captain Suresh Samant marg, Near Aggarwal Industrial Estate, Hill Park, Jogeshwari West, Mumbai - 400102"
+  },
+  {
+    "_id": {"$oid": "646c86307bc69db1e5ec10c2"},
+    "__v": 0,
+    "address": "Hyderabad",
+    "code": "09",
+    "deleted": false,
+    "location": "Zikra High School, 6-3-888/889, Raj Bhavan Rd, Durga Nagar Colony, Somajiguda, Hyderabad - 500082, Ph: 8790057871"
+  },
+  {
+    "_id": {"$oid": "646c86557bc69db1e5ec10c8"},
+    "__v": 0,
+    "address": "Srinagar",
+    "code": "02",
+    "deleted": false,
+    "location": "Northern Lights Academy, Opposite Jamkash Vehicleades, Hyderpora Byepass, Srinagar, Jammu and Kashmir - 190014"
+  },
+  {
+    "_id": {"$oid": "646c85a07bc69db1e5ec10b0"},
+    "__v": 0,
+    "address": "Ghazipur",
+    "code": "",
+    "deleted": true,
+    "location": ""
+  },
+  {
+    "_id": {"$oid": "646c85d47bc69db1e5ec10b4"},
+    "__v": 0,
+    "address": "Saharanpur",
+    "code": "",
+    "deleted": true,
+    "location": ""
+  },
+  {
+    "_id": {"$oid": "646c85f07bc69db1e5ec10ba"},
+    "__v": 0,
+    "address": "Guwahati",
+    "code": "",
+    "deleted": true,
+    "location": ""
+  },
+  {
+    "_id": {"$oid": "646c85f97bc69db1e5ec10bc"},
+    "__v": 0,
+    "address": "Bhopal",
+    "code": "",
+    "deleted": true,
+    "location": ""
+  },
+  {
+    "_id": {"$oid": "646c86087bc69db1e5ec10c0"},
+    "__v": 0,
+    "address": "Pune",
+    "code": "",
+    "deleted": true,
+    "location": ""
+  },
+  {
+    "_id": {"$oid": "646c864c7bc69db1e5ec10c6"},
+    "__v": 0,
+    "address": "Jammu",
+    "code": "",
+    "deleted": true,
+    "location": ""
+  }
+]

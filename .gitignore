@@ -6,5 +6,4 @@ build
 .netlify
 data/attendancePdf
 
-scripts
 todo.txt
